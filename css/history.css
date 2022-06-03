@@ -2,7 +2,7 @@
 @import url('./common.css');
 
 @import url('https://fonts.googleapis.com/css2? family= Merriweather:ital,wght@1,700;1,900 & family= PT+Serif:ital,wght@1,400;1,700 & display=swap' );
-
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Merriweather:ital,wght@1,700;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap');
 
 main{
     width: 1920px;
@@ -24,7 +24,7 @@ main{
 
     font-size: 70px;
     color: rgba(255, 255, 255, 0.8);
-    z-index: -1;
+    z-index: 1;
 }
 
 /*header*/
@@ -49,20 +49,21 @@ main{
 
 .header>.a>a{
     width: 100%;
-    font-size: 20px;
+    font-size: 17px;
 
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    padding: 30px  20px;
+    padding: 35px  20px;
 }
 
 .header>.a>a:hover{
     font-weight: bold;
-    border-bottom: 5px solid #D91226;
+    border-bottom: 4px solid #D91226;
 }
+
 
 /*nav*/
 .nav{
@@ -83,14 +84,30 @@ main{
     color: #D91226;
 }
 
+/*visual*/
 .visual{
     width: 1200px; margin: 0 auto;
 }
 
 .visual>h1{
-    font-size: 80px; margin-bottom: 70px;
+    font-size: 70px; margin-bottom: 200px;
     display: flex;
-    justify-content: center;
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #302C2D;
+
+    transform: translateY(0%);
+    animation: h2 1s forwards;
+}
+
+@keyframes h2{
+    100%{transform: translateY(100%);}
+}
+
+.visual>h1>span{
+    font-size: 70px;
+    display: flex;
+    font-family: 'Gowun Dodum', sans-serif;
+    color:#D91226;
 }
 
 .main>.main-txt{
@@ -182,7 +199,7 @@ main{
 }
 
 .main>p{
-    font-size: 20px; font-weight: 300;
+    font-size: 18px; font-weight: 300;
     text-align: center;
     margin-top: 100px; padding: 50px;
     background-color: rgba(184, 184, 184, 0.1);
@@ -191,7 +208,7 @@ main{
 
 .main>p>span{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     color: #D91226;
 }
 
@@ -215,26 +232,42 @@ main{
 
 /*history*/
 .history{
-    width: 1200px; margin: 200px auto;
+    width: 1200px; margin: 0 auto;
 }
 
 .history .title{
+    transform: translateY(0%);
+    animation: h2 1s forwards;
+    margin-bottom: 300px;
 }
 
+@keyframes h2{
+    100%{transform: translateY(100%);}
+}
+
+
 .history .title>h1{
-    font-size: 80px; margin-bottom: 40px;
     display: flex;
     justify-content: center;
     text-align: center;
-    line-height: 75px;
+    line-height: 75px; margin: 0;
+}
+
+
+.history .title>h1>span{
+    font-size: 70px;
+    display: flex;
+    font-family: 'Gowun Dodum', sans-serif;
+    color:#D91226;
 }
 
 .history .title>p{
+    font-family: 'Gowun Dodum', sans-serif;
     font-size: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
-    color: rgb(66, 66, 66);
+    color: rgb(66, 66, 66); 
 }
 
 dl{
@@ -256,17 +289,6 @@ dl>dt{
     justify-content: flex-start;
     position: relative;
     margin: 0; padding: 0;
-}
-
-dl>dt:nth-of-type(1)>.txt>b::after{
-    content:'●';
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    width:3%;
-    position:absolute;
-    left: 202%; bottom:-35%;
-
-    z-index: 1;
 }
 
 dl>dt:nth-of-type(odd)>.txt>b::after{
@@ -291,6 +313,17 @@ dl>dt:nth-of-type(even)>.txt>b::before{
     width:3%;
     position:absolute;
     right: 233%; bottom:-35%;
+
+    z-index: 1;
+}
+
+dl>dt:nth-of-type(1)>.txt>b::after{
+    content:'●';
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    width:3%;
+    position:absolute;
+    left: 202%; bottom:-35%;
 
     z-index: 1;
 }
@@ -368,7 +401,7 @@ dl>dd:nth-of-type(even)>p:nth-child(2)::after{
 .history>p{
     font-size: 20px; font-weight: 300;
     text-align: center;
-    margin-top: 100px; padding: 50px;
+    margin: 100px 0; padding: 50px;
     background-color: rgba(184, 184, 184, 0.1);
     border-radius: 30px;
 }
@@ -390,10 +423,24 @@ dl>dd:nth-of-type(even)>p:nth-child(2)::after{
 }
 
 .bi>.img>h1{
-    font-size: 80px; margin-bottom: 50px;
+    font-size: 70px; margin-bottom: 200px;
     display: flex;
-    justify-content: center;
-    padding-top: 60px;
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #302C2D;
+    transform: translateY(0%);
+    animation: h2 1s forwards;
+}
+
+@keyframes h2{
+    100%{transform: translateY(100%);}
+}
+
+
+.bi>.img>h1>span{
+    font-size: 70px; 
+    display: flex;
+    font-family: 'Gowun Dodum', sans-serif;
+    color:#D91226;
 }
 
 .bi>.logo{

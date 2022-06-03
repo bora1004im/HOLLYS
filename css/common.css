@@ -1,10 +1,12 @@
 @charset "utf-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&family=Nunito+Sans:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Merriweather:ital,wght@1,700;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap');
 
 html, body{
     margin: 0;
     font-size: 14px;
+    
 }
 
 ul,li,ol{
@@ -14,6 +16,14 @@ ul,li,ol{
 
 h1,h2,h3,h4,p,figure{
     margin: 0;
+}
+
+h1{
+    font-size: 70px; margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #302C2D;
 }
 
 a{
@@ -33,6 +43,10 @@ img{
 }
 
 /*header*/
+.mobile{
+    display: none;
+}
+
 header{
     position: fixed;
     justify-content: space-between;
@@ -42,11 +56,12 @@ header{
 }
 
 .active{
-    position: relative;
+    /* position: sticky; */
     justify-content: space-between;
     width: 100%; height: 100px;
     top: 0;  left: 0;
     z-index: 5;
+    background-color: white;
 }
 
 header>div{
@@ -116,20 +131,16 @@ header>div>div>a>img{
     padding:15px  2.5vw;
 }
 
-
 /*footer*/
 footer{
     background-color: #E0E0E0;
     padding: 40px 0;
+    margin-top:100px;
 }
 
 .footer{
-    width: 1060px; margin: 0 auto;
+    width: 1060px; margin:0px auto;
     text-align:center;
-}
-
-.footer>.number>figure{
-
 }
 
 .footer>.number>figure>img{
@@ -160,10 +171,105 @@ footer{
     font-size: 12px;
 }
 
-/* 모바일  */
+
+
+
+
+
+
+
+
+/************************** 모바일 **************************/
 @media (max-width:767px){
-    
+    .web{
+        display: none;
+    }
+
+    /*******************header mobile*******************/
+    header{
+        display: none;
+    }
+
+    .mobile{
+        display: block; 
+    }
+
+    .mobile>header{
+        display: block; 
+        width: 767px; height: 150px;
+        background-color: white;
+        border-bottom: 1px solid #ddd;
+        position: sticky; top:0;
+    }
+
+    header>.menu-mobile{
+        width: 767px; 
+        position:relative;
+    }
+
+    .mobile>header>.menu-mobile>.trigger-menu{
+        display:block;
+        width:20px;
+        align-items: center;
+        margin-left: 30px;  
+    }
+
+    .mobile>header>.menu-mobile>.trigger-menu>span{
+        display: block;
+        border-bottom: 3px solid rgb(0, 0, 0);
+        margin: 5px 0;
+    }
+
+    .mobile>header>.menu-mobile>a>img{
+        width: 50px;
+    }
+
+    /*******************main mobile*******************/
+    main>.visual{
+        display: none;
+    }
+
+    .mobile-main{
+        display: flex;
+    }
+
+    .mobile-main>ul>li{
+        margin-bottom: 20px;
+    }
+
+    /*******************footer mobile*******************/
+footer{
+    background-color: #E0E0E0;
+    padding: 40px 0;
+    margin-top:100px;
 }
+
+.footer{
+    width: 767px; margin:0px auto;
+    text-align:center;
+}
+
+.footer>.number>figure>img{
+    padding: 20px 0;
+}
+
+.footer>.tos>b{
+    font-size: 18px;
+}
+
+.footer>.tos>a:nth-child(3)::after{
+    content: 'ㅣ';
+}
+
+.footer>.number>p:nth-of-type(1){
+    padding: 10px;
+}
+
+.footer>.number>p:nth-of-type(2){
+    font-size: 12px;
+}
+
+
 
 /*ipad*/
 @media (min-width:768px) and (max-width:1023px){

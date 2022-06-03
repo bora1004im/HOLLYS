@@ -23,9 +23,18 @@ main>.menu>li{
     height:835px;
 }
 
+main>.menu>li>div{
+    padding: 20px;
+}
+
+main>.menu>li>div{
+    position:absolute; left:0; top:0; width:40vw;
+}
+
 main>.menu>li:hover{
+    /* width: 100%; */
     opacity: 1;
-    flex-grow:9;
+    flex-grow:6;
 }
 
 main>.menu>li:nth-child(1){
@@ -46,4 +55,28 @@ main>.menu>li:nth-child(4){
 
 main>.menu>li:nth-child(5){
     background: url('../img/menu-main/Rectangle 54.png')   no-repeat ;
+}
+
+main>.menu>li>div>h3{
+    font-size: 40px;
+}
+
+main>.menu>li>div>p{
+    margin: 10px 0 30px 0;
+    opacity: 0;
+}
+
+main>.menu>li>div>a{
+    background-color: #eee;
+    border-radius: 15px;
+    padding: 10px 20px;
+    opacity: 0;
+}
+
+main>.menu>li:hover>div>p{
+    opacity: 1;
+}
+
+main>.menu>li:hover>div>a{
+    opacity: 1;
 }

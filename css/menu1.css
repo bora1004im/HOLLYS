@@ -1,0 +1,300 @@
+@charset "utf-8";
+@import url('./common.css');
+
+.img{
+    position: relative;
+}
+
+.img>div>i{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* display: flex; */
+    justify-content: center;
+    align-items: center; /*가운데 정렬하는 방법*/
+    text-align: center;
+
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+/*header*/
+
+.header{
+    width: 1920px;
+    border-bottom: 1px solid #ddd;
+    position: sticky; top:0;
+    z-index: 999;
+    background-color: white;
+}
+
+.header>.a{
+    width: 1200px; height: 100px;
+    margin: 0 auto;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.header>.a>a{
+    width: 100%;
+    font-size: 17px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 35px  20px;
+}
+
+.header>.a>a:hover{
+    font-weight: bold;
+    border-bottom: 4px solid #D91226;
+}
+
+
+/* 
+.nav{
+    padding: 50px 0 ;
+    width: 1200px; margin: 0 auto;
+    display: flex;
+}
+
+.nav>figure:hover>div{
+    display: block;
+}
+
+.nav>figure>a{
+}
+
+.nav>figure>a:nth-of-type(2){
+    font-weight: bold;
+    color: #D91226;
+} */
+
+/*hot*/
+.hot{
+    width: 1200px; margin: 0 auto;
+    position: relative;
+}
+
+.hot>.detail{
+    margin: 50px 0;
+}
+
+.hot>h3{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 25px;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+
+.hot>h3>span{
+    background-color: white;
+    font-size: 25px;
+    padding: 0 30px;
+}
+
+.hot>h3::before{
+    content: '';
+    width: 100%; 
+    border-bottom: 1px solid #5e5e5e;
+    margin: 5px auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.hot>.detail>.slide>ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hot>.detail>.slide>ul>li{
+    padding: 50px 0;
+
+}
+
+.hot>.detail>.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hot>.detail>.btn>.bx-prev{
+    position: absolute;
+    left: 0; top:50%;
+}
+
+.hot>.detail>.btn>.bx-next{
+    position: absolute;
+    right: 0; top:50%;
+}
+
+/*search*/
+.search{
+    width: 1200px; margin: 0 auto;
+    position: relative;
+
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.search>h4{
+    font-size: 16px;
+    /* border-bottom: 1px solid rgb(211, 211, 211); */
+}
+
+.search>ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.search>ul>li{
+    padding: 10px 0;
+}
+
+.search>ul>li>label{
+    width: 100px;
+    margin-right: 100px;
+}
+
+/*menu*/
+.menu{
+    width: 1200px; margin: 100px auto;
+    position: relative;
+}
+
+.menu>ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu>ul>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.menu>ul>li>figure{
+    width: 280px; height: 440px;
+    background-color: #eee;
+    margin-bottom:50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu>ul>li>figure>img{
+    transform: translateY(-10%);
+    width: 100%;
+}
+
+.menu>ul>li>p{
+    font-size: 15px;
+    position: absolute;
+    top:75%;
+}
+
+.menu>ul>li>span{
+    font-size: 12px;
+    position: absolute;
+    top:80%;
+}
+
+.menu>ul>li:nth-last-of-type(1){
+    margin-right:  auto;
+}
+
+.menu>ul>li:nth-last-of-type(2){
+    margin-right:26px;
+}
+
+.menu>ul>li>.txt{
+    width: 280px; height: 440px;
+    position: absolute; left: 0; top:0;
+}
+
+.menu>ul>li>.txt>button{
+    position: absolute;
+    top:2%; right: 0%;
+    border: none; background: none;
+    
+}
+
+.menu>ul>li>.txt>.txt2{
+    width: 280px; height: 440px;
+    padding: 30px; 
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid gray;
+}
+
+.menu>ul>li>.txt>.txt2>.title{
+}
+
+.menu>ul>li>.txt>.txt2>.title>h4{
+    font-size: 18px;
+}
+
+.menu>ul>li>.txt>.txt2>.title>p{
+    margin-bottom: 15px;
+    color: #D91226; 
+    font-size: 15px;
+}
+
+.menu>ul>li>.txt>.txt2>.title>span{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+
+.menu>ul>li>.txt>.txt2>table{
+    margin-top: 30px; 
+    width: 100%; 
+}
+
+.menu>ul>li>.txt>.txt2>table::before{
+    content: '';
+    width: 80%; 
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    margin-top: -10px;
+}
+
+.menu>ul>li>.txt>.txt2>table>tr{
+    font-size: 10px;
+    color: #D91226;
+    padding: 30px;
+}
+
+.menu>ul>li>.txt>.txt2>table>tbody>tr{
+    font-size: 10px;
+}
+
+.menu>ul>li>.txt>.txt2>table>tbody>tr>th{
+    font-size: 12px;
+}
+
+.menu>ul>li>.txt>.txt2>table>tbody>tr>td{
+    font-size: 12px;
+}
+
+.menu>ul>li>.txt{
+    display: block;
+}
+
