@@ -59,7 +59,10 @@
 .header>.a>a:hover{
     font-weight: bold;
     border-bottom: 4px solid #D91226;
+    color: #D91226;
 }
+
+
 
 
 

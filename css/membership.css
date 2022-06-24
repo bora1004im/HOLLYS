@@ -61,6 +61,7 @@
 .header>.a>a:hover{
     font-weight: bold;
     border-bottom: 4px solid #D91226;
+    color: #D91226;
 }
 
 /*nav*/
@@ -360,7 +361,6 @@
     display:scroll;
     position:fixed;
     bottom:50px; right:50px;
-    transition: 2s;
     font-size: 0;
     background-image: url("../img/bi_arrow-up-circle-fill.png");
     width: 50px; height: 50px;

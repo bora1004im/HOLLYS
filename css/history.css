@@ -62,8 +62,8 @@
 .header>.a>a:hover{
     font-weight: bold;
     border-bottom: 4px solid #D91226;
+    color: #D91226;
 }
-
 /*nav*/
 .nav{
     padding: 50px 0 ;
