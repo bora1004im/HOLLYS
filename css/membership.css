@@ -7,6 +7,10 @@
     position: relative;
 }
 
+.img > p >img {
+    width: 100%;
+}
+
 .img>div>i{
     position: absolute;
     left: 50%; top: 50%;
@@ -25,11 +29,10 @@
 /*header*/
 
 .header{
-    width: 1920px; 
+    width: 100%;
     border-bottom: 1px solid #ddd;
     position: sticky; top:0;
     z-index: 999;
-    background-color: white;
 }
 
 .header>.a{
@@ -351,3 +354,15 @@
     border-bottom: 1px solid #eee;
 }
  */
+
+/*top*/
+.top > a{
+    display:scroll;
+    position:fixed;
+    bottom:50px; right:50px;
+    transition: 2s;
+    font-size: 0;
+    background-image: url("../img/bi_arrow-up.png");
+    width: 50px; height: 50px;
+}
+

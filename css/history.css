@@ -4,12 +4,12 @@
 @import url('https://fonts.googleapis.com/css2? family= Merriweather:ital,wght@1,700;1,900 & family= PT+Serif:ital,wght@1,400;1,700 & display=swap' );
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Merriweather:ital,wght@1,700;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap');
 
-main{
-    width: 1920px;
-}
-
 .img{
     position: relative;
+}
+
+.img > p >img {
+    width: 100%;
 }
 
 .img>div>i{
@@ -30,7 +30,7 @@ main{
 /*header*/
 
 .header{
-    width: 1920px;
+    width: 100%;
     border-bottom: 1px solid #ddd;
     position: sticky; top:0;
     z-index: 999;
@@ -63,7 +63,6 @@ main{
     font-weight: bold;
     border-bottom: 4px solid #D91226;
 }
-
 
 /*nav*/
 .nav{
@@ -529,6 +528,16 @@ dl>dd:nth-of-type(even)>p:nth-child(2)::after{
     margin-bottom: 25px;
 }
 
+/*top*/
+.top > a{
+    display:scroll;
+    position:fixed;
+    bottom:50px; right:50px;
+    transition: 2s;
+    font-size: 0;
+    background-image: url("../img/bi_arrow-up.png");
+    width: 50px; height: 50px;
+}
 
 
 

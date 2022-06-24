@@ -4,60 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu2</title>
+    <title>menu1</title>
     <link href="./css/menu1.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./common.js"></script> <!--defer : 로드를 시키되 실행시키지 않고 html 작업이 끝나면 실행하도록 하는 명령어-->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script defer src="./js/menu1.js" type="text/javascript" charset="utf-8"></script>
 
     <link rel="icon" type="image/png" href="./hollys-icon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./hollys-icon/favicon-16x16.png" sizes="16x16" />
 </head>
+
 <body>
-    <header class="active">
-        <div>
-            <ul>
-                <li >
-                    <a href="./history.html">HOLLYS</a>
-                    <div>
-                        <a href="#">HOLLYS IS</a>
-                        <a href="#">HISTORY</a>
-                        <a href="#">BI</a>
-                    </div>
-                    
-                </li>
-    
-                <li>
-                    <a href="./menu-main.html">MENU</a>
-                    <div>
-                        <a href="#">신메뉴</a>
-                        <a href="./menu1.html">커피</a>
-                        <a href="./menu2.html">음료</a>
-                        <a href="./menu3.html">푸드</a>
-                        <a href="./menu4.html">MD</a>
-                    </div>
-                </li>
-            </ul>
-                
-            <div><a href="./index.html"><img src="./img/2021_BI 6.png"></a></div>
-    
-            <ul>
-                <li>
-                    <a href="./membership.html">MEMBERSHIP</a>
-                    <div>
-                        <a href="#">멤버십 혜택</a>
-                        <a href="#">스마트 오더</a>
-                    </div>
-                </li>
-            
-                <li>
-                    <a href="./partner.html">PARTNER</a>
-                    <div>
-                        <a href="#">창업안내</a>
-                        <a href="#">창업신청</a>
-                        <a href="#">FQA</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <header class="active"></header>
     
     <main>
         <div class="img">
@@ -69,11 +29,11 @@
     
         <div class="header">
             <div class="a">
-                <a href="#">신메뉴</a>
-                <a href="#">커피</a>
-                <a href="#">음료</a>
-                <a href="#">푸드</a>
-                <a href="#">MD</a>
+                <a href="./menu-new.html">신메뉴</a>
+                <a href="./menu1.html">커피</a>
+                <a href="./menu2.html">음료</a>
+                <a href="./menu3.html">푸드</a>
+                <a href="./menu4.html">MD</a>
             </div>
         </div>
     
@@ -86,34 +46,43 @@
 
         <div class="hot">
             <h3><span>추천 상품</span></h3>
-            <div class="detail">
                 <div class="slide">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="./img/menu1/Rectangle 106.png"></a>
-                            <p>바닐라 딜라이트</p>
-                        </li>
-        
-                        <li>
-                            <a href="#"><img src="./img/menu1/Rectangle 107.png"></a>
-                            <p>콜드브루</p>
-                        </li>
-        
-                        <li>
-                            <a href="#"><img src="./img/menu1/Rectangle 108.png"></a>
-                            <p>민트 초콜릿</p>
-                        </li>
-                    </ul>
-                </div>
+                    <figure>   
+                        <a href="#"><img src="./img/menu2/Rectangle-108.png"></a>
+                        <p>피치 딸기 크러쉬</p>
+                    </figure>
 
-                <div class="btn">
+                    <figure>
+                        <a href="#"><img src="./img/menu2/Rectangle-109.png"></a>
+                        <p>민트 초코칩 할리치노</p>
+                    </figure>
+
+                    <figure>
+                        <a href="#"><img src="./img/menu2/Rectangle-110.png"></a>
+                        <p>청포도케일 착즙주스</p>
+                    </figure>
+
+                    <figure>
+                        <a href="#"><img src="./img/menu2/Rectangle-111.png"></a>
+                        <p>복숭아 얼그레이</p>
+                    </figure>
+
+                    <figure>
+                        <a href="#"><img src="./img/menu2/Rectangle-112.png"></a>
+                        <p>티라미스 크림라떼</p>
+                    </figure>
+
+                    <figure>
+                        <a href="#"><img src="./img/menu2/Rectangle-113.png"></a>
+                        <p>유자 캐모마일</p>
+                    </figure>
+                </div>
+    
+                <!-- <div class="btn">
                     <a class="bx-prev" href><img src="./img/menu1/new_btn_arrow01.gif"></a>
                     <a class="bx-next" href><img src="./img/menu1/new_btn_arrow02.gif"></a>
-                </div>
+                </div> -->
             </div>
-
-            </div>
-
 
         <div class=" search">
             <h4>메뉴 검색</h4>
@@ -138,9 +107,161 @@
         <div class="menu">
             <ul>
                 <li>
-                    <figure><img src="./img/menu2/ade/Shine muscat Smoothie.png"></figure>
-                    <p>샤인머스캣 봉봉 스무디</p>
-                    <span>Shine muscat Smoothie</span>
+                    <div class="main">
+                        <figure><img src="./img/menu-new/Jeju Green Tangerine Green Tea.png"></figure>
+                        <p>제주 청귤 그린티</p>
+                        <span>Jeju Green Tangerine Green Tea</span>
+                    </div>
+
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>제주 청귤 그린티</h4>
+                                <p>Jeju Green Tangerine Green Tea</p>
+                                <span>제주산 청귤과 녹차를 블렌딩한 그린티에 
+                                한라봉 과육과 젤리를 듬뿍 넣은 티베리에이션 음료
+                                </span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리</th>
+                                <td>153kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>34g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>0g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>0.0g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>9mg</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="main">
+                    <figure><img src="./img/menu-new/Ham and Cheese Scrambled Eggs Toast.png"></figure>
+                    <p>수박 달달 스무디</p>
+                    <span>Watermelon Smoothie</span>
+                    </div>
+                
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>수박 달달 스무디</h4>
+                                <p>Watermelon Smoothie</p>
+                                <span>달콤하고 시원한 수박 스무디에 수박 아이스크림을 얹은 스무디</span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리</th>
+                                <td>122kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>9g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>6g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>3.9g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>104mg</td>
+                            </tr>
+
+                            <tr>
+                                <th>카페인</th>
+                                <td>7mg</td>
+                            </tr>
+
+                            <tr>
+                                <th><br>*알레르기 요소 : 우유</th>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="main">
+                        <figure><img src="./img/menu-new/Peach Smoothie.png"></figure>
+                        <p>복숭아 발그레 스무디</p>
+                        <span>Peach Smoothie</span>
+                    </div>
+
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>복숭아 발그레 스무디</h4>
+                                <p>Peach Smoothie</p>
+                                <span>복숭아 과육과 탱글한 젤리를 가득 넣은 복숭아 스무디에 발그레한 복숭아 아이스크림을 얹은 스무디
+                                </span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리 </th>
+                                <td>354kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>76g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>2g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>0g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>26mg</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Shine muscat Smoothie.png"></figure>
+                        <p>샤인머스캣 봉봉 스무디</p>
+                        <span>Shine muscat Smoothie</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -192,9 +313,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/ade/Apple mango Smoothie.png"></figure>
-                    <p>애플 망고 스무디</p>
-                    <span>Apple mango Smoothie</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Apple mango Smoothie.png"></figure>
+                        <p>애플 망고 스무디</p>
+                        <span>Apple mango Smoothie</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -241,9 +364,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/ade/Fresh Strawberry Juice.png"></figure>
-                    <p>생딸기 주스</p>
-                    <span>Fresh Strawberry Juice</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Fresh Strawberry Juice.png"></figure>
+                        <p>생딸기 주스</p>
+                        <span>Fresh Strawberry Juice</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -290,9 +415,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/ade/Mint Chocochip Hollyccino.png"></figure>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Mint Chocochip Hollyccino.png"></figure>
                     <p>민트 초코칩 할리치노</p>
                     <span>Mint Chocochip Hollyccino</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -343,9 +470,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/ade/Peach Strawberry Crush.png"></figure>
-                    <p>피치 딸기 크러쉬</p>
-                    <span>Peach Strawberry Crush</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Peach Strawberry Crush.png"></figure>
+                        <p>피치 딸기 크러쉬</p>
+                        <span>Peach Strawberry Crush</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -396,9 +525,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu2/ade/Apple Beet Juice.png"></figure>
-                    <p>사과 비트 착즙 주스</p>
-                    <span>Apple Beet Juice</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Apple Beet Juice.png"></figure>
+                        <p>사과 비트 착즙 주스</p>
+                        <span>Apple Beet Juice</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -445,10 +576,11 @@
                 </li>
                 
                 <li>
+                    <div class="main">
                     <figure><img src="./img/menu2/ade/Orange Carrot Juice.png"></figure>
                     <p>오렌지 당근 착즙 주스</p>
                     <span>Orange Carrot Juice</span>
-
+                    </div>
                     
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -495,9 +627,11 @@
                 </li>
                 
                 <li>
+                <div class="main">
                     <figure> <img src="./img/menu2/ade/Strawberry Cheese Cake Hollyccino.png"></figure>
                     <p>딸기 치즈케익 할리치노</p>
                     <span>Strawberry Cheese Cake Hollyccino</span>
+                </div>  
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -548,9 +682,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/ade/Strawberry Smoothie.png"></figure>
-                    <p>딸기 스무디</p>
-                    <span>Strawberry Smoothie</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Strawberry Smoothie.png"></figure>
+                        <p>딸기 스무디</p>
+                        <span>Strawberry Smoothie</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -597,9 +733,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/ade/Green Grape Kale Juice.png"></figure>
-                    <p>청포도케일 착즙주스</p>
-                    <span>Green Grape Kale Juice</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Green Grape Kale Juice.png"></figure>
+                        <p>청포도케일 착즙주스</p>
+                        <span>Green Grape Kale Juice</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -646,9 +784,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu2/ade/Iyote-Plain.png"></figure>
-                    <p>플레인 요거트 할리치노</p>
-                    <span>Iyote-Plain</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Iyote-Plain.png"></figure>
+                        <p>플레인 요거트 할리치노</p>
+                        <span>Iyote-Plain</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -700,9 +840,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu2/ade/Green Tea Hollyccino.png"></figure>
-                    <p>그린티 할리치노</p>
-                    <span>Green Tea Hollyccino</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Green Tea Hollyccino.png"></figure>
+                        <p>그린티 할리치노</p>
+                        <span>Green Tea Hollyccino</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -753,9 +895,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu2/ade/Dark Chocochip Hollyccino.png"></figure>
-                    <p>다크초코칩 할리치노</p>
-                    <span>Dark Chocochip Hollyccino</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Dark Chocochip Hollyccino.png"></figure>
+                        <p>다크초코칩 할리치노</p>
+                        <span>Dark Chocochip Hollyccino</span>
+                    </div>  
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -806,9 +950,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu2/ade/Coldbrew Hollyccino.png"></figure>
-                    <p>콜드브루 할리치노</p>
-                    <span>Coldbrew Hollyccino</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Coldbrew Hollyccino.png"></figure>
+                        <p>콜드브루 할리치노</p>
+                        <span>Coldbrew Hollyccino</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -859,9 +1005,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/ade/Shine muscat Sparkling.png"></figure>
-                    <p>샤인머스캣 코코 스파클링</p>
-                    <span>Shine muscat Sparkling</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Shine muscat Sparkling.png"></figure>
+                        <p>샤인머스캣 코코 스파클링</p>
+                        <span>Shine muscat Sparkling</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -908,9 +1056,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/ade/Peach Plum Sparkling.png"></figure>
-                    <p>복숭아 자두 스파클링</p>
-                    <span>Peach Plum Sparkling</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Peach Plum Sparkling.png"></figure>
+                        <p>복숭아 자두 스파클링</p>
+                        <span>Peach Plum Sparkling</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -961,9 +1111,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/ade/Green Grape SPARKLING.png"></figure>
-                    <p>청포도 스파클링</p>
-                    <span>Green Grape SPARKLING</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Green Grape SPARKLING.png"></figure>
+                        <p>청포도 스파클링</p>
+                        <span>Green Grape SPARKLING</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1010,10 +1162,12 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/ade/Grapefruit Pineapple SPARKLING.png"></figure>
-                    <p>자몽 파인 스파클링</p>
-                    <span>Grapefruit Pineapple SPARKLING</span>
-
+                    <div class="main">
+                        <figure><img src="./img/menu2/ade/Grapefruit Pineapple SPARKLING.png"></figure>
+                        <p>자몽 파인 스파클링</p>
+                        <span>Grapefruit Pineapple SPARKLING</span>
+                    </div>
+                
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
                         <div class="txt2">
@@ -1059,9 +1213,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/latte/Mint Chocolate.png"></figure>
-                    <p>민트초코</p>
-                    <span>Mint Chocolate</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/latte/Mint Chocolate.png"></figure>
+                        <p>민트초코</p>
+                        <span>Mint Chocolate</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1112,9 +1268,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/latte/Hot Chocolate.png"></figure>
-                    <p>핫초코</p>
-                    <span>Hot Chocolate</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/latte/Hot Chocolate.png"></figure>
+                        <p>핫초코</p>
+                        <span>Hot Chocolate</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1165,9 +1323,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/latte/White Chocolate.png"></figure>
-                    <p>화이트초코</p>
-                    <span>White Chocolate</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/latte/White Chocolate.png"></figure>
+                        <p>화이트초코</p>
+                        <span>White Chocolate</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1218,9 +1378,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/latte/Sweet Potato Latte.png"></figure>
-                    <p>우리 고구마 라떼</p>
-                    <span>Sweet Potato Latte</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/latte/Sweet Potato Latte.png"></figure>
+                        <p>우리 고구마 라떼</p>
+                        <span>Sweet Potato Latte</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1271,9 +1433,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/latte/Green Tea Latte.png"></figure>
-                    <p>그린티라떼</p>
-                    <span>Green Tea Latte</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/latte/Green Tea Latte.png"></figure>
+                        <p>그린티라떼</p>
+                        <span>Green Tea Latte</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1324,9 +1488,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/latte/Milk Tea Latte.png"></figure>
-                    <p>밀크티라떼</p>
-                    <span>Milk Tea Latte</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/latte/Milk Tea Latte.png"></figure>
+                        <p>밀크티라떼</p>
+                        <span>Milk Tea Latte</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1377,9 +1543,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu2/latte/Sweet-Cream-Latte.png"></figure>
-                    <p>스위트 크림라떼</p>
-                    <span>Sweet Cream Latte</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/latte/Sweet-Cream-Latte.png"></figure>
+                        <p>스위트 크림라떼</p>
+                        <span>Sweet Cream Latte</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1426,9 +1594,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/latte/Tiramisu-Cream-Latte.png"></figure>
-                    <p>티라미스 크림라떼</p>
-                    <span>Tiramisu Cream Latte</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/latte/Tiramisu-Cream-Latte.png"></figure>
+                        <p>티라미스 크림라떼</p>
+                        <span>Tiramisu Cream Latte</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1475,9 +1645,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/tea/Yuzu Chamomile.png"></figure>
-                    <p>유자 캐모마일</p>
-                    <span>Yuzu Chamomile</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/tea/Yuzu Chamomile.png"></figure>
+                        <p>유자 캐모마일</p>
+                        <span>Yuzu Chamomile</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1524,9 +1696,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/tea/Peach Earl Grey.png"></figure>
-                    <p>복숭아 얼그레이</p>
-                    <span>Peach Earl Grey</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/tea/Peach Earl Grey.png"></figure>
+                        <p>복숭아 얼그레이</p>
+                        <span>Peach Earl Grey</span>    
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1577,9 +1751,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/tea/Red Grapefruit Tea.png"></figure>
-                    <p>홍자몽차</p>
-                    <span>Red Grapefruit Tea</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/tea/Red Grapefruit Tea.png"></figure>
+                        <p>홍자몽차</p>
+                        <span>Red Grapefruit Tea</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1630,9 +1806,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu2/tea/jeju Hanrabong tangerine tea.jpg"></figure>
-                    <p>제주 한라봉 감귤차</p>
-                    <span>jeju Hanrabong tangerine tea</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/tea/jeju-Hanrabong-tangerine-tea.jpg.png"></figure>
+                        <p>제주 한라봉 감귤차</p>
+                        <span>jeju Hanrabong tangerine Tea</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1679,9 +1857,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/tea/Goheung Yuzu Tea.png"></figure>
-                    <p>고흥 유자차</p>
-                    <span>Goheung Yuzu Tea</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/tea/Goheung Yuzu Tea.png"></figure>
+                        <p>고흥 유자차</p>
+                        <span>Goheung Yuzu Tea</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1728,9 +1908,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/tea/Green Tea.png"></figure>
-                    <p>해남 녹차</p>
-                    <span>Green Tea</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/tea/Green Tea.png"></figure>
+                        <p>해남 녹차</p>
+                        <span>Green Tea</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1777,9 +1959,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/tea/Peppermint.png"></figure>
-                    <p>페퍼민트</p>
-                    <span>Peppermint</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/tea/Peppermint.png"></figure>
+                        <p>페퍼민트</p>
+                        <span>Peppermint</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1826,9 +2010,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/tea/Chamomile.png"></figure>
-                    <p>캐모마일</p>
-                    <span>Chamomile</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/tea/Chamomile.png"></figure>
+                        <p>캐모마일</p>
+                        <span>Chamomile</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1875,9 +2061,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/tea/Earl Grey.png"></figure>
-                    <p>얼그레이</p>
-                    <span>Earl Grey</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/tea/Earl Grey.png"></figure>
+                        <p>얼그레이</p>
+                        <span>Earl Grey</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1924,9 +2112,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/tea/Peach-Oolong.png"></figure>
-                    <p>피치우롱</p>
-                    <span>Peach Oolong</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/tea/Peach-Oolong.png"></figure>
+                        <p>피치우롱</p>
+                        <span>Peach Oolong</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1973,9 +2163,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/tea/Hibiscus-Blend-Tea.png"></figure>
-                    <p>히비스커스블렌드</p>
-                    <span>Hibiscus Blend Tea</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/tea/Hibiscus-Blend-Tea.png"></figure>
+                        <p>히비스커스블렌드</p>
+                        <span>Hibiscus Blend Tea</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -2022,9 +2214,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/tea/Squeeze-Lemon-Tea.png"></figure>
-                    <p>스퀴즈레몬차</p>
-                    <span>Squeeze Lemon Tea</span>
+                    <div class="main">
+                        <figure><img src="./img/menu2/tea/Squeeze-Lemon-Tea.png"></figure>
+                        <p>스퀴즈레몬차</p>
+                        <span>Squeeze Lemon Tea</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -2071,31 +2265,14 @@
                 </li>
             </ul>
         </div>
-    
-        
+
+        <div class="top">
+            <a href="#"></a>
+        </div>
     </main>
     
+    <footer> </footer>
 
-
-    <footer>
-        <div class="footer">
-            <div class="tos">
-                <a href="#">이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">고객센터</a>
-                <a href="#">고객설문</a>
-            </div>
-    
-            <div class="number">
-                <figure><img src="./img/2021_BI 1.png"></figure>
-                <b>사업자등록번호 211-87-61044 ㅣ대표전화 : 02-2188-7100 ㅣ 가맹문의 1670-4432</b>
-                <p>법인명 : (주)할리스에프앤비 대표자 : 이종현 통신판매업 : 제2019-서울종로-0193호<br>
-                        주소 : 서울특별시 종로구 율곡로 88 삼환빌딩 8층 (운니동)</p>
-                
-                <p>COPYRIGHT (C) HOLLYS COFFEECo., Ltd. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
 

@@ -15,7 +15,7 @@ main>.menu{
 main>.menu>li{
     border:1px solid #ddd;
     flex-grow: 1;
-    transition: 0.5s;
+    transition: 1s;
     overflow: hidden;
     position: relative;
 
@@ -71,6 +71,8 @@ main>.menu>li>div>a{
     border-radius: 15px;
     padding: 10px 20px;
     opacity: 0;
+    box-shadow: 5px 5px 5px rgba(74, 74, 74, 0.55);
+
 }
 
 main>.menu>li:hover>div>p{

@@ -1,12 +1,12 @@
 @charset "utf-8";
 @import url('./common.css');
 
-main{
-    width: 1920px;
-}
-
 .img{
     position: relative;
+}
+
+.img > p >img {
+    width: 100%;
 }
 
 .img>div>i{
@@ -27,17 +27,16 @@ main{
 /*header*/
 
 .header{
-    width: 1920px;
-    border-top: 1px solid #ddd;
+    width: 100%;
     border-bottom: 1px solid #ddd;
-    position: sticky; top:0px;
+    position: sticky; top:0;
     z-index: 999;
-    background-color: rgb(255, 255, 255);
 }
 
 .header>.a{
     width: 1200px; height: 100px;
     margin: 0 auto;
+    background-color: white;
 
     display: flex;
     align-items: center;
@@ -63,6 +62,7 @@ main{
 }
 
 
+
 /*nav*/
 .nav{
     padding: 50px 0 ;
@@ -83,12 +83,12 @@ main{
 }
 
 /*icon*/
-.icon{
-    width: 1200px; 
+.icon-1{
+    width: 1200px;
     margin: 0 auto;
 }
 
-.icon>h1{
+.icon-1>h1{
     font-size: 70px; margin-bottom: 200px;
     display: flex;
     font-family: 'Gowun Dodum', sans-serif;
@@ -102,14 +102,14 @@ main{
 }
 
 
-.icon>h1>span{
+.icon-1>h1>span{
     font-size: 70px;
     display: flex;
     font-family: 'Gowun Dodum', sans-serif;
     color:#D91226;
 }
 
-.icon>ul{
+.icon-1>ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -118,7 +118,7 @@ main{
     margin: 150px 0;
 }
 
-.icon>ul>li{
+.icon-1>ul>li{
     width: 30%;
     padding-bottom: 150px;
 
@@ -129,7 +129,7 @@ main{
     align-items: center;
 }
 
-.icon>ul>li>figure{
+.icon-1>ul>li>figure{
     width: 170px; height: 170px;
     margin-bottom: 20px;
 
@@ -139,14 +139,14 @@ main{
     justify-content: center;
 }
 
-.icon>ul>li>p{
+.icon-1>ul>li>p{
     font-size: 20px;
     color: #D91226;
     font-weight: bold;
     line-height: 28px;
 }
 
-.icon>ul>li>span{
+.icon-1>ul>li>span{
     margin-top: 20px;
     line-height: 20px;
 }
@@ -301,32 +301,32 @@ main{
     position: relative;
 }
 
-.condition>.main>.img{
+.condition>.main>.icon{
     position: absolute;
     left:calc(50% - 45px); top:calc(50% - 45px);
     
 }
 
-.condition .main .img>p:nth-child(1),
-.condition .main .img>p:nth-child(3){
+.condition .main .icon>p:nth-child(1),
+.condition .main .icon>p:nth-child(3){
     position: absolute;
     left: 0%; top:0%;
     display: flex;
     width: 100%;
 }
 
-.condition .main .img>p:nth-child(2)>span{
+.condition .main .icon>p:nth-child(2)>span{
     transform: translateX(-210%);
     text-align: right;
 }
 
-.condition .main .img>p:nth-child(4)>span{
+.condition .main .icon>p:nth-child(4)>span{
     transform: translateX(-190%);
     text-align: right;
 }
 
-.condition .main .img>p:nth-child(2),
-.condition .main .img>p:nth-child(4){
+.condition .main .icon>p:nth-child(2),
+.condition .main .icon>p:nth-child(4){
     position: absolute;
     left: 0%; top:0%;
     display: flex;
@@ -334,30 +334,30 @@ main{
     width: 100%;
 }
 
-.condition .main .img>p>img,
-.condition .main .img>p>span{
+.condition .main .icon>p>img,
+.condition .main .icon>p>span{
     flex-shrink: 0;
 }
 
-.condition .main .img>p>span{
+.condition .main .icon>p>span{
     margin: 0 30px;
 }
 
-.condition .main .img>p>span{white-space: pre-line;}
-.condition .main .img>p:nth-child(1){
+.condition .main .icon>p>span{white-space: pre-line;}
+.condition .main .icon>p:nth-child(1){
     transform: translate(250px,-250px);
 }
-.condition .main .img>p:nth-child(2){
+.condition .main .icon>p:nth-child(2){
     transform: translate(-250px,-250px);
 }
-.condition .main .img>p:nth-child(3){
+.condition .main .icon>p:nth-child(3){
     transform: translate(250px,250px);
 }
-.condition .main .img>p:nth-child(4){
+.condition .main .icon>p:nth-child(4){
     transform: translate(-250px,250px);
 }
 
-.condition .main .img>p>span>b{
+.condition .main .icon>p>span>b{
     color: #D91226;
 }
 
@@ -425,3 +425,16 @@ main{
 .advice>fieldset>ul>li>label>span{
     color: #D91226;
 }
+
+
+/*top*/
+.top > a{
+    display:scroll;
+    position:fixed;
+    bottom:50px; right:50px;
+    transition: 2s;
+    font-size: 0;
+    background-image: url("../img/bi_arrow-up.png");
+    width: 50px; height: 50px;
+}
+

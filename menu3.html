@@ -6,58 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu3</title>
     <link href="./css/menu1.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./common.js"></script> <!--defer : 로드를 시키되 실행시키지 않고 html 작업이 끝나면 실행하도록 하는 명령어-->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script defer src="./js/menu1.js" type="text/javascript" charset="utf-8"></script>
 
     <link rel="icon" type="image/png" href="./hollys-icon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./hollys-icon/favicon-16x16.png" sizes="16x16" />
 </head>
 <body>
-    <header class="active">
-        <div>
-            <ul>
-                <li >
-                    <a href="./history.html">HOLLYS</a>
-                    <div>
-                        <a href="#">HOLLYS IS</a>
-                        <a href="#">HISTORY</a>
-                        <a href="#">BI</a>
-                    </div>
-                    
-                </li>
-    
-                <li>
-                    <a href="./menu-main.html">MENU</a>
-                    <div>
-                        <a href="#">신메뉴</a>
-                        <a href="./menu1.html">커피</a>
-                        <a href="./menu2.html">음료</a>
-                        <a href="./menu3.html">푸드</a>
-                        <a href="./menu4.html">MD</a>
-                    </div>
-                </li>
-            </ul>
-                
-            <div><a href="./index.html"><img src="./img/2021_BI 6.png"></a></div>
-    
-            <ul>
-                <li>
-                    <a href="./membership.html">MEMBERSHIP</a>
-                    <div>
-                        <a href="#">멤버십 혜택</a>
-                        <a href="#">스마트 오더</a>
-                    </div>
-                </li>
-            
-                <li>
-                    <a href="./partner.html">PARTNER</a>
-                    <div>
-                        <a href="#">창업안내</a>
-                        <a href="#">창업신청</a>
-                        <a href="#">FQA</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <header class="active"></header>
     
     <main>
         <div class="img">
@@ -69,7 +28,7 @@
     
         <div class="header">
             <div class="a">
-                <a href="#">신메뉴</a>
+                <a href="./menu-new.html">신메뉴</a>
                 <a href="./menu1.html">커피</a>
                 <a href="./menu2.html">음료</a>
                 <a href="./menu3.html">푸드</a>
@@ -86,34 +45,43 @@
 
         <div class="hot">
             <h3><span>추천 상품</span></h3>
-            <div class="detail">
                 <div class="slide">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="./img/menu1/Rectangle 106.png"></a>
-                            <p>바닐라 딜라이트</p>
-                        </li>
-        
-                        <li>
-                            <a href="#"><img src="./img/menu1/Rectangle 107.png"></a>
-                            <p>콜드브루</p>
-                        </li>
-        
-                        <li>
-                            <a href="#"><img src="./img/menu1/Rectangle 108.png"></a>
-                            <p>민트 초콜릿</p>
-                        </li>
-                    </ul>
-                </div>
+                    <figure>   
+                        <a href="#"><img src="./img/menu3/Rectangle-108.png"></a>
+                        <p>베이컨 포테이토 데니쉬</p>
+                    </figure>
 
-                <div class="btn">
+                    <figure>
+                        <a href="#"><img src="./img/menu3/Rectangle-109.png"></a>
+                        <p>크랜베리 치킨 샌드위치</p>
+                    </figure>
+
+                    <figure>
+                        <a href="#"><img src="./img/menu3/Rectangle-110.png"></a>
+                        <p>아이스크림 크로플</p>
+                    </figure>
+
+                    <figure>
+                        <a href="#"><img src="./img/menu3/Rectangle-111.png"></a>
+                        <p>딸기 치즈 스윗박스</p>
+                    </figure>
+
+                    <figure>
+                        <a href="#"><img src="./img/menu3/Rectangle-112.png"></a>
+                        <p>트리플 초코 라운드</p>
+                    </figure>
+
+                    <figure>
+                        <a href="#"><img src="./img/menu3/Rectangle-113.png"></a>
+                        <p>부드러운 쿠키 앤 크림</p>
+                    </figure>
+                </div>
+    
+                <!-- <div class="btn">
                     <a class="bx-prev" href><img src="./img/menu1/new_btn_arrow01.gif"></a>
                     <a class="bx-next" href><img src="./img/menu1/new_btn_arrow02.gif"></a>
-                </div>
-            </div>
-
-            </div>
-
+                </div> -->
+        </div>
 
         <!-- <div class=" search">
             <h4>메뉴 검색</h4>
@@ -138,9 +106,479 @@
         <div class="menu">
             <ul>
                 <li>
-                    <figure><img src="./img/menu3/food/Hallasan Green tea Basque Cheese.png"></figure>
-                    <p>한라산 녹차 치즈 바스크</p>
-                    <span>Hallasan Green tea Basque Cheese</span>
+                    <div class="main">
+                        <figure><img src="./img/menu-new/Applemango Cheesecake Ice Flake.png"></figure>
+                        <p>1인) 애플망고 치즈케이크 빙수</p>
+                        <span>Applemango Cheesecake Ice Flake</span>
+                    </div>
+
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>1인) 애플망고 치즈케이크 빙수</h4>
+                                <p>Applemango Cheesecake Ice Flake</p>
+                                <span>상큼달콤한 애플망고 베이스에 망고를 한가득 올리고, 진한 치즈 케이크와 바삭한 코코넛칩을 더한 망고 빙수</span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리 </th>
+                                <td>318kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>45g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>5g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>7.6g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>134mg</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="main">
+                        <figure><img src="./img/menu-new/Applemango Cheesecake Ice Flake2.png"></figure>
+                        <p>2인) 애플망고 치즈케이크 빙수</p>
+                        <span>Applemango Cheesecake Ice Flake</span>
+                    </div>
+
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>2인) 애플망고 치즈케이크 빙수</h4>
+                                <p>Applemango Cheesecake Ice Flake</p>
+                                <span>상큼달콤한 애플망고 베이스에 망고를 한가득 올리고, 진한 치즈 케이크와 바삭한 코코넛칩을 더한 망고 빙수</span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리 </th>
+                                <td>326kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>45g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>5g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>7.7g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>139mg</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="main">
+                        <figure><img src="./img/menu-new/Red Bean Ice Flake.png"></figure>
+                        <p>1인) 눈꽃 팥빙수</p>
+                        <span>Red Bean Ice Flake</span>
+                    </div>
+
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>1인) 눈꽃 팥빙수</h4>
+                                <p>Red Bean Ice Flake</p>
+                                <span>부드러운 우유얼음에 국내산 팥, 달콤 바삭한 그래놀라와 고소한 인절미가 어우러진 팥빙수</span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리 </th>
+                                <td>493kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>59g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>10g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>6.3g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>185mg</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="main">
+                        <figure><img src="./img/menu-new/Red Bean Ice Flake2.png"></figure>
+                        <p>2인) 눈꽃 팥빙수 </p>
+                        <span>Red Bean Ice Flake</span>
+                    </div>
+                    
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>2인) 눈꽃 팥빙수</h4>
+                                <p>Red Bean Ice Flake</p>
+                                <span>부드러운 우유얼음에 국내산 팥, 달콤 바삭한 그래놀라와 고소한 인절미가 어우러진 팥빙수</span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리 </th>
+                                <td>109kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>8g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>5g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>3.5g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>75mg</td>
+                            </tr>
+
+                            <tr>
+                                <th>카페인</th>
+                                <td>111mg</td>
+                            </tr>
+
+                            <tr>
+                                <th><br>*알레르기 요소 : 우유</th>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="main">
+                        <figure> <img src="./img/menu-new/Black Monster Chocolate Ice Flake.png"></figure>
+                        <p>2인) 블랙몬스터 초코 빙수</p>
+                        <span>Black Monster Chocolate Ice Flake</span>
+                    </div>
+
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>2인) 블랙몬스터 초코 빙수</h4>
+                                <p>Black Monster Chocolate Ice Flake</p>
+                                <span>진한 다크 초코 베이스에 초코 쿠키와 다크 초코볼, 두가지 아이스크림이 어우러진 달콤 쌉싸름한 초코 빙수</span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리 </th>
+                                <td>551kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>58g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>8g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>16.0g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>190mg</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="main">
+                        <figure><img src="./img/menu-new/Triple Berry Cheese Sweet Box.png"></figure>
+                        <p>트리플 베리 치즈 스윗박스</p>
+                        <span>Triple Berry Cheese Sweet Box</span>
+                    </div>
+        
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>트리플 베리 치즈 스윗박스</h4>
+                                <p>Triple Berry Cheese Sweet Box</p>
+                                <span>딸기와 치즈맛이 어우러진 케이크 위에 블루베리, 크랜베리를 토핑한 케이크</span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리 </th>
+                                <td>490kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>47g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>6g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>13.3g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>100mg</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="main">
+                        <figure><img src="./img/menu-new/Triple Berry Fresh Cream Round.png"></figure>
+                        <p>트리플 베리 생크림 라운드</p>
+                        <span>Triple Berry Fresh Cream Round</span>
+                    </div>
+                
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>트리플 베리 생크림 라운드</h4>
+                                <p>Triple Berry Fresh Cream Round</p>
+                                <span>부드러운 생크림과 달콤한 딸기가 샌딩된 케이크 위에 블루베리와 크랜베리를 토핑한 라운드 케이크</span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리 </th>
+                                <td>571kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>41g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>7g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>15.5g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>105mg</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="main">
+                        <figure><img src="./img/menu-new/Triple Berry Fresh Cream Cake.png"></figure>
+                    <p>트리플 베리 생크림</p>
+                    <span>Triple Berry Fresh Cream Cake</span>
+                    </div>
+
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>트리플 베리 생크림</h4>
+                                <p>Triple Berry Fresh Cream Cake</p>
+                                <span>부드러운 생크림과 달콤한 딸기가 샌딩된 케이크 위에 블루베리와 크랜베리를 토핑한 케이크</span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리 </th>
+                                <td>268kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>4g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>4g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>9.3g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>105mg</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="main">
+                        <figure><img src="./img/menu-new/Cranberry White Chocolate Cookie.png"></figure>
+                        <p>크랜베리 화이트 초코 쿠키</p>
+                        <span>Cranberry White Chocolate Cookie</span>
+                    </div>
+
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>크랜베리 화이트 초코 쿠키</h4>
+                                <p>Cranberry White Chocolate Cookie</p>
+                                <span>상큼한 크랜베리와 화이트 초콜릿이 조화로운 달콤상큼한 쿠키</span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리 </th>
+                                <td>373kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>38g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>4g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>9g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>103mg</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="main">
+                        <figure><img src="./img/menu-new/Triple Chocolate Cookie.png"></figure>
+                        <p>트리플 초코 쿠키</p>
+                        <span>Triple Chocolate Cookie</span>
+                    </div>
+
+                    <div class="txt">
+                        <button><img src="./img/menu1/bx_x-circle.png"></button>
+                        <div class="txt2">
+                            <div class="title">
+                                <h4>트리플 초코 쿠키</h4>
+                                <p>Triple Chocolate Cookie</p>
+                                <span>다크, 화이트, 블랙카카오 3가지 초코에 다크 초콜릿 청크를 가득 올린 진한 초코 쿠키</span>
+                            </div>
+
+                        <table>
+                            <tr>
+                                <th>칼로리 </th>
+                                <td>389kcal</td>
+                            </tr>
+
+                            <tr>
+                                <th>당류</th>
+                                <td>34g</td>
+                            </tr>
+
+                            <tr>
+                                <th>단백질</th>
+                                <td>5g</td>
+                            </tr>
+
+                            <tr>
+                                <th>포화지방</th>
+                                <td>11g</td>
+                            </tr>
+
+                            <tr>
+                                <th>나트륨</th>
+                                <td>128mg</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Hallasan Green tea Basque Cheese.png"></figure>
+                        <p>한라산 녹차 치즈 바스크</p>
+                        <span>Hallasan Green tea Basque Cheese</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -182,9 +620,11 @@
                 </li>
 
                 <li>
+                    <div class="main">
                     <figure><img src="./img/menu3/food/Ham and Cheese Scrambled Eggs Toast.png"></figure>
                     <p>햄치즈 스크램블 토스트</p>
                     <span>Ham and Cheese Scrambled Eggs Toast</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -226,9 +666,11 @@
                 </li>
 
                 <li>
+                    <div class="main">
                     <figure><img src="./img/menu3/food/Soft Jambon Beurre.png"></figure>
                     <p>소프트 잠봉뵈르</p>
                     <span>Soft Jambon Beurre</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -270,9 +712,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Strawberry Soop Cheese Cake.png"></figure>
-                    <p>딸기숲 치즈 케이크</p>
-                    <span>Strawberry Soop Cheese Cake</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Strawberry Soop Cheese Cake.png"></figure>
+                        <p>딸기숲 치즈 케이크</p>
+                        <span>Strawberry Soop Cheese Cake</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -314,9 +758,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu2/ade/Peach Strawberry Crush.png"></figure>
-                    <p>딸기 치즈 스윗박스</p>
-                    <span>Strawberry Cheese Sweetbox</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Strawberry Cheese Sweetbox.png"></figure>
+                        <p>딸기 치즈 스윗박스</p>
+                        <span>Strawberry Cheese Sweetbox</span>    
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -358,9 +804,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu3/food/Tiara Strawberry Fresh Cream Cake.png"></figure>
-                    <p>티아라 딸기 생크림 케이크</p>
-                    <span>Tiara Strawberry Fresh Cream Cake</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Tiara Strawberry Fresh Cream Cake.png"></figure>
+                        <p>티아라 딸기 생크림 케이크</p>
+                        <span>Tiara Strawberry Fresh Cream Cake</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -402,10 +850,11 @@
                 </li>
                 
                 <li>
+                    <div class="main">
                     <figure><img src="./img/menu3/food/Strawberry Fresh Cream Cake.png"></figure>
                     <p>딸기 생크림 케이크</p>
                     <span>Strawberry Fresh Cream Cake</span>
-
+                    </div>
                     
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -447,9 +896,11 @@
                 </li>
                 
                 <li>
-                    <figure> <img src="./img/menu3/food/Strawberry Fresh Cream Round.png"></figure>
-                    <p>딸기 생크림 라운드</p>
-                    <span>Strawberry Fresh Cream Round</span>
+                    <div class="main">
+                        <figure> <img src="./img/menu3/food/Strawberry Fresh Cream Round.png"></figure>
+                        <p>딸기 생크림 라운드</p>
+                        <span>Strawberry Fresh Cream Round</span>    
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -491,9 +942,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/New York Cheese 2호.png"></figure>
-                    <p>뉴욕치즈 2호</p>
-                    <span>New York Cheese 2호</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/New York Cheese 2호.png"></figure>
+                        <p>뉴욕치즈 2호</p>
+                        <span>New York Cheese 2호</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -535,9 +988,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Triple Chocolate 1호.png"></figure>
-                    <p>트리플 초코 1호</p>
-                    <span>Triple Chocolate 1호</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Triple Chocolate 1호.png"></figure>
+                        <p>트리플 초코 1호</p>
+                        <span>Triple Chocolate 1호</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -579,9 +1034,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu3/food/Carrot 1호.png"></figure>
-                    <p>촉촉한 당근 1호</p>
-                    <span>Carrot 1호</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Carrot 1호.png"></figure>
+                        <p>촉촉한 당근 1호</p>
+                        <span>Carrot 1호</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -623,9 +1080,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu3/food/Bacon Potato Danish.png"></figure>
-                    <p>베이컨 포테이토 데니쉬</p>
-                    <span>Bacon Potato Danish</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Bacon Potato Danish.png"></figure>
+                        <p>베이컨 포테이토 데니쉬</p>
+                        <span>Bacon Potato Danish</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -667,9 +1126,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu3/food/Corn Cheese Danish.png"></figure>
-                    <p>콘 치즈 데니쉬</p>
-                    <span>Corn Cheese Danish</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Corn Cheese Danish.png"></figure>
+                        <p>콘 치즈 데니쉬</p>
+                        <span>Corn Cheese Danish</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -711,9 +1172,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu3/food/Truffle Mushroom Soup Bowl.png"></figure>
-                    <p>트러플 머쉬룸 수프볼</p>
-                    <span>Truffle Mushroom Soup Bowl</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Truffle Mushroom Soup Bowl.png"></figure>
+                        <p>트러플 머쉬룸 수프볼</p>
+                        <span>Truffle Mushroom Soup Bowl</span>    
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -755,9 +1218,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Croffle with Ice Cream.png"></figure>
-                    <p>아이스크림 크로플</p>
-                    <span>Croffle with Ice Cream</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Croffle with Ice Cream.png"></figure>
+                        <p>아이스크림 크로플</p>
+                        <span>Croffle with Ice Cream</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -799,9 +1264,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Double Chocolate Macaron.png"></figure>
-                    <p>더블 초코 뚱카롱</p>
-                    <span>Double Chocolate Macaron</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Double Chocolate Macaron.png"></figure>
+                        <p>더블 초코 뚱카롱</p>
+                        <span>Double Chocolate Macaron</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -843,9 +1310,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Strawberry Cheese Cake Macaron.png"></figure>
-                    <p>딸기 치즈케익 뚱카롱</p>
-                    <span>Strawberry Cheese Cake Macaron</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Strawberry Cheese Cake Macaron.png"></figure>
+                        <p>딸기 치즈케익 뚱카롱</p>
+                        <span>Strawberry Cheese Cake Macaron</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -887,9 +1356,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Vanilla Delight Macaron.png"></figure>
-                    <p>바닐라 딜라이트 뚱카롱</p>
-                    <span>Vanilla Delight Macaron</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Vanilla Delight Macaron.png"></figure>
+                        <p>바닐라 딜라이트 뚱카롱</p>
+                        <span>Vanilla Delight Macaron</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -931,9 +1402,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/New York Cheese Cake.png"></figure>
-                    <p>뉴욕 치즈 케이크</p>
-                    <span>New York Cheese Cake</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/New York Cheese Cake.png"></figure>
+                        <p>뉴욕 치즈 케이크</p>
+                        <span>New York Cheese Cake</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -975,54 +1448,12 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Grilled Chicken Salad.png"></figure>
-                    <p>그릴드 치킨 샐러드</p>
-                    <span>Grilled Chicken Salad</span>
-
-                    <div class="txt">
-                        <button><img src="./img/menu1/bx_x-circle.png"></button>
-                        <div class="txt2">
-                            <div class="title">
-                                <h4>그릴드 치킨 샐러드</h4>
-                                <p>Grilled Chicken Salad</p>
-                                <span>부드럽게 익힌 그릴드 치킨과 풍성한 재료, 오리엔탈소스가 어우러진 샐러드</span>
-                            </div>
-
-                        <table>
-                            <tr>
-                                <th>칼로리 </th>
-                                <td>201kcal</td>
-                            </tr>
-
-                            <tr>
-                                <th>당류</th>
-                                <td>10g</td>
-                            </tr>
-
-                            <tr>
-                                <th>단백질</th>
-                                <td>13g</td>
-                            </tr>
-
-                            <tr>
-                                <th>포화지방</th>
-                                <td>1.7g</td>
-                            </tr>
-
-                            <tr>
-                                <th>나트륨</th>
-                                <td>640mg</td>
-                            </tr>
-                        </table>
-                        </div>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Cranberry Chicken Sandwich.png"></figure>
+                        <p>크랜베리 치킨 샌드위치</p>
+                        <span>Cranberry Chicken Sandwich</span>
                     </div>
-                </li>
-
-                <li>
-                    <figure><img src="./img/menu3/food/Cranberry Chicken Sandwich.png"></figure>
-                    <p>크랜베리 치킨 샌드위치</p>
-                    <span>Cranberry Chicken Sandwich</span>
-
+    
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
                         <div class="txt2">
@@ -1063,9 +1494,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/B.E.L.T Club Sandwich.png"></figure>
-                    <p>BELT 클럽 샌드위치</p>
-                    <span>B.E.L.T Club Sandwich</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/B.E.L.T Club Sandwich.png"></figure>
+                        <p>BELT 클럽 샌드위치</p>
+                        <span>B.E.L.T Club Sandwich</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1107,9 +1540,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Cookie & Cream Cake.png"></figure>
-                    <p>부드러운 쿠키 앤 크림</p>
-                    <span>Cookie & Cream Cake</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Cookie & Cream Cake.png"></figure>
+                        <p>부드러운 쿠키 앤 크림</p>
+                        <span>Cookie & Cream Cake</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1151,9 +1586,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Triple Chocolate Round Cake.png"></figure>
-                    <p>트리플 초코 라운드</p>
-                    <span>Triple Chocolate Round Cake</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Triple Chocolate Round Cake.png"></figure>
+                        <p>트리플 초코 라운드</p>
+                        <span>Triple Chocolate Round Cake</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1195,9 +1632,11 @@
                 </li>
                 
                 <li>
-                    <figure><img src="./img/menu3/food/Mascarpone Tiramisu.png"></figure>
-                    <p>진한 마스카포네</p>
-                    <span>Mascarpone Tiramisu</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Mascarpone Tiramisu.png"></figure>
+                        <p>진한 마스카포네</p>
+                        <span>Mascarpone Tiramisu</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1239,9 +1678,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Cream Cheese Biscuit & Strawberry Jam.png"></figure>
-                    <p>크림치즈비스켓&딸기잼</p>
-                    <span>Cream Cheese Biscuit & Strawberry Jam</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Cream Cheese Biscuit & Strawberry Jam.png"></figure>
+                        <p>크림치즈비스켓&딸기잼</p>
+                        <span>Cream Cheese Biscuit & Strawberry Jam</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1283,9 +1724,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/American Macadamia Cookie.png"></figure>
-                    <p>아메리칸 마카다미아 쿠키</p>
-                    <span>American Macadamia Cookie</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/American Macadamia Cookie.png"></figure>
+                        <p>아메리칸 마카다미아 쿠키</p>
+                        <span>American Macadamia Cookie</span>    
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1327,9 +1770,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/American Chocolate Chunk Cookie.png"></figure>
-                    <p>아메리칸 초콜릿 청크 쿠키</p>
-                    <span>American Chocolate Chunk Cookie</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/American Chocolate Chunk Cookie.png"></figure>
+                        <p>아메리칸 초콜릿 청크 쿠키</p>
+                        <span>American Chocolate Chunk Cookie</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1369,55 +1814,13 @@
                         </div>
                     </div>
                 </li>
-
-                <li>
-                    <figure><img src="./img/menu3/food/Souffle Omelet Rice.png"></figure>
-                    <p>수플레 오믈렛 라이스</p>
-                    <span>Souffle Omelet Rice</span>
-
-                    <div class="txt">
-                        <button><img src="./img/menu1/bx_x-circle.png"></button>
-                        <div class="txt2">
-                            <div class="title">
-                                <h4>수플레 오믈렛 라이스</h4>
-                                <p>Souffle Omelet Rice</p>
-                                <span>부드럽고 포슬한 식감의 오믈렛과 아라비아따 소스로 구성된 오믈렛 라이스</span>
-                            </div>
-
-                        <table>
-                            <tr>
-                                <th>칼로리 </th>
-                                <td>405kcal</td>
-                            </tr>
-
-                            <tr>
-                                <th>당류</th>
-                                <td>6g</td>
-                            </tr>
-
-                            <tr>
-                                <th>단백질</th>
-                                <td>12g</td>
-                            </tr>
-
-                            <tr>
-                                <th>포화지방</th>
-                                <td>6.4g</td>
-                            </tr>
-
-                            <tr>
-                                <th>나트륨</th>
-                                <td>1,190mg</td>
-                            </tr>
-                        </table>
-                        </div>
-                    </div>
-                </li>
                 
                 <li>
-                    <figure><img src="./img/menu2/tea/jeju Hanrabong tangerine tea.jpg"></figure>
-                    <p>바삭 불고기 & 트리플 치즈 치킨 퀘사디아</p>
-                    <span>Bulgogi & Triple Cheese Chicken Quesadilla</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Bulgogi & Triple Cheese Chicken Quesadilla.png"></figure>
+                        <p>바삭 불고기 & 트리플 치즈 치킨 퀘사디아</p>
+                        <span>Bulgogi & Triple Cheese Chicken Quesadilla</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1459,10 +1862,12 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Half of Egg and Mashed Potato Mayo Sandwich.png"></figure>
-                    <p>반반 마요 (에그/감자)</p>
-                    <span>Half of Egg and Mashed Potato Mayo Sandwich</span>
-
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Half of Egg and Mashed Potato Mayo Sandwich.png"></figure>
+                        <p>반반 마요 (에그/감자)</p>
+                        <span>Half of Egg and Mashed Potato Mayo Sandwich</span>
+                    </div>
+                
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
                         <div class="txt2">
@@ -1503,9 +1908,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Egg Mayo Sandwich.png"></figure>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Egg Mayo Sandwich.png"></figure>
                     <p>에그 마요 샌드위치</p>
                     <span>Egg Mayo Sandwich</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1547,9 +1954,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Pesto Ham Mozzarella.png"></figure>
-                    <p>페스토 햄 모짜렐라</p>
-                    <span>Pesto Ham Mozzarella</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Pesto Ham Mozzarella.png"></figure>
+                        <p>페스토 햄 모짜렐라</p>
+                        <span>Pesto Ham Mozzarella</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1591,9 +2000,11 @@
                 </li>
 
                 <li>
-                    <figure><img src="./img/menu3/food/Olive Bacon Ciabatta.png"></figure>
-                    <p>올리브 베이컨 치아바타</p>
-                    <span>Olive Bacon Ciabatta</span>
+                    <div class="main">
+                        <figure><img src="./img/menu3/food/Olive Bacon Ciabatta.png"></figure>
+                        <p>올리브 베이컨 치아바타</p>
+                        <span>Olive Bacon Ciabatta</span>
+                    </div>
 
                     <div class="txt">
                         <button><img src="./img/menu1/bx_x-circle.png"></button>
@@ -1633,297 +2044,16 @@
                         </div>
                     </div>
                 </li>
-
-                <li>
-                    <figure><img src="./img/menu3/food/Spicy Seafood Risotto.png"></figure>
-                    <p>스파이시 씨푸드 리조또</p>
-                    <span>Spicy Seafood Risotto</span>
-
-                    <div class="txt">
-                        <button><img src="./img/menu1/bx_x-circle.png"></button>
-                        <div class="txt2">
-                            <div class="title">
-                                <h4>스파이시 씨푸드 리조또</h4>
-                                <p>Spicy Seafood Risotto</p>
-                                <span>탱글탱글한 새우와 오징어살이 토핑된 매콤한 토마토베이스의 리조또</span>
-                            </div>
-
-                        <table>
-                            <tr>
-                                <th>칼로리 </th>
-                                <td>356kcal</td>
-                            </tr>
-
-                            <tr>
-                                <th>당류</th>
-                                <td>6g</td>
-                            </tr>
-
-                            <tr>
-                                <th>단백질</th>
-                                <td>14g</td>
-                            </tr>
-
-                            <tr>
-                                <th>포화지방</th>
-                                <td>6.1g</td>
-                            </tr>
-
-                            <tr>
-                                <th>나트륨</th>
-                                <td>664mg</td>
-                            </tr>
-                        </table>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <figure><img src="./img/menu3/food/Chicken cream Risotto.png"></figure>
-                    <p>치킨 크림 리조또</p>
-                    <span>Chicken cream Risotto</span>
-
-                    <div class="txt">
-                        <button><img src="./img/menu1/bx_x-circle.png"></button>
-                        <div class="txt2">
-                            <div class="title">
-                                <h4>치킨 크림 리조또</h4>
-                                <p>Chicken cream Risotto</p>
-                                <span>닭가슴살, 버섯, 베이컨이 큼지막하게 토핑된 부드러운 풍미의 크림 리조또</span>
-                            </div>
-
-                        <table>
-                            <tr>
-                                <th>칼로리 </th>
-                                <td>446kcal</td>
-                            </tr>
-
-                            <tr>
-                                <th>당류</th>
-                                <td>4g</td>
-                            </tr>
-
-                            <tr>
-                                <th>단백질</th>
-                                <td>15g</td>
-                            </tr>
-
-                            <tr>
-                                <th>포화지방</th>
-                                <td>11.9g</td>
-                            </tr>
-
-                            <tr>
-                                <th>나트륨</th>
-                                <td>524mg</td>
-                            </tr>
-                        </table>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <figure><img src="./img/menu3/food/Croque Monsieur.png"></figure>
-                    <p>크로크무슈</p>
-                    <span>Croque Monsieur</span>
-
-                    <div class="txt">
-                        <button><img src="./img/menu1/bx_x-circle.png"></button>
-                        <div class="txt2">
-                            <div class="title">
-                                <h4>크로크무슈</h4>
-                                <p>Croque Monsieur</p>
-                                <span>햄과 치즈를 차곡차곡 쌓아 올려 만든 프랑스식 샌드위치로 사르르 녹아내린 모짜렐라 치즈가 입안 가득 풍성한 맛</span>
-                            </div>
-
-                        <table>
-                            <tr>
-                                <th>칼로리 </th>
-                                <td>470kcal</td>
-                            </tr>
-
-                            <tr>
-                                <th>당류</th>
-                                <td>6g</td>
-                            </tr>
-
-                            <tr>
-                                <th>단백질</th>
-                                <td>22g</td>
-                            </tr>
-
-                            <tr>
-                                <th>포화지방</th>
-                                <td>10g</td>
-                            </tr>
-
-                            <tr>
-                                <th>나트륨</th>
-                                <td>845mg</td>
-                            </tr>
-                        </table>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <figure><img src="./img/menu3/food/Honey Baguette Bowl.png"></figure>
-                    <p>허니바게트볼</p>
-                    <span>Honey Baguette Bowl</span>
-
-                    <div class="txt">
-                        <button><img src="./img/menu1/bx_x-circle.png"></button>
-                        <div class="txt2">
-                            <div class="title">
-                                <h4>허니바게트볼</h4>
-                                <p>Honey Baguette Bowl</p>
-                                <span>겉은 바삭 속은 쫄깃한 바게트 속에 꿀과 버터가 녹아있는 부드럽고 달콤한 허니브레드</span>
-                            </div>
-
-                        <table>
-                            <tr>
-                                <th>칼로리 </th>
-                                <td>474kcal</td>
-                            </tr>
-
-                            <tr>
-                                <th>당류</th>
-                                <td>12g</td>
-                            </tr>
-
-                            <tr>
-                                <th>단백질</th>
-                                <td>9g</td>
-                            </tr>
-
-                            <tr>
-                                <th>포화지방</th>
-                                <td>4.4g</td>
-                            </tr>
-
-                            <tr>
-                                <th>나트륨</th>
-                                <td>601mg</td>
-                            </tr>
-                        </table>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <figure><img src="./img/menu3/food/Plain Bagel.png"></figure>
-                    <p>플레인 베이글&크림치즈</p>
-                    <span>Plain Bagel</span>
-
-                    <div class="txt">
-                        <button><img src="./img/menu1/bx_x-circle.png"></button>
-                        <div class="txt2">
-                            <div class="title">
-                                <h4>플레인 베이글&크림치즈</h4>
-                                <p>Plain Bagel</p>
-                                <span>찰지면서도 질기지 않은 보송보송함이 살아있는 할리스 베이글</span>
-                            </div>
-
-                        <table>
-                            <tr>
-                                <th>칼로리 </th>
-                                <td>366kcal</td>
-                            </tr>
-
-                            <tr>
-                                <th>당류</th>
-                                <td>6g</td>
-                            </tr>
-
-                            <tr>
-                                <th>단백질</th>
-                                <td>13g</td>
-                            </tr>
-
-                            <tr>
-                                <th>포화지방</th>
-                                <td>8.1g</td>
-                            </tr>
-
-                            <tr>
-                                <th>나트륨</th>
-                                <td>598mg</td>
-                            </tr>
-                        </table>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <figure><img src="./img/menu3/food/Plain Bagel.png"></figure>
-                    <p>블루베리 베이글&크림치즈</p>
-                    <span>Blueberry Bagel</span>
-
-                    <div class="txt">
-                        <button><img src="./img/menu1/bx_x-circle.png"></button>
-                        <div class="txt2">
-                            <div class="title">
-                                <h4>블루베리 베이글&크림치즈</h4>
-                                <p>Blueberry Bagel</p>
-                                <span>플레인 베이글에 탱글탱글 달콤한 블루베리를 토핑한 제품</span>
-                            </div>
-
-                        <table>
-                            <tr>
-                                <th>칼로리 </th>
-                                <td>371kcal</td>
-                            </tr>
-
-                            <tr>
-                                <th>당류</th>
-                                <td>7g</td>
-                            </tr>
-
-                            <tr>
-                                <th>단백질</th>
-                                <td>12g</td>
-                            </tr>
-
-                            <tr>
-                                <th>포화지방</th>
-                                <td>8.2g</td>
-                            </tr>
-
-                            <tr>
-                                <th>나트륨</th>
-                                <td>646mg</td>
-                            </tr>
-                        </table>
-                        </div>
-                    </div>
-                </li>
             </ul>
         </div>
-    
-        
+
+        <div class="top">
+            <a href="#"></a>
+        </div>
     </main>
     
+    <footer></footer>
 
-
-    <footer>
-        <div class="footer">
-            <div class="tos">
-                <a href="#">이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">고객센터</a>
-                <a href="#">고객설문</a>
-            </div>
-    
-            <div class="number">
-                <figure><img src="./img/2021_BI 1.png"></figure>
-                <b>사업자등록번호 211-87-61044 ㅣ대표전화 : 02-2188-7100 ㅣ 가맹문의 1670-4432</b>
-                <p>법인명 : (주)할리스에프앤비 대표자 : 이종현 통신판매업 : 제2019-서울종로-0193호<br>
-                        주소 : 서울특별시 종로구 율곡로 88 삼환빌딩 8층 (운니동)</p>
-                
-                <p>COPYRIGHT (C) HOLLYS COFFEECo., Ltd. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
 

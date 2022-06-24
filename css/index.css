@@ -2,109 +2,106 @@
 @import url('./common.css');
 
 /*main-1*/
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+main{
+    position: fixed;
+    width: 100%; height: 100%;
+}
+
 .visual{
-    height:3850px;
     overflow:hidden;
     position:relative;
+    left: 0; top:0;
+    width: 100%; 
+    transition: 1s;
 }
 
 .visual .main-1{
     height:100vh;
     position: relative;
     margin: 0 auto;
-
     overflow: hidden;
 }
 
 .visual .main-1>img{
-    height: 1000px;
     position: absolute; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.visual .main-1>input{
-    display: none;
+.slide{
+    width: 100%;
+    position: relative;
+                
+    /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
 }
 
-ul.imgs{
-    padding: 0;
-    margin: 0;
+.slide .slick-list{  
+/* 배너들의 상위요소 */
+    overflow:hidden;  
 }
 
-ul.imgs li{
+.slide .slick-track{
+/* 배너 그룹 및 translateX값으로 이동(스크립트) */
+}
+
+.slide .slick-track::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.slide .slick-slide{
+/* 개별 배너 */
+margin:0; 
+width:100%;
+float:left;
+}
+
+.slide .slick-slide  img{width:100%;}
+    
+/* next prev */           
+.slide .slick-prev{
     position: absolute;
-    opacity: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    transition: 0.9s;
-}
-
-.visual .bullets{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
+    left:0; top:50%;
     z-index: 2;
 }
 
-.visual .bullets label{
-    display: inline-block;
-    border-radius: 50%;
-    background-color: rgba(74, 74, 74, 0.55);
-    width: 5px; height: 5px; padding: 8px; margin: 0 10px;
-    cursor: pointer;
-}
-
-.main-1 input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
-    background-color:  #D91226;
-}
-.main-1 input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
-    background-color:  #D91226;
-}
-.main-1 input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
-    background-color:  #D91226;
-}
-
-.main-1 input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
-    opacity: 1;
-    z-index: 1;
-    transition: 1s;
-}
-.main-1 input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){
-    opacity: 1;
-    z-index: 1;
-    transition: 1s;
-}
-.main-1 input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){
-    opacity: 1;
-    z-index: 1;
-    transition: 1s;
-}
-
-.imgs>li:nth-of-type(3){
-    position: relative;
-}
-
-.imgs>li:nth-of-type(3)>.txt-s1>p{
+.slide .slick-next{
     position: absolute;
-    left:60%; top:50%;
-    transform: translate(-50%,-50%);
-    font-size: 90px;
-    font-weight: bold;
-    background-color: #fff;
-    padding-right:20px;
+    right:0; top:50%;
+    z-index: 2;
+}
+    
+/* dots */
+    .slide .slick-dots{
+    position: absolute;
+    left:0; bottom:5%;
+    width:100%;
+    text-align: center;
+    
+    list-style-type: none;
+    padding:0;
 }
 
-.imgs>li:nth-of-type(3)>.txt-s1>p::after{
-    content:'';
-    border-bottom:3px solid #000;
-    width:100%;
-    position:absolute;
-    left:70%; top:77%;
-    z-index: -1;
+.slide .slick-dots li{display: inline-block;}
+.slide .slick-dots li button{
+    width:15px; height:15px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    border:none;
+    font-size:0;
+    margin:0 10px;
+}
+
+.slide .slick-dots li.slick-active button{
+    background-color: #D91226;
 }
 
 /*main-2*/
@@ -112,7 +109,7 @@ ul.imgs li{
     margin:0 auto;
     padding:150px 200px 60px 200px;
 
-    height:980px;
+    height: 100vh;
     position: relative;
     text-align: center;
 }
@@ -197,7 +194,7 @@ ul.imgs li{
 /*main-3*/
 .main-3{
     margin:0 auto;
-    width: 1980px; height:980px;
+    width: 100%; height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -231,8 +228,6 @@ ul.imgs li{
 .main-3>.img>.rolling>p:nth-of-type(2){
     transform: rotateY(-90deg) translateZ(100px);
 } */
-
-
 
 .main-3>.txt-s1{
     width: 50%; height: 50%;
@@ -291,7 +286,7 @@ ul.imgs li{
 
 /*main-4*/
 .main-4{
-    height:980px; 
+    height: 100vh;
 
     display: flex;
     align-items: center;
@@ -345,7 +340,6 @@ ul.imgs li{
 }
 
 .main-4>.img>ul>li>.txt-s1>b{
-    font-weight: 500;
     font-size: 30px;
 }
 
@@ -359,10 +353,38 @@ ul.imgs li{
 }
 
 .main-4>.img>ul>li>.txt-s1>p{
-    font-weight: 300;
     margin-top: 20px;
     font-size: 16px;
 }
 
+aside{
+    position:fixed; right:3%; top:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+aside > p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #232323;
+    padding: 10px 0;
+}
+
+aside > a{
+    width:4px; height:30px;
+    background-color: rgb(218, 218, 218);
+    display: block; 
+    
+}
+
+aside > a.active{
+    background-color: #232323;
+}
 
 
+
+/*
+font-family: 'Anek Malayalam', sans-serif;
+*/

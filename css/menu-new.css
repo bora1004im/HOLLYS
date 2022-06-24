@@ -1,0 +1,286 @@
+@charset "utf-8";
+@import url('./common.css');
+
+.img{
+    position: relative;
+}
+
+.img > p >img {
+    width: 100%;
+}
+
+.img>div>i{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* display: flex; */
+    justify-content: center;
+    align-items: center; /*가운데 정렬하는 방법*/
+    text-align: center;
+
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+/*header*/
+
+.header{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    position: sticky; top:0;
+    z-index: 999;
+    background-color: white;
+}
+
+.header>.a{
+    width: 1200px; height: 100px;
+    margin: 0 auto;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.header>.a>a{
+    width: 100%;
+    font-size: 17px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 35px  20px;
+}
+
+.header>.a>a:hover{
+    font-weight: bold;
+    border-bottom: 4px solid #D91226;
+}
+
+/*banner*/
+.slide{
+    width: 100%;
+    position: relative;
+                
+    /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
+}
+
+.slide .slick-list{  
+/* 배너들의 상위요소 */
+    overflow:hidden;  
+}
+
+.slide .slick-track{
+/* 배너 그룹 및 translateX값으로 이동(스크립트) */
+}
+
+.slide .slick-track::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.slide .slick-slide{
+/* 개별 배너 */
+margin:0; 
+width:100%;
+float:left;
+}
+
+.slide .slick-slide  img{width:100%;}
+    
+/* next prev */           
+.slide .slick-prev{
+    position: absolute;
+    left:50px; top:45%;
+    z-index: 2;
+    border: none;
+    font-size: 0;
+    background-image: url("../img/ic_round-navigate-prev.png");
+    width: 70px; height: 70px;
+    background-color: transparent;
+}
+
+.slide .slick-next{
+    position: absolute;
+    right:50px; top:45%;
+    z-index: 2;
+    border: none;
+    font-size: 0;
+    background-image: url("../img/ic_round-navigate-next.png");
+    width: 70px; height: 70px;
+    background-color: transparent;
+}
+    
+/* dots */
+    .slide .slick-dots{
+    position: absolute;
+    left:0; bottom:5%;
+    width:100%;
+    text-align: center;
+    
+    list-style-type: none;
+    padding:0;
+}
+
+.slide .slick-dots li{display: inline-block;}
+.slide .slick-dots li button{
+    width:15px; height:15px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    border:none;
+    font-size:0;
+    margin:0 10px;
+}
+
+.slide .slick-dots li.slick-active button{
+    background-color: #D91226;
+}
+
+
+/*menu*/
+.menu{
+    width: 1200px; margin: 100px auto;
+    position: relative;
+}
+
+.menu>ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu>ul>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.menu>ul>li>.main{
+    width: 280px; height: 440px;
+    background-color: #eee;
+    margin-bottom:50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu>ul>li>.main>figure>img{
+    transform: translateY(-10%);
+    width: 100%;
+}
+
+.menu>ul>li>.main>p{
+    font-size: 15px;
+    position: absolute;
+    top:75%;
+}
+
+.menu>ul>li>.main>span{
+    font-size: 12px;
+    position: absolute;
+    top:80%;
+}
+
+.menu>ul>li:nth-last-of-type(1){
+    margin-right:  auto;
+}
+
+.menu>ul>li:nth-last-of-type(2){
+    margin-right:26px;
+}
+
+.menu>ul>li>.txt{
+    width: 280px; height: 440px;
+    position: absolute; left: 0; top:0;
+    display: none;
+}
+
+.menu>ul>li>.txt.active{
+    display: block;
+}
+
+.menu>ul>li>.txt>button{
+    position: absolute;
+    top:2%; right: 0%;
+    border: none; background: none;
+    
+}
+
+.menu>ul>li>.txt>.txt2{
+    width: 280px; height: 440px;
+    padding: 30px; 
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid gray;
+}
+
+.menu>ul>li>.txt>.txt2>.title{
+}
+
+.menu>ul>li>.txt>.txt2>.title>h4{
+    font-size: 18px;
+}
+
+.menu>ul>li>.txt>.txt2>.title>p{
+    margin-bottom: 15px;
+    color: #D91226; 
+    font-size: 15px;
+}
+
+.menu>ul>li>.txt>.txt2>.title>span{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+
+.menu>ul>li>.txt>.txt2>table{
+    margin-top: 30px; 
+    width: 100%; 
+}
+
+.menu>ul>li>.txt>.txt2>table::before{
+    content: '';
+    width: 80%; 
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    margin-top: -10px;
+}
+
+.menu>ul>li>.txt>.txt2>table>tr{
+    font-size: 10px;
+    color: #D91226;
+    padding: 30px;
+}
+
+.menu>ul>li>.txt>.txt2>table>tbody>tr{
+    font-size: 10px;
+}
+
+.menu>ul>li>.txt>.txt2>table>tbody>tr>th{
+    font-size: 12px;
+}
+
+.menu>ul>li>.txt>.txt2>table>tbody>tr>td{
+    font-size: 12px;
+}
+
+/*top*/
+.top > a{
+    display:scroll;
+    position:fixed;
+    bottom:50px; right:50px;
+    transition: 2s;
+    font-size: 0;
+    background-image: url("../img/bi_arrow-up.png");
+    width: 50px; height: 50px;
+}
+
+
