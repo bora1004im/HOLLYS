@@ -279,7 +279,7 @@ float:left;
     bottom:50px; right:50px;
     transition: 2s;
     font-size: 0;
-    background-image: url("../img/bi_arrow-up.png");
+    background-image: url("../img/bi_arrow-up-circle-fill.png");
     width: 50px; height: 50px;
 }
 
