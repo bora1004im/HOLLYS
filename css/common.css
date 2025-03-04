@@ -3,11 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&family=Nunito+Sans:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Merriweather:ital,wght@1,700;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300&family=Gamja+Flower&family=Gowun+Dodum&family=Merriweather:ital,wght@1,700;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 html, body{
+    font-family: 'Pretendard-Regular';
     margin: 0;
     font-size: 14px;
-    
 }
 
 ul,li,ol{
@@ -23,7 +29,7 @@ h1{
     font-size: 70px; margin-bottom: 70px;
     display: flex;
     justify-content: center;
-    font-family: 'Gowun Dodum', sans-serif;
+    font-family: 'Pretendard-Regular';
     color: #302C2D;
 }
 
@@ -40,7 +46,7 @@ img{
     font-size: 1rem;
     line-height: 1.7;
     color: black;
-    font-family: 'Noto Sans KR', serif;
+    font-family: 'Pretendard-Regular';
 }
 
 /*header*/
@@ -69,14 +75,6 @@ header>div{
     align-items: center;
 }
 
-/* header>div::after{
-    content: ''; 
-    display: block; width: 0; height: 300px;
-    background-color: rgba(255, 255, 255, 0.8);
-    position:absolute; left:0; bottom: 0;
-    transform: translate(0, 65%);
-    z-index: -2;
-} */
 
 header>div:hover::after{
     width: 100%;
@@ -136,7 +134,7 @@ header>div>div>a>img{
 
 /*footer*/
 footer{
-    background-color: #E0E0E0;
+    background-color: #f8f8f8;
     padding: 40px 0;
     margin-top:100px;
 

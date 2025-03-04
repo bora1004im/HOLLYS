@@ -115,8 +115,7 @@ float:left;
 }
 
 .main-2>h2{
-    margin-top: 80px;
-    font-size: 40px;
+    font-size: 42px;
 }
 
 .main-2>h2::after{
@@ -127,7 +126,8 @@ float:left;
 }
 
 .main-2>p{
-    padding: 20px 0 130px;
+    padding: 20px 0 100px;
+    font-size: 18px;
 }
 
 .main-2>ul {
@@ -154,18 +154,12 @@ float:left;
     border: 5px solid rgba(255, 255, 255,0.8);
 }
 
-
 .main-2>ul>li>figure>img{
     transition: 0.5s;
 }
 
 .main-2>ul>li>figure:hover>img{
     transform: scale(1.1);
-}
-
-.main-2>ul>li>figure:hover{
-
-
 }
 
 .main-2>ul>li>.txt-s1{
@@ -182,6 +176,7 @@ float:left;
 }
 
 .main-2>ul>li>.txt-s1>a{
+    font-size: 15px;
     color: #C2A571;
 }
 
@@ -220,14 +215,6 @@ float:left;
     opacity: 0.8;
 }
 
-/* 
-.main-3>.img>.rolling>p:nth-of-type(1){
-    transform: rotateY(0deg) translateZ(100px);
-}
-
-.main-3>.img>.rolling>p:nth-of-type(2){
-    transform: rotateY(-90deg) translateZ(100px);
-} */
 
 .main-3>.txt-s1{
     width: 50%; height: 50%;
@@ -242,6 +229,7 @@ float:left;
 .main-3>.txt-s1>h2{
     font-size: 55px;
     color: rgba(39, 39, 39);
+    letter-spacing: -1px;
 }
 
 .main-3>.txt-s1>h2>span{
@@ -277,6 +265,7 @@ float:left;
     font-weight: bold;
     font-size: 18px;
     transition: 0.3s;
+    border-radius: 10px;
 }
 
 .main-3>.txt-s1>a:hover{
@@ -353,8 +342,10 @@ float:left;
 }
 
 .main-4>.img>ul>li>.txt-s1>p{
+    font-weight: 400;
     margin-top: 20px;
     font-size: 16px;
+    letter-spacing: -.5px;
 }
 
 aside{
@@ -382,9 +373,3 @@ aside > a{
 aside > a.active{
     background-color: #232323;
 }
-
-
-
-/*
-font-family: 'Anek Malayalam', sans-serif;
-*/
