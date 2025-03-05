@@ -173,9 +173,14 @@
 }
 
 .menu>ul>li>.txt{
-    width: 280px; height: 440px;
+    width: 325px; height: 370px;
     position: absolute; left: 0; top:0;
     display: none;
+    background-color: #fff;
+    border-radius: 30px;
+    top: 5%;
+    border: 1px solid #5C4033;
+    border-radius: 30px;
 }
 
 .menu>ul>li>.txt.active{
@@ -184,26 +189,24 @@
 
 .menu>ul>li>.txt>button{
     position: absolute;
-    top:2%; right: 0%;
+    top: 5%;
+    right: 2%;
     border: none; background: none;
     
 }
-.slick-slide p{
-    font-family: 'GmarketSansMedium';
-    font-size: 15px;
-}
-
 .menu>ul>li>.txt>.txt2{
-    width: 280px; height: 440px;
-    padding: 30px; 
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .menu>ul>li>.txt>.txt2>.title{
+    padding: 0 10%;
 }
 
 .menu>ul>li>.txt>.txt2>.title>h4{
+    font-family: 'GmarketSansMedium';
     font-size: 18px;
 }
 
@@ -214,10 +217,9 @@
 }
 
 .menu>ul>li>.txt>.txt2>.title>span{
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 15px;
 }
-
 
 .menu>ul>li>.txt>.txt2>table{
     margin-top: 30px; 
@@ -229,7 +231,8 @@
     width: 80%; 
     border-bottom: 1px solid #ddd;
     position: absolute;
-    margin-top: -10px;
+    margin-top: -18px;
+    left: 10%;
 }
 
 .menu>ul>li>.txt>.txt2>table>tr{
@@ -460,79 +463,6 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 }
 
 
-.menu>ul>li>.txt{
-    width: 280px; height: 440px;
-    position: absolute; left: 0; top:0;
-    display: none;
-}
-
-.menu>ul>li>.txt.active{
-    display: block;
-}
-
-.menu>ul>li>.txt>button{
-    position: absolute;
-    top:2%; right: 0%;
-    border: none; background: none;
-    
-}
-
-.menu>ul>li>.txt>.txt2{
-    width: 280px; height: 440px;
-    padding: 30px; 
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid gray;
-}
-
-.menu>ul>li>.txt>.txt2>.title{
-}
-
-.menu>ul>li>.txt>.txt2>.title>h4{
-    font-size: 18px;
-}
-
-.menu>ul>li>.txt>.txt2>.title>p{
-    margin-bottom: 15px;
-    color: #B5121B; 
-    font-size: 15px;
-}
-
-.menu>ul>li>.txt>.txt2>.title>span{
-    font-size: 12px;
-    margin-bottom: 15px;
-}
-
-
-.menu>ul>li>.txt>.txt2>table{
-    margin-top: 30px; 
-    width: 100%; 
-}
-
-.menu>ul>li>.txt>.txt2>table::before{
-    content: '';
-    width: 80%; 
-    border-bottom: 1px solid #ddd;
-    position: absolute;
-    margin-top: -10px;
-}
-
-.menu>ul>li>.txt>.txt2>table>tr{
-    font-size: 10px;
-    color: #B5121B;
-    padding: 30px;
-}
-
-.menu>ul>li>.txt>.txt2>table>tbody>tr{
-    font-size: 10px;
-}
-
-.menu>ul>li>.txt>.txt2>table>tbody>tr>th{
-    font-size: 12px;
-}
-
-.menu>ul>li>.txt>.txt2>table>tbody>tr>td{
-    font-size: 12px;
-}
 
 /*top*/
 .top > a{
