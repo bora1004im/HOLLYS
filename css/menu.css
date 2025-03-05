@@ -124,7 +124,6 @@
 .menu>ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     gap: 20px;
     padding: 0;
 }
@@ -449,7 +448,6 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 
 .menu>ul{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
