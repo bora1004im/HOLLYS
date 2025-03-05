@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할리스 가맹점</title>
+    <link href="./css/partner.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./js/common.js"></script>
+    <script defer src="./js/partner.js" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="icon" type="image/png" href="./hollys-icon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./hollys-icon/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="header-wrap">
+            <!--logo-->
+            <a href="./index.html" class="logo" title="메인으로">
+            <img src="./img/2021_BI 6.png" alt="">
+            </a>
+            <!--active-bg-->
+            <div class="nav-bg">
+                <div class="container"></div>
+            </div>
+            <!--menu-->
+            <nav class="gnb-drop-all">
+            <ul class="depth-1">
+                <li>
+                    <a href="./history.html">HOLLYS</a>
+                    <ul class="depth-2">
+                        <li><a href="./brand.html">BRAND</a></li>
+                        <li><a href="./history.html">HISTORY</a></li>
+                        <li><a href="./bi.html">BI 소개</a></li>
+                        <li><a href="./map.html">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./menu-new.html">MENU</a>
+                    <ul class="depth-2">
+                        <li><a href="./menu-new.html">신메뉴</a></li>
+                        <li><a href="./menu1.html">커피</a></li>
+                        <li><a href="./menu2.html">음료</a></li>
+                        <li><a href="./menu3.html">푸드</a></li>
+                        <li><a href="./menu4.html">MD</a></li>
+                    </ul>
+            </li>
+                <li>
+                    <a href="./membership.html">MEMBERSHIP</a>
+                    <ul class="depth-2">
+                        <li><a href="./membership.html">멤버십 혜택</a></li>
+                        <li><a href="./membership.html">스마트 오더</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./partner.html">PARTNER</a>
+                    <ul class="depth-2">
+                        <li><a href="./partner.html">창업안내</a></li>
+                        <li><a href="./partner.html">창업신청</a></li>
+                        <li><a href="./partner.html">FQA</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </nav>
+            <!--창업문의-->
+            <a href="./contact.html" class="header-link">
+               <img src="./img/shop.png">가맹문의
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="img">
+            <p> <img src="./img/partner/bg04.png"></p>
+            <div>
+                <h1>PARTNER</h1>
+                <p>품질 좋은 커피와 따뜻한 서비스를 제공하는 고객과 함께 성장하는 할리스</p>
+            </div>
+        </div>
+    
+        <div class="sub-nav">
+            <ul class="sub-nav-bar">
+                <li class="item">
+                    <a href="./partner.html" class="link on">창업안내</a>
+                </li>
+                <li class="item active">
+                    <a href="./contact.html" class="link on">창업신청</a>
+                </li>
+                <li class="item">
+                    <a href="./faq.html" class="link on">FAQ</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="advice">
+            <div class="main">
+                <h1>창업 신청</h1>
+            </div>
+
+            <div class="f_wrap animation">
+                <ul>
+                  <li>
+                    <label for="">이름</label>
+                    <div class="d_wr">
+                      <input type="text" name="counselName" id="counselName" placeholder="이름을 입력해주세요.">
+                    </div>
+                  </li>
+                  <li>
+                    <label for="">연락처</label>
+                    <div class="d_wr">
+                      <input type="text" name="counselPhone" id="counselPhone" placeholder="연락처" onkeyup="this.value=this.value.replace(/[^-0-9]/g,'');">
+                    </div>
+                  </li>
+                  <li>
+                    <label for="">희망 지역</label>
+                    <div class="d_wr">
+                      <select class="counselCompany" name="counselCompany">
+                       <option value="">희망 지역을 선택해주세요.</option>
+                       <option value="서울">서울</option>
+                       <option value="경기">경기</option>
+                       <option value="강원">강원</option>
+                       <option value="경남">경남</option>
+                       <option value="경북">경북</option>
+                       <option value="광주">광주</option>
+                       <option value="대구">대구</option>
+                       <option value="대전">대전</option>
+                       <option value="부산">부산</option>
+                       <option value="세종">세종</option>
+                       <option value="울산">울산</option>
+                       <option value="인천">인천</option>
+                       <option value="전남">전남</option>
+                       <option value="전북">전북</option>
+                       <option value="제주">제주</option>
+                       <option value="충남">충남</option>
+                       <option value="충북">충북</option>
+                    </select>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="">문의 내용</label>
+                    <div class="d_wr">
+                      <textarea name="counselContent" id="counselContent" placeholder="문의내용을 입력해주세요."></textarea>
+                    </div>
+                  </li>
+                   <li>
+                    <label for="">자동등록방지</label>
+                    <div class="d_wr2">
+                      <div class="g-recaptcha" data-sitekey="6LePCmQqAAAAAPSZeBELS2tzjmqtJvS6EVVpET6K" data-callback="recaptcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-896m0bpx5tr6" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LePCmQqAAAAAPSZeBELS2tzjmqtJvS6EVVpET6K&amp;co=aHR0cHM6Ly9tbXRoY29mZmVlLmNvbTo0NDM.&amp;hl=ko&amp;v=rW64dpMGAGrjU7JJQr9xxPl8&amp;size=normal&amp;cb=gs2khdk4hg91"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="inq_btn">
+                  <a href="#" id="btnSave">문의하기</a>
+                </div>
+              </div>
+
+        </div>
+
+        <div class="top">
+            <a href="#"></a>
+        </div>
+    </main>
+    
+    <footer>     
+    <div class="tos">
+        <a href="#">이용약관</a>
+        <a href="#">개인정보처리방침</a>
+        <a href="#">고객센터</a>
+        <a href="#">고객설문</a>
+    </div>
+            
+    <div class="number">
+        <figure><img src="./img/2021_BI 1.png"></figure>
+        <b>사업자등록번호 211-87-61044 ㅣ대표전화 : 02-2188-7100 ㅣ 가맹문의 1670-4432</b>
+        <p>법인명 : (주)할리스에프앤비 대표자 : 이종현 통신판매업 : 제2019-서울종로-0193호<br>
+                주소 : 서울특별시 종로구 율곡로 88 삼환빌딩 8층 (운니동)</p>
+                        
+        <p>COPYRIGHT (C) HOLLYS COFFEECo., Ltd. All Rights Reserved.</p>
+    </div>
+    </footer>
+    
+</body>
+</html>

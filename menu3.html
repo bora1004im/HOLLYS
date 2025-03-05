@@ -1,47 +1,105 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu3</title>
-    <link href="./css/menu1.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="./common.js"></script> <!--defer : 로드를 시키되 실행시키지 않고 html 작업이 끝나면 실행하도록 하는 명령어-->
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="./slick.min.js" type="text/javascript" charset="utf-8"></script>
-    <script defer src="./js/menu1.js" type="text/javascript" charset="utf-8"></script>
-
-    <link rel="icon" type="image/png" href="./hollys-icon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="./hollys-icon/favicon-16x16.png" sizes="16x16" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>푸드</title>
+        <link href="./css/menu.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script defer src="./js/common.js"></script>
+        <script src="./slick.min.js" type="text/javascript" charset="utf-8"></script>
+        <script defer src="./js/menu.js" type="text/javascript" charset="utf-8"></script>
+    
+        <link rel="icon" type="image/png" href="./hollys-icon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="./hollys-icon/favicon-16x16.png" sizes="16x16" />
+    </head>
 <body>
-    <header class="active"></header>
+    <header id="header" class="header">
+        <div class="header-wrap">
+            <!--logo-->
+            <a href="./index.html" class="logo" title="메인으로">
+            <img src="./img/2021_BI 6.png" alt="">
+            </a>
+            <!--active-bg-->
+            <div class="nav-bg">
+                <div class="container"></div>
+            </div>
+            <!--menu-->
+            <nav class="gnb-drop-all">
+            <ul class="depth-1">
+                <li>
+                    <a href="./history.html">HOLLYS</a>
+                    <ul class="depth-2">
+                        <li><a href="./brand.html">BRAND</a></li>
+                        <li><a href="./history.html">HISTORY</a></li>
+                        <li><a href="./bi.html">BI 소개</a></li>
+                        <li><a href="./map.html">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./menu-new.html">MENU</a>
+                    <ul class="depth-2">
+                        <li><a href="./menu-new.html">신메뉴</a></li>
+                        <li><a href="./menu1.html">커피</a></li>
+                        <li><a href="./menu2.html">음료</a></li>
+                        <li><a href="./menu3.html">푸드</a></li>
+                        <li><a href="./menu4.html">MD</a></li>
+                    </ul>
+            </li>
+                <li>
+                    <a href="./membership.html">MEMBERSHIP</a>
+                    <ul class="depth-2">
+                        <li><a href="./membership.html">멤버십 혜택</a></li>
+                        <li><a href="./membership.html">스마트 오더</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./partner.html">PARTNER</a>
+                    <ul class="depth-2">
+                        <li><a href="./partner.html">창업안내</a></li>
+                        <li><a href="./partner.html">창업신청</a></li>
+                        <li><a href="./partner.html">FQA</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </nav>
+            <!--창업문의-->
+            <a href="./membership.html" class="header-link">
+               <img src="./img/shop.png">가맹문의
+            </a>
+        </div>
+</header>
     
     <main>
         <div class="img">
-            <p> <img src="./img/menu1/Rectangle 9.png"></p>
+            <p> <img src="./img/menu/bg02.png"></p>
             <div>
-                <i>MENU</i>
+                <h1>MENU</h1>
+                <p>품질 좋은 커피와 따뜻한 서비스를 제공하는 고객과 함께 성장하는 할리스</p>
             </div>
         </div>
-    
-        <div class="header">
-            <div class="a">
-                <a href="./menu-new.html">신메뉴</a>
-                <a href="./menu1.html">커피</a>
-                <a href="./menu2.html">음료</a>
-                <a href="./menu3.html">푸드</a>
-                <a href="./menu4.html">MD</a>
-            </div>
+        <div class="sub-nav">
+            <ul class="sub-nav-bar">
+                <li class="item">
+                    <a href="./menu-new.html" class="link on">신메뉴 </a>
+                </li>
+                <li class="item">
+                    <a href="./menu1.html" class="link on">커피</a>
+                </li>
+                <li class="item">
+                    <a href="./menu2.html">음료</a>
+                </li>
+                <li class="item active">
+                    <a href="./menu3.html" class="link on">푸드</a>
+                </li>
+                <li class="item">
+                    <a href="./menu4.html" class="link on">MD</a>
+                </li>
+            </ul>
         </div>
-    
-        <!-- <div class="nav">
-            <figure><img src="./img/history/bxs_home.png">
-            <a href="#">홈</a>
-            <a href="#"><b>ㆍ</b>HOLLYS</a>
-            </figure>
-        </div> -->
 
         <div class="hot">
             <h3><span>추천 상품</span></h3>
@@ -76,36 +134,56 @@
                         <p>부드러운 쿠키 앤 크림</p>
                     </figure>
                 </div>
-    
-                <!-- <div class="btn">
-                    <a class="bx-prev" href><img src="./img/menu1/new_btn_arrow01.gif"></a>
-                    <a class="bx-next" href><img src="./img/menu1/new_btn_arrow02.gif"></a>
-                </div> -->
         </div>
 
-        <!-- <div class=" search">
-            <h4>메뉴 검색</h4>
+        <div class="search">
+            <h4><img src="./img/menu/search.png">메뉴 검색</h4>
             <ul>
                 <li>
-                    <input type="checkbox">
-                    <label>ADE</label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        ALL
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        FLAKE
+                    </label>
                 </li>
 
                 <li>
-                    <input type="checkbox">
-                    <label>LATTE</label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        CAKE
+                    </label>
                 </li>
 
                 <li>
-                    <input type="checkbox">
-                    <label>TEA</label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        COOKIE
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        BAKERY
+                    </label>
                 </li>
             </ul>
-        </div> -->
+    </div>
+
 
         <div class="menu">
             <ul>
-                <li>
+                <li class="all flake">
                     <div class="main">
                         <figure><img src="./img/menu-new/Applemango Cheesecake Ice Flake.png"></figure>
                         <p>1인) 애플망고 치즈케이크 빙수</p>
@@ -151,7 +229,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all flake">
                     <div class="main">
                         <figure><img src="./img/menu-new/Applemango Cheesecake Ice Flake2.png"></figure>
                         <p>2인) 애플망고 치즈케이크 빙수</p>
@@ -197,7 +275,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all flake">
                     <div class="main">
                         <figure><img src="./img/menu-new/Red Bean Ice Flake.png"></figure>
                         <p>1인) 눈꽃 팥빙수</p>
@@ -243,7 +321,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all flake">
                     <div class="main">
                         <figure><img src="./img/menu-new/Red Bean Ice Flake2.png"></figure>
                         <p>2인) 눈꽃 팥빙수 </p>
@@ -298,7 +376,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all flake" >
                     <div class="main">
                         <figure> <img src="./img/menu-new/Black Monster Chocolate Ice Flake.png"></figure>
                         <p>2인) 블랙몬스터 초코 빙수</p>
@@ -344,7 +422,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu-new/Triple Berry Cheese Sweet Box.png"></figure>
                         <p>트리플 베리 치즈 스윗박스</p>
@@ -390,7 +468,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu-new/Triple Berry Fresh Cream Round.png"></figure>
                         <p>트리플 베리 생크림 라운드</p>
@@ -436,7 +514,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu-new/Triple Berry Fresh Cream Cake.png"></figure>
                     <p>트리플 베리 생크림</p>
@@ -482,7 +560,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all cookie">
                     <div class="main">
                         <figure><img src="./img/menu-new/Cranberry White Chocolate Cookie.png"></figure>
                         <p>크랜베리 화이트 초코 쿠키</p>
@@ -528,7 +606,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all cookie">
                     <div class="main">
                         <figure><img src="./img/menu-new/Triple Chocolate Cookie.png"></figure>
                         <p>트리플 초코 쿠키</p>
@@ -573,7 +651,8 @@
                         </div>
                     </div>
                 </li>
-                <li>
+
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Hallasan Green tea Basque Cheese.png"></figure>
                         <p>한라산 녹차 치즈 바스크</p>
@@ -619,7 +698,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                     <figure><img src="./img/menu3/food/Ham and Cheese Scrambled Eggs Toast.png"></figure>
                     <p>햄치즈 스크램블 토스트</p>
@@ -665,7 +744,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                     <figure><img src="./img/menu3/food/Soft Jambon Beurre.png"></figure>
                     <p>소프트 잠봉뵈르</p>
@@ -711,7 +790,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Strawberry Soop Cheese Cake.png"></figure>
                         <p>딸기숲 치즈 케이크</p>
@@ -757,7 +836,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Strawberry Cheese Sweetbox.png"></figure>
                         <p>딸기 치즈 스윗박스</p>
@@ -803,7 +882,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Tiara Strawberry Fresh Cream Cake.png"></figure>
                         <p>티아라 딸기 생크림 케이크</p>
@@ -849,7 +928,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all cake">
                     <div class="main">
                     <figure><img src="./img/menu3/food/Strawberry Fresh Cream Cake.png"></figure>
                     <p>딸기 생크림 케이크</p>
@@ -895,7 +974,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure> <img src="./img/menu3/food/Strawberry Fresh Cream Round.png"></figure>
                         <p>딸기 생크림 라운드</p>
@@ -941,7 +1020,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu3/food/New York Cheese 2호.png"></figure>
                         <p>뉴욕치즈 2호</p>
@@ -987,7 +1066,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Triple Chocolate 1호.png"></figure>
                         <p>트리플 초코 1호</p>
@@ -1033,7 +1112,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Carrot 1호.png"></figure>
                         <p>촉촉한 당근 1호</p>
@@ -1079,7 +1158,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Bacon Potato Danish.png"></figure>
                         <p>베이컨 포테이토 데니쉬</p>
@@ -1125,7 +1204,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Corn Cheese Danish.png"></figure>
                         <p>콘 치즈 데니쉬</p>
@@ -1171,7 +1250,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Truffle Mushroom Soup Bowl.png"></figure>
                         <p>트러플 머쉬룸 수프볼</p>
@@ -1217,7 +1296,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Croffle with Ice Cream.png"></figure>
                         <p>아이스크림 크로플</p>
@@ -1263,7 +1342,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cookie">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Double Chocolate Macaron.png"></figure>
                         <p>더블 초코 뚱카롱</p>
@@ -1309,7 +1388,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cookie">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Strawberry Cheese Cake Macaron.png"></figure>
                         <p>딸기 치즈케익 뚱카롱</p>
@@ -1355,7 +1434,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cookie">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Vanilla Delight Macaron.png"></figure>
                         <p>바닐라 딜라이트 뚱카롱</p>
@@ -1401,7 +1480,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu3/food/New York Cheese Cake.png"></figure>
                         <p>뉴욕 치즈 케이크</p>
@@ -1447,7 +1526,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Cranberry Chicken Sandwich.png"></figure>
                         <p>크랜베리 치킨 샌드위치</p>
@@ -1493,7 +1572,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                         <figure><img src="./img/menu3/food/B.E.L.T Club Sandwich.png"></figure>
                         <p>BELT 클럽 샌드위치</p>
@@ -1539,7 +1618,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Cookie & Cream Cake.png"></figure>
                         <p>부드러운 쿠키 앤 크림</p>
@@ -1585,7 +1664,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Triple Chocolate Round Cake.png"></figure>
                         <p>트리플 초코 라운드</p>
@@ -1631,7 +1710,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all cake">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Mascarpone Tiramisu.png"></figure>
                         <p>진한 마스카포네</p>
@@ -1677,7 +1756,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Cream Cheese Biscuit & Strawberry Jam.png"></figure>
                         <p>크림치즈비스켓&딸기잼</p>
@@ -1723,7 +1802,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cookie">
                     <div class="main">
                         <figure><img src="./img/menu3/food/American Macadamia Cookie.png"></figure>
                         <p>아메리칸 마카다미아 쿠키</p>
@@ -1769,7 +1848,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all cookie">
                     <div class="main">
                         <figure><img src="./img/menu3/food/American Chocolate Chunk Cookie.png"></figure>
                         <p>아메리칸 초콜릿 청크 쿠키</p>
@@ -1815,10 +1894,10 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Bulgogi & Triple Cheese Chicken Quesadilla.png"></figure>
-                        <p>바삭 불고기 & 트리플 치즈 치킨 퀘사디아</p>
+                        <p>바삭 불고기 & 치즈 치킨 퀘사디아</p>
                         <span>Bulgogi & Triple Cheese Chicken Quesadilla</span>
                     </div>
 
@@ -1861,7 +1940,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Half of Egg and Mashed Potato Mayo Sandwich.png"></figure>
                         <p>반반 마요 (에그/감자)</p>
@@ -1907,7 +1986,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Egg Mayo Sandwich.png"></figure>
                     <p>에그 마요 샌드위치</p>
@@ -1953,7 +2032,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Pesto Ham Mozzarella.png"></figure>
                         <p>페스토 햄 모짜렐라</p>
@@ -1999,7 +2078,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all bakery">
                     <div class="main">
                         <figure><img src="./img/menu3/food/Olive Bacon Ciabatta.png"></figure>
                         <p>올리브 베이컨 치아바타</p>
@@ -2052,7 +2131,23 @@
         </div>
     </main>
     
-    <footer></footer>
+    <footer>     
+        <div class="tos">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">고객센터</a>
+            <a href="#">고객설문</a>
+        </div>
+                
+        <div class="number">
+            <figure><img src="./img/2021_BI 1.png"></figure>
+            <b>사업자등록번호 211-87-61044 ㅣ대표전화 : 02-2188-7100 ㅣ 가맹문의 1670-4432</b>
+            <p>법인명 : (주)할리스에프앤비 대표자 : 이종현 통신판매업 : 제2019-서울종로-0193호<br>
+                    주소 : 서울특별시 종로구 율곡로 88 삼환빌딩 8층 (운니동)</p>
+                            
+            <p>COPYRIGHT (C) HOLLYS COFFEECo., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

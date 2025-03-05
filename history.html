@@ -4,220 +4,282 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>history</title>
+    <title>History</title>
     <link href="./css/history.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="./common.js"></script> <!--defer : 로드를 시키되 실행시키지 않고 html 작업이 끝나면 실행하도록 하는 명령어-->
+    <script defer src="./js/common.js"></script>
     <script defer src="./js/history.js" type="text/javascript" charset="utf-8"></script>
 
     <link rel="icon" type="image/png" href="./hollys-icon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./hollys-icon/favicon-16x16.png" sizes="16x16" />
 </head>
 <body>
-    <header class="active"></header>
+    <header id="header" class="header">
+        <div class="header-wrap">
+            <!--logo-->
+            <a href="./index.html" class="logo" title="메인으로">
+            <img src="./img/2021_BI 6.png" alt="">
+            </a>
+            <!--active-bg-->
+            <div class="nav-bg">
+                <div class="container"></div>
+            </div>
+            <!--menu-->
+            <nav class="gnb-drop-all">
+            <ul class="depth-1">
+                <li>
+                    <a href="./history.html">HOLLYS</a>
+                    <ul class="depth-2">
+                        <li><a href="./brand.html">BRAND</a></li>
+                        <li><a href="./history.html">HISTORY</a></li>
+                        <li><a href="./bi.html">BI 소개</a></li>
+                        <li><a href="./map.html">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./menu-new.html">MENU</a>
+                    <ul class="depth-2">
+                        <li><a href="./menu-new.html">신메뉴</a></li>
+                        <li><a href="./menu1.html">커피</a></li>
+                        <li><a href="./menu2.html">음료</a></li>
+                        <li><a href="./menu3.html">푸드</a></li>
+                        <li><a href="./menu4.html">MD</a></li>
+                    </ul>
+            </li>
+                <li>
+                    <a href="./membership.html">MEMBERSHIP</a>
+                    <ul class="depth-2">
+                        <li><a href="./membership.html">멤버십 혜택</a></li>
+                        <li><a href="./membership.html">스마트 오더</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./partner.html">PARTNER</a>
+                    <ul class="depth-2">
+                        <li><a href="./partner.html">창업안내</a></li>
+                        <li><a href="./partner.html">창업신청</a></li>
+                        <li><a href="./partner.html">FQA</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </nav>
+            <!--창업문의-->
+            <a href="./contact.html" class="header-link">
+                <img src="./img/shop.png">가맹문의
+            </a>
+        </div>
+    </header>
 
     <main>
-<div class="img">
-            <p> <img src="./img/history/Rectangle 9.png"></p>
-            <div>
-                <i>HOLLYS</i>
-            </div>
-        </div>
-
-<div class="header">
-            <div class="a">
-                <a href="#">HOLLYS IS</a>
-                <a href="#">HISTORY</a>
-                <a href="#">BI</a>
-            </div>
-        </div>
-
-<div class="nav">
-            <figure><img src="./img/history/bxs_home.png">
-            <a href="#">홈</a>
-            <a href="#"><b>ㆍ</b>HOLLYS</a>
-            </figure>
-        </div>
-
-<div class="visual">
-            <h1><span>ㆍ</span>ABOUT HOLLYS<span>ㆍ</span></h1>
-            <p><img src="./img/history/Rectangle 20.png"></p>
-
-            <div class="main">
-                <div class="main-txt">
-                <h2>커피의 즐거움을 만드는<b>‘작은 차이의 미학’</b></h2>
-                <p>‘작은 차이가 평범함과 특별함을 가르는 기준이 된다'</p>      
-                </div>
-                
-                <div class="main-2">
-                    <div class="txt-1">
-                    <h3><span>하나, </span>커피를 알아가는 즐거움</h3>
-
-                    <p>숙련된 바리스타는 산지에 따라 각기 다른 원두의 비밀을 밝혀내고 
-                    고객의 입맛과 성향을 이해한 후 자신만의 커피 미학으로
-                    섬세하게 커피를 내려 최상의 즐거움을 제공 합니다. 
-                    </p>
+        <div class="img">
+                    <p> <img src="./img/history/bg01.png"></p>
+                    <div>
+                        <h1>HOLLYS</h1>
+                        <p>품질 좋은 커피와 따뜻한 서비스를 제공하는 고객과 함께 성장하는 할리스</p>
                     </div>
-                    
-                    <img src="./img/history/Ellipse 10.png">
-
-                    <div class="txt-2">
-                        <h3><span>둘, </span>커피를 함께하는 즐거움</h3>
-    
-                        <p>커피를 혼자 즐길 때, 사람들과 함께 할 때 각기 다른 즐거움을 줍니다.
-                            이를 위해 할리스커피는 편안하고 여유로운 공간에 그 이상의
-                            가치를 담으려 다양한 노력을 하고 있습니다.
-                        </p>
-                        </div>
-                </div>
-
-                <p><span>할리스커피</span>는 전세계의 커피 산지를 연구하고, 원두 본연의 맛을 살리기 위한<br> 
-                    블랜딩을 개발하는 등 다양한 노력을 하고 있습니다.<br>
-                    커피가 주는 아름다움을 많은 고객들이 즐길 수 있도록, 의미 있는 차이를 만들어가는 할리스커피가 되겠습니다.</p>
-
-            </div>
         </div>
 
-<div class="history">
-            <div class="title">
-                <h1><span>ㆍ</span>HISTORY<br>
-                    OF HOLLYS<span>ㆍ</span></h1>
-                    <p>할리스커피의 탄생 그리고 오늘</p>
+        <div class="sub-nav">
+            <ul class="sub-nav-bar">
+                <li class="item">
+                    <a href="./brand.html" class="link on">BRAND</a>
+                </li>
+                <li class="item  active">
+                    <a href="./history.html" class="link on">HISTORY</a>
+                </li>
+                <li class="item">
+                        <li><a href="./bi.html">BI 소개</a></li>
+                </li>
+                <li class="item">
+                    <a href="./map.html" class="link on">찾아오시는 길</a>
+                </li>
+           </ul>
+        </div>
+
+        <div class="visual-2">
+            <div class="main">
+                <h1>HISTORY</h1>
+                <p>할리스커피의 탄생 그리고 오늘</p>
             </div>
 
-        <dl>
-            <dt>
-                <div class="txt">
-                    <b>1988</b><br>
-                    <p>할리스커피 창립 1호점 '강남점'오픈</p>
+            <div class="h_wrap clear">
+                <div class="line">
+                    <span></span>
+                    <span class="line02" style="height:0;"></span>
                 </div>
-            </dt>
-            <dd>
-                <p>1998</p>
-                <p><img src="./img/history/Ellipse 68.png"></p>
-            </dd>
-
-            <dt>
-                <div class="txt">
-                    <b>2007</b><br>
-                    <p>100호점 오픈</p>
+                <div class="clear y_wrap y_right y_2023">
+                    <div class="txt_w">
+                        <strong>2023</strong>
+                        <ul>
+                            <li>25th. Anniver</li>
+                        </ul>
+                    </div>
+                    <div class="img_w">
+                        <img src="./img/history/history2023.png" alt="" title="">
+                    </div>
                 </div>
-            </dt>
-            <dd>
-                <p>2007</p>
-                <p><img src="./img/history/Ellipse 70.png"></p>
-            </dd>
-
-            <dt>
-                <div class="txt">
-                    <b>2009</b><br>
-                    <p>로스팅 센터오픈<br>200호점 오픈</p>
+                <div class="clear y_wrap y_left y_2019">
+                    <div class="img_w">
+                        <img src="./img/history/history2019.png" alt="" title="">
+                    </div>
+                    <div class="txt_w">
+                        <strong>2019</strong>
+                        <ul>
+                            <li>파주 로스팅센터 오픈</li>
+                        </ul>
+                    </div>
                 </div>
-            </dt>
-            <dd>
-                <p>2009</p>
-                <p><img src="./img/history/Ellipse 69.png"></p>
-            </dd>
-
-            <dt>
-                <div class="txt">
-                    <b>2013</b><br>
-                    <p>창립 15주년</p>
+                <div class="clear y_wrap y_right y_2018">
+                    <div class="txt_w">
+                        <strong>2018</strong>
+                        <ul>
+                            <li>창립 20주년</li>
+                        </ul>
+                    </div>
+                    <div class="img_w">
+                        <img src="./img/history/history2018.png" alt="" title="">
+                    </div>
                 </div>
-            </dt>
-            <dd>
-                <p>2013</p>
-                <p><img src="./img/history/Ellipse 71.png"></p>
-            </dd>
-
-            <dt>
-                <div class="txt">
-                    <b>2015</b><br>
-                    <p>할리스커피 멤버십 앱<br>서비스 론칭</p>
+                <div class="clear y_wrap y_left y_2017">
+                    <div class="img_w">
+                        <img src="./img/history/history2017.png" alt="" title="">
+                    </div>
+                    <div class="txt_w">
+                        <strong>2017</strong>
+                        <ul>
+                            <li>직영점 100개점 돌파</li>
+                            <li>드라이브스루(Drive Thru) 대전도안 DT점 오픈</li>
+                        </ul>
+                    </div>
                 </div>
-            </dt>
-            <dd>
-                <p>2015</p>
-                <p><img src="./img/history/Ellipse 73.png"></p>
-            </dd>
-
-            <dt>
-                <div class="txt">
-                    <b>2016</b><br>
-                    <p>장애인 일자리 창출<br>서울시장 표창</p>
+                <div class="clear y_wrap y_right y_2016">
+                    <div class="txt_w">
+                        <strong>2016</strong>
+                        <ul>
+                            <li>장애인 일자리 창출 서울시장 표창</li>
+                            <li>제 1회 할리스타 챔피언십 개최</li>
+                        </ul>
+                    </div>
+                    <div class="img_w">
+                        <img src="./img/history/history2016.png" alt="" title="">
+                    </div>
                 </div>
-            </dt>
-            <dd>
-                <p>2016</p>
-                <p><img src="./img/history/Ellipse 72.png"></p>
-            </dd>
-
-            <dt>
-                <div class="txt">
-                    <b>2017</b><br>
-                    <p>직영점 100개점 돌파<br>드라이브스루 오픈</p>
+                <div class="clear y_wrap y_left y_2015">
+                    <div class="img_w">
+                        <img src="./img/history/history2015.png" alt="" title="">
+                    </div>
+                    <div class="txt_w">
+                        <strong>2015</strong>
+                        <ul>
+                            <li>할리스 멤버심 앱(App) 서비스 론칭</li>
+                        </ul>
+                    </div>
                 </div>
-            </dt>
-            <dd>
-                <p>2017</p>
-                <p><img src="./img/history/Ellipse 74.png"></p>
-            </dd>
-
-            <dt>
-                <div class="txt">
-                    <b>2018</b><br>
-                    <p>창립 20주년</p>
+                <div class="clear y_wrap y_right y_2014">
+                    <div class="txt_w">
+                        <strong>2014</strong>
+                        <ul>
+                            <li>할리스 패스티벌 개최</li>
+                            <li>할리스 클럽 1호점 론칭</li>
+                        </ul>
+                    </div>
+                    <div class="img_w">
+                        <img src="./img/history/history2014.png" alt="" title="">
+                    </div>
                 </div>
-            </dt>
-        </dl>
+                <div class="clear y_wrap y_left y_2013">
+                    <div class="img_w">
+                        <img src="./img/history/history2013.png" alt="" title="">
+                    </div>
+                    <div class="txt_w">
+                        <strong>2013</strong>
+                        <ul>
+                            <li>창립 15주년</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear y_wrap y_right y_2012">
+                    <div class="txt_w">
+                        <strong>2012</strong>
+                        <ul>
+                            <li>커피 아카데미 부산 캠퍼스 오픈</li>
+                            <li>곤지암 물류센터 오픈</li>
+                            <li>멤버십 서비스 론칭</li>
+                        </ul>
+                    </div>
+                    <div class="img_w">
+                        <img src="./img/history/history2012.png" alt="" title="">
+                    </div>
+                </div>
+                <div class="clear y_wrap y_left y_2011">
+                    <div class="img_w">
+                        <img src="./img/history/history2011.png" alt="" title="">
+                    </div>
+                    <div class="txt_w">
+                        <strong>2011</strong>
+                        <ul>
+                            <li>커피 아카데미 서울 캠퍼스 오픈</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear y_wrap y_right y_2009">
+                    <div class="txt_w">
+                        <strong>2009</strong>
+                        <ul>
+                            <li>로스팅 센터 오픈</li>
+                            <li>200호점 오픈</li>
+                        </ul>
+                    </div>
+                    <div class="img_w">
+                        <img src="./img/history/history2009.png" alt="" title="">
+                    </div>
+                </div>
+                <div class="clear y_wrap y_left y_2007">
+                    <div class="img_w">
+                        <img src="./img/history/history2007.png" alt="" title="">
+                    </div>
+                    <div class="txt_w">
+                        <strong>2007</strong>
+                        <ul>
+                            <li>100호점 오픈</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear y_wrap y_right y_1998">
+                    <div class="txt_w">
+                        <strong>1998</strong>
+                        <ul>
+                            <li>할리스 회사 창립</li>
+                            <li>1호점 '강남점' 오픈</li>
+                        </ul>
+                    </div>
+                    <div class="img_w">
+                        <img src="./img/history/history1998.png" alt="" title="">
+                    </div>
+                </div>
 
-    <p>할리스커피(Hollys Coffee)는 1998년 6월 서울 강남에 한국 최초로 에스프레소 전문점을 오픈한 커피 브랜드 입니다.<br>
-        현재 약 510개의 매장을 운영하고 있으며, 트렌드를 선도하는 다양한 활동으로<br>
-        대한민국 대표 커피전문기업으로 자리매김하고 있습니다.</p>
-</div>
-
-<div class="bi">
-    <div class="img">
-        <h1><span>ㆍ</span>BI 소개<span>ㆍ</span></h1>
-        <p><img src="./img/history/image 39.png"></p>
-    </div>
-
-    <div class="logo">
-        <div class="btn">
-            <h4>HOLLYS CROWN<br>
-                커피의 즐거움을 만드는 작은 차이의 미학</h4>
-                <figure>
-                    <a href="#">로고 다운로드</a>
-                    <a href="#"><img src="./img/history/ic_baseline-download-for-offline.png"></a>
-                </figure>
+            </div>
+            
         </div>
-    
-            <p>CROWN(왕관) 형상은 할리스를 매개로 고객과 바리스타가 손을 맞잡고 있는 형태를 상징합니다.<br>
-                이는 할리스를 방문하시는 고객의 이야기에 귀 기울이고 진심을 담아 서비스하는 마음을 담고 있습니다. </p>
-    </div>
-</div>
-
-<div class="logo2">
-        <h4>HISTORY OF HOLLYS LOGO</h4>
-        <p><img src="./img/history/image 40.png"></p>
-</div>
-
-<div class="color">
-    <div class="color-txt">
-        <h4>HOLLYS RED</h4>
-        <p>할리스 레드는 할리스의 열정과 신뢰 그리고 서비스 정신을 의미합니다.</p>
-    </div>
-        <p><img src="./img/history/image 41.png"></p>
-
-</div>
-
-<div class="top">
-    <a href="#"></a>
-</div>
     </main>
 
-    <footer></footer>
-
+    <footer>     
+        <div class="tos">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">고객센터</a>
+            <a href="#">고객설문</a>
+        </div>
+                
+        <div class="number">
+            <figure><img src="./img/2021_BI 1.png"></figure>
+            <b>사업자등록번호 211-87-61044 ㅣ대표전화 : 02-2188-7100 ㅣ 가맹문의 1670-4432</b>
+            <p>법인명 : (주)할리스에프앤비 대표자 : 이종현 통신판매업 : 제2019-서울종로-0193호<br>
+                    주소 : 서울특별시 종로구 율곡로 88 삼환빌딩 8층 (운니동)</p>
+                            
+            <p>COPYRIGHT (C) HOLLYS COFFEECo., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

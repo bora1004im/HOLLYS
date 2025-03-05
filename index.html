@@ -7,61 +7,71 @@
     <title>HOLLYS</title>
     <link href="./css/index.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./slick.min.js" type="text/javascript" charset="utf-8"></script>
-    <script defer src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./slick.min.js"></script>
+    <script defer src="./js/common.js"></script>
+    <script defer src="./js/index.js"></script>
 
     <link rel="icon" type="image/png" href="./hollys-icon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./hollys-icon/favicon-16x16.png" sizes="16x16" />
 </head>
 
 <body>
-<header>
-<div>
-<ul>
-    <li>
-        <a href="./history.html">HOLLYS</a>
-            <!-- <div>
-                <a href="#">HOLLYS IS</a>
-                <a href="#">HISTORY</a>
-                <a href="#">BI</a>
-            </div> -->
-    </li>
-
-    <li>
-        <a href="./menu-main.html">MENU</a>
-            <!-- <div>
-                <a href="./menu-new.html">신메뉴</a>
-                <a href="./menu1.html">커피</a>
-                <a href="./menu2.html">음료</a>
-                <a href="./menu3.html">푸드</a>
-                <a href="./menu4.html">MD</a>
-            </div> -->
-    </li>
-</ul>
-                            
-<div><a href="./index.html"><img src="./img/2021_BI 6.png"></a></div>
-            
-<ul>
-    <li>
-        <a href="./membership.html">MEMBERSHIP</a>
-            <!-- <div>
-                <a href="#">멤버십 혜택</a>
-                <a href="#">스마트 오더</a>
-            </div> -->
-    </li>
-                        
-    <li>
-        <a href="./partner.html">PARTNER</a>
-            <!-- <div>
-                <a href="#">창업안내</a>
-                <a href="#">창업신청</a>
-                <a href="#">FQA</a>
-            </div> -->
-    </li>
-</ul>
-</div>
+<header id="header" class="header">
+    <div class="header-wrap">
+        <!--logo-->
+        <a href="./index.html" class="logo" title="메인으로">
+        <img src="./img/2021_BI 6.png" alt="">
+        </a>
+        <!--active-bg-->
+        <div class="nav-bg">
+            <div class="container"></div>
+        </div>
+        <!--menu-->
+        <nav class="gnb-drop-all">
+        <ul class="depth-1">
+            <li>
+                <a href="./brand.html">HOLLYS</a>
+                <ul class="depth-2">
+                    <li><a href="./brand.html">BRAND</a></li>
+                    <li><a href="./history.html">HISTORY</a></li>
+                    <li><a href="./bi.html">BI 소개</a></li>
+                    <li><a href="./history.html">찾아오시는 길</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./menu-new.html">MENU</a>
+                <ul class="depth-2">
+                    <li><a href="./menu-new.html">신메뉴</a></li>
+                    <li><a href="./menu1.html">커피</a></li>
+                    <li><a href="./menu2.html">음료</a></li>
+                    <li><a href="./menu3.html">푸드</a></li>
+                    <li><a href="./menu4.html">MD</a></li>
+                </ul>
+        </li>
+            <li>
+                <a href="./membership.html">MEMBERSHIP</a>
+                <ul class="depth-2">
+                    <li><a href="./membership.html">멤버십 혜택</a></li>
+                    <li><a href="./membership.html">스마트 오더</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./partner.html">PARTNER</a>
+                <ul class="depth-2">
+                    <li><a href="./partner.html">창업안내</a></li>
+                    <li><a href="./partner.html">창업신청</a></li>
+                    <li><a href="./partner.html">FQA</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+        <!--창업문의-->
+        <a href="./membership.html" class="header-link">
+            <img src="./img/shop.png">가맹문의
+        </a>
+    </div>
 </header>
 
 <main>
@@ -187,7 +197,6 @@
         <a></a>
         <p>05</p>
     </aside>
-
 </main>
 
 </body>

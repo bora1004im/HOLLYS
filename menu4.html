@@ -1,47 +1,107 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu3</title>
-    <link href="./css/menu2.css" rel="stylesheet">
+    <title>MD</title>
+    <link href="./css/menu.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="./common.js"></script> <!--defer : 로드를 시키되 실행시키지 않고 html 작업이 끝나면 실행하도록 하는 명령어-->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="./js/common.js"></script>
     <script src="./slick.min.js" type="text/javascript" charset="utf-8"></script>
-    <script defer src="./js/menu1.js" type="text/javascript" charset="utf-8"></script>
+    <script defer src="./js/menu.js" type="text/javascript" charset="utf-8"></script>
 
     <link rel="icon" type="image/png" href="./hollys-icon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./hollys-icon/favicon-16x16.png" sizes="16x16" />
 </head>
 <body>
-    <header class="active"></header>
-    
+    <header id="header" class="header">
+        <div class="header-wrap">
+            <!--logo-->
+            <a href="./index.html" class="logo" title="메인으로">
+            <img src="./img/2021_BI 6.png" alt="">
+            </a>
+            <!--active-bg-->
+            <div class="nav-bg">
+                <div class="container"></div>
+            </div>
+            <!--menu-->
+            <nav class="gnb-drop-all">
+            <ul class="depth-1">
+                <li>
+                    <a href="./history.html">HOLLYS</a>
+                    <ul class="depth-2">
+                        <li><a href="./brand.html">BRAND</a></li>
+                        <li><a href="./history.html">HISTORY</a></li>
+                        <li><a href="./bi.html">BI 소개</a></li>
+                        <li><a href="./map.html">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./menu-new.html">MENU</a>
+                    <ul class="depth-2">
+                        <li><a href="./menu-new.html">신메뉴</a></li>
+                        <li><a href="./menu1.html">커피</a></li>
+                        <li><a href="./menu2.html">음료</a></li>
+                        <li><a href="./menu3.html">푸드</a></li>
+                        <li><a href="./menu4.html">MD</a></li>
+                    </ul>
+            </li>
+                <li>
+                    <a href="./membership.html">MEMBERSHIP</a>
+                    <ul class="depth-2">
+                        <li><a href="./membership.html">멤버십 혜택</a></li>
+                        <li><a href="./membership.html">스마트 오더</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./partner.html">PARTNER</a>
+                    <ul class="depth-2">
+                        <li><a href="./partner.html">창업안내</a></li>
+                        <li><a href="./partner.html">창업신청</a></li>
+                        <li><a href="./partner.html">FQA</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </nav>
+            <!--창업문의-->
+            <a href="./membership.html" class="header-link">
+               <img src="./img/shop.png">가맹문의
+            </a>
+        </div>
+    </header>
+
     <main>
         <div class="img">
-            <p> <img src="./img/menu1/Rectangle 9.png"></p>
+            <p> <img src="./img/menu/bg02.png"></p>
             <div>
-                <i>MENU</i>
+                <h1>MENU</h1>
+                <p>품질 좋은 커피와 따뜻한 서비스를 제공하는 고객과 함께 성장하는 할리스</p>
             </div>
         </div>
-    
-        <div class="header">
-            <div class="a">
-                <a href="./menu-new.html">신메뉴</a>
-                <a href="./menu1.html">커피</a>
-                <a href="./menu2.html">음료</a>
-                <a href="./menu3.html">푸드</a>
-                <a href="./menu4.html">MD</a>
-            </div>
+
+        <div class="sub-nav">
+            <ul class="sub-nav-bar">
+                <li class="item">
+                    <a href="./menu-new.html" class="link on">신메뉴 </a>
+                </li>
+                <li class="item">
+                    <a href="./menu1.html" class="link on">커피</a>
+                </li>
+                <li class="item">
+                    <a href="./menu2.html">음료</a>
+                </li>
+                <li class="item">
+                    <a href="./menu3.html" class="link on">푸드</a>
+                </li>
+                <li class="item active">
+                    <a href="./menu4.html" class="link on">MD</a>
+                </li>
+            </ul>
         </div>
-    
-        <!-- <div class="nav">
-            <figure><img src="./img/history/bxs_home.png">
-            <a href="#">홈</a>
-            <a href="#"><b>ㆍ</b>HOLLYS</a>
-            </figure>
-        </div> -->
 
         <div class="hot">
             <h3><span>추천 상품</span></h3>
@@ -84,23 +144,36 @@
         </div>
 
         <div class=" search">
-            <h4>메뉴 검색</h4>
+            <h4><img src="./img/menu/search.png">메뉴 검색</h4>
             <ul>
                 <li>
-                    <input type="checkbox">
-                    <label>FOOD</label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        ALL
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        FOOD
+                    </label>
                 </li>
 
                 <li>
-                    <input type="checkbox">
-                    <label>PRODUCT</label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        PRODUCT
+                    </label>
                 </li>
             </ul>
         </div>
 
         <div class="menu">
             <ul>
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Strawberry Sand wafer.png"></figure>
                         <p>딸기 샌드웨이퍼</p>
@@ -119,7 +192,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Greentea Sand wafer.png"></figure>
                         <p>녹차 샌드웨이퍼</p>
@@ -138,7 +211,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Milk Sandwafer.png"></figure>
                         <p>밀크 샌드웨이퍼</p>
@@ -157,7 +230,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Easy Shake Grain.png"></figure>
                         <p>이지쉐이크 그레인</p>
@@ -176,7 +249,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Easy Shake Choco.png"></figure>
                         <p>이지쉐이크 초코</p>
@@ -195,11 +268,11 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/HOLLYS CAPSULE COFFEE ECLIPSE BLEND.png"></figure>
                         <p>할리스 캡슐커피 이클립스 블렌드</p>
-                        <span>HOLLYS CAPSULE COFFEE ECLIPSE BLEND</span>
+                        <span>CAPSULE COFFEE ECLIPSE BLEND</span>
                     </div>
 
                     <div class="txt">
@@ -214,11 +287,11 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/HOLLYS CAPSULE COFFEE SIGNATURE BLEND.png"></figure>
                         <p>할리스 캡슐커피 시그니처 블렌드</p>
-                        <span>HOLLYS CAPSULE COFFEE SIGNATURE BLEND</span>
+                        <span>CAPSULE COFFEE SIGNATURE BLEND</span>
                     </div>
 
                     <div class="txt">
@@ -233,7 +306,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Kombucha Shine Muscat.png"></figure>
                         <p>할리스 콤부차 샤인머스캣</p>
@@ -252,7 +325,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Kombucha Peach Strawberry.png"></figure>
                         <p>할리스 콤부차 피치딸기</p>
@@ -271,7 +344,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Decaf Americano 30T.png"></figure>
                         <p>디카페인 아메리카노 30T</p>
@@ -290,7 +363,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Decaf Americano 12T.png"></figure>
                         <p>디카페인 아메리카노 12T</p>
@@ -309,7 +382,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Iced Cold Brew 30T.png"></figure>
                         <p>아이스 콜드브루 30T</p>
@@ -328,7 +401,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Iced Cold Brew 10T.png"></figure>
                         <p>아이스 콜드브루 10T</p>
@@ -347,7 +420,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Vanilla Delight.png"></figure>
                         <p>바닐라 딜라이트 10T</p>
@@ -366,7 +439,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Real Belgian Chocolate Latte.png"></figure>
                         <p>리얼 벨지안 초코 라떼 10T</p>
@@ -385,7 +458,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/Cafe Latte.png"></figure>
                         <p>카페라떼 10T</p>
@@ -404,7 +477,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/SIGNATURE AMERICANO.png"></figure>
                         <p>시그니처 아메리카노 12T</p>
@@ -423,7 +496,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/HAZELNUT AMERICANO.png"></figure>
                         <p>헤이즐넛 아메리카노12T</p>
@@ -442,7 +515,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/SIGNATURE ESPRESSO BLEND.png"></figure>
                         <p>시그니처 에스프레소 블렌드</p>
@@ -461,7 +534,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/DAYDREAM (BLEND).png"></figure>
                         <p>데이드림</p>
@@ -480,7 +553,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/ECLIPSE (BLEND).png"></figure>
                         <p>이클립스</p>
@@ -499,7 +572,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/GUATEMALA (SINGLE ORIGIN).png"></figure>
                         <p>과테말라 싱글오리진</p>
@@ -518,7 +591,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/SIGNATURE DRIP BAG.png"></figure>
                         <p>시그니처 드립백</p>
@@ -537,7 +610,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/DAYDREAM DRIP BAG (BLEND).png"></figure>
                         <p>데이드림 드립백</p>
@@ -556,7 +629,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all food">
                     <div class="main">
                         <figure><img src="./img/menu4/food/ECLIPSE DRIP BAG (BLEND).png"></figure>
                         <p>이클립스 드립백</p>
@@ -575,7 +648,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Golf-Ball-Set.png"></figure>
                         <p>골프볼 세트</p>
@@ -594,7 +667,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Hollys Redvelvet Lip.png"></figure>
                         <p>할리스 레드벨벳 립</p>
@@ -613,7 +686,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/All About Edition (So Sweet).png"></figure>
                         <p>올어바웃에디션 1호(쏘 스윗)</p>
@@ -632,7 +705,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/All About Edition (Oh Happy).png"></figure>
                         <p>올어바웃에디션 2호(오 해피)</p>
@@ -651,7 +724,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/SS Cup Tumbler (Winter Red Edition).png"></figure>
                         <p>SS 컵 텀블러 (윈터 레드 에디션)</p>
@@ -670,7 +743,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Twinkle Glass Mug.png"></figure>
                         <p>트윙클 글라스 머그</p>
@@ -689,7 +762,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Gradation Glass Mug.png"></figure>
                         <p>그라데이션 글라스 머그</p>
@@ -708,7 +781,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/SS Cup Tumbler (Grey).png"></figure>
                         <p>SS컵 텀블러(그레이)</p>
@@ -727,7 +800,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/SS Cup Tumbler (Black).png"></figure>
                         <p>SS컵 텀블러(블랙)</p>
@@ -746,7 +819,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Hollys Coffee Glass Mug G.png"></figure>
                         <p>글라스 머그 G</p>
@@ -765,7 +838,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/DAILY GLASS MUG.png"></figure>
                         <p>데일리 글라스 머그</p>
@@ -784,7 +857,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Signature Mug (8oz).png"></figure>
                         <p>시그니처 머그 (8oz)</p>
@@ -803,7 +876,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Signature Mug (12oz).png"></figure>
                         <p>시그니처 머그 (12oz)</p>
@@ -822,7 +895,7 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Signature Plate.png"></figure>
                         <p>시그니처 플레이트</p>
@@ -841,7 +914,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Signature dessert stand.png"></figure>
                         <p>시그니처 디저트</p>
@@ -860,7 +933,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Water drop Cup Tumbler.png"></figure>
                         <p>물방울 컵 텀블러</p>
@@ -880,7 +953,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Woody Bottle Tumbler (Lavender).png"></figure>
                         <p>우디 보틀 텀블러 (라벤더)</p>
@@ -899,7 +972,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/MiiR Cup Tumbler 12oz _Red.png"></figure>
                         <p>미르 컵 텀블러 12oz (레드)</p>
@@ -920,7 +993,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/MiiR Wide Mouth Tumbler 16oz _Red.png"></figure>
                         <p>미르 와이드마우스 16oz (레드)</p>
@@ -941,7 +1014,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Two-tone Glass (Pink).png"></figure>
                         <p>투-톤 글라스컵 (핑크)</p>
@@ -961,7 +1034,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Half Double Wall Glass (Yellow).png"></figure>
                         <p>하프 더블 월 글라스 컵 (옐로우)</p>
@@ -982,7 +1055,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Half Double Wall Glass (Green).png"></figure>
                         <p>하프 더블 월 글라스 컵 (그린)</p>
@@ -1003,7 +1076,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/HOLLYS WALLMUG SLEEK-SIGNATURE(L) WHITE.png"></figure>
                         <p>할리스 월머그 슬릭 L 시그니처 화이트</p>
@@ -1024,7 +1097,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/HOLLYS WALLMUG SLEEK-SIGNATURE.png"></figure>
                         <p>할리스 월머그 슬릭 시그니처</p>
@@ -1045,7 +1118,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/HOLLYS WALLMUG SLEEK-GOOD DAY.png"></figure>
                         <p>할리스 월머그 슬릭 굿데이</p>
@@ -1066,7 +1139,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/KINTO-ALFRESCO CUP BEIGE.png"></figure>
                         <p>킨토 알프레스코 컵 베이지</p>
@@ -1088,7 +1161,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/KINTO-ALFRESCO CUP BLACK.png"></figure>
                         <p>킨토 알프레스코 컵 블랙</p>
@@ -1110,7 +1183,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/KINTO-ALFRESCO MUG BEIGE.png"></figure>
                         <p>킨토 알프레스코 머그 베이지</p>
@@ -1132,7 +1205,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/KINTO-ALFRESCO MUG BLACK.png"></figure>
                         <p>킨토 알프레스코 머그 블랙</p>
@@ -1154,7 +1227,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/KINTO-ALFRESCO PLATE BEIGE.png"></figure>
                         <p>킨토 알프레스코 플레이트 베이지</p>
@@ -1176,7 +1249,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/KINTO-ALFRESCO PLATE BLACK.png"></figure>
                         <p>킨토 알프레스코 플레이트 블랙</p>
@@ -1198,7 +1271,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/DAILY MUG.png"></figure>
                         <p>데일리 머그</p>
@@ -1219,7 +1292,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Hollys Coffee Signature Mug R Red.png"></figure>
                         <p>시그니처 머그 R 레드</p>
@@ -1238,7 +1311,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Hollys Coffee Signature Mug G Red.png"></figure>
                         <p>시그니처 머그 G 레드</p>
@@ -1257,7 +1330,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="all product">
                     <div class="main">
                         <figure><img src="./img/menu4/product/Hollys Coffee Espresso Cup Set.png"></figure>
                         <p>에스프레소 잔 세트</p>
@@ -1283,7 +1356,23 @@
         </div>
     </main>
     
-<footer></footer>
+    <footer>     
+        <div class="tos">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">고객센터</a>
+            <a href="#">고객설문</a>
+        </div>
+                
+        <div class="number">
+            <figure><img src="./img/2021_BI 1.png"></figure>
+            <b>사업자등록번호 211-87-61044 ㅣ대표전화 : 02-2188-7100 ㅣ 가맹문의 1670-4432</b>
+            <p>법인명 : (주)할리스에프앤비 대표자 : 이종현 통신판매업 : 제2019-서울종로-0193호<br>
+                    주소 : 서울특별시 종로구 율곡로 88 삼환빌딩 8층 (운니동)</p>
+                            
+            <p>COPYRIGHT (C) HOLLYS COFFEECo., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
