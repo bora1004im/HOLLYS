@@ -58,8 +58,8 @@
 
 .header>.a>a:hover{
     font-weight: bold;
-    border-bottom: 4px solid #D91226;
-    color: #D91226;
+    border-bottom: 4px solid #B5121B;
+    color: #B5121B;
 }
 
 /* 
@@ -78,7 +78,7 @@
 
 .nav>figure>a:nth-of-type(2){
     font-weight: bold;
-    color: #D91226;
+    color: #B5121B;
 } */
 
 /*hot*/
@@ -320,7 +320,7 @@
 
 .menu>ul>li>.txt>.txt2>.title>p{
     margin-bottom: 15px;
-    color: #D91226; 
+    color: #B5121B; 
     font-size: 15px;
 }
 
@@ -345,7 +345,7 @@
 
 .menu>ul>li>.txt>.txt2>table>tr{
     font-size: 10px;
-    color: #D91226;
+    color: #B5121B;
     padding: 30px;
 }
 
