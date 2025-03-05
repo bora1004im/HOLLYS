@@ -1,43 +1,16 @@
-        //메뉴를 클릭하면 해당 콘텐츠가 있는 곳까지 스크롤이 이동
+$('.slider').slick({
+    slidesToShow: 1, // 한 번에 보여줄 슬라이드 개수
+    slidesToScroll: 1, // 한 번에 스크롤할 슬라이드 개수
+    infinite: true, // 무한 반복
+    dots: true, // 아래 점 네비게이션
+    arrows: true, // 좌우 화살표
+    // autoplay: true, // 자동 슬라이드 활성화
+    // autoplaySpeed: 3000 // 3초마다 자동 이동 (1000ms = 1초)
+});
 
-        // setTimeout(function(){
-        //     $('html').scrollTop(969);
-        //     //window.scrollTop(0,969);
-        // },1000)
 
-        // setTimeout(function(){
-        //     $('html').animate({scrollTop:969},1000);
-        //     //window.scrollTop(0,969);
-        // },1000)
-
-        // console.log(
-        //     $('.con').eq(0).offset().top,
-        //     $('.con').eq(1).offset().top,
-        //     $('.con').eq(2).offset().top,
-        // )
-
-        //메뉴클릭 
-
-        let idx = $(this).index(); //메뉴의 순번을 변수로 담기
-        let conTop = $('.visual').eq(idx).offset().top;
-
-        $('.header .a > a').eq(0).on('click', function(){ 
-            $('html').animate({scrollTop:660},800);
-        });
-
-        $('.header .a > a').eq(1).on('click', function(){ 
-
-        $('html').animate({scrollTop:2290},800);
-        });
-
-        $('.header .a > a').eq(2).on('click', function(){ 
-
-        $('html').animate({scrollTop:4210},800);
-        });
-        
-        console.log(
-            $('.visual').offset().top, //668
-            $('.crown').offset().top, //2287
-            $('.order').offset().top, //4208
-        )
-
+/*TOP버튼*/
+$('.top').on('click',function(){
+    $('html').animate({scrollTop:0},750);
+});
+    

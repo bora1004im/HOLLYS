@@ -1,4 +1,3 @@
-
 function init(){
     $(".slide").slick({
         arrows : false,
@@ -32,6 +31,7 @@ function init(){
         },50);
 
         
+        //scrollbar
         $(window).on('scroll',function(){
             scrollState.y = $(window).scrollTop();
 
@@ -64,10 +64,6 @@ function init(){
                     idx+1,
                     $('aside a').length
                 )
-
-                // $('aside a').removeClass('active')
-                // .eq(idx).addClass('active');
-
             },50);            
 
             scrollState.y2 = scrollState.y;
@@ -75,5 +71,11 @@ function init(){
         })
     //init end
 }
+
+// $('.top').on('click',function(){
+//     $('html').animate({scrollTop:0},750);
+// });
+
+
 
 $(window).on('load',init)

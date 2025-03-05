@@ -32,7 +32,7 @@
 
         $('.header .a > a').eq(2).on('click', function(){ 
 
-        $('html').animate({scrollTop:3250},800);
+        $('html').animate({scrollTop:4450},800);
         });
 
         $('.header .a > a').eq(3).on('click', function(){ 
@@ -40,11 +40,7 @@
             $('html').animate({scrollTop:4450},800);
             });
 
-            
-        
-        console.log(
-            $('.process').offset().top, //668
-            $('.condition').offset().top, //2287
-            $('.advice').offset().top, //4208
-        )
-
+    /*TOP버튼*/
+    $('.top').on('click',function(){
+    $('html').animate({scrollTop:0},750);
+    });
