@@ -190,14 +190,28 @@
 .main>p{
     font-size: 18px; font-weight: 300;
     text-align: center;
-    margin-top: 100px; padding: 50px;
+    padding: 50px;
     border-radius: 30px;
+}
+.main>p:nth-child(1) {
+    margin-top: 100px;
+}
+.main>p:nth-child(1) img{
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgb(74 74 74 / 24%);
+}
+.main>p:nth-child(2){
+    font-family: 'GmarketSansMedium';
+    margin-bottom:100px;
+    font-size:18px;
 }
 
 .main>p>span{
+    font-family: 'GmarketSansMedium';
     font-weight: 500;
     font-size: 18px;
     color: #B5121B;
+    font-weight: 700;
 }
 
 .nav-2{
