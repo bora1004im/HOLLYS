@@ -433,7 +433,15 @@
     margin: 0;
     font-family: 'GmarketSansBold';
 }
-
+#daumRoughmapContainer1741329969027{
+    margin-top: 50px;
+}
+.root_daum_roughmap .cont .section_address{
+    display: none;
+}
+.root_daum_roughmap .cont .section{
+    margin: 0;
+}
 /*top*/
 .top > a{
     display:scroll;
