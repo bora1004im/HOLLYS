@@ -599,7 +599,7 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     }
     
     .menu>ul>li:hover .main{
-        box-shadow: 5px 5px 5px rgb(74 74 74 / 24%);
+        box-shadow: none;
     }
     
     .menu>ul>li>.main{

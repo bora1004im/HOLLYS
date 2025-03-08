@@ -811,13 +811,13 @@ body > main > div.visual-2 > div.h_wrap.clear > div.clear.y_wrap.y_right.y_1998 
 }
 .visual-2 .h_wrap .y_left .txt_w strong:after{
     position: absolute;
-    right: 124%;
+    right: 326px;
     top: 40%;
     transform: translate(0, -50%);  
 }
 .visual-2 .h_wrap .y_right .txt_w strong:after{
     position: absolute;
-    left: -24.7%;
+    left: -64px;
     top: 40%;
     transform: translate(0, -50%);
 }
