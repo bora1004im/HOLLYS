@@ -454,3 +454,501 @@
 }
 
 
+
+@media (max-width:767px){
+   
+ /*1.BRAND*/
+.img{
+    position: relative;
+    margin-top: 50px;
+    height: 300px;
+}
+.img > p {
+    height: 100%;
+}
+.img > p >img {
+    width: 100%;
+    height: 100%;
+}
+.img>div{
+    width: 100%;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.img>div>h1{
+    font-family: 'GmarketSansBold';
+    font-weight: 900;
+    font-size: 1.875rem;
+    color: #fff;
+    margin: 0;
+}
+.img>div>p{
+    font-size: 0.9375rem;
+    font-weight: 100;
+    color: #fff;
+}
+
+/*BRAND-sub-nav*/
+.sub-nav{
+    height: 4.25rem;
+}
+.sub-nav .sub-nav-bar{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 0 2%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-nav .sub-nav-bar li {
+    height: 100%;
+}
+.sub-nav .sub-nav-bar li a{
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    color: #333;
+    font-size: 0.9375rem;
+    height: 100%;
+}
+.sub-nav .sub-nav-bar .active{
+    border-bottom: 2.5px solid #B5121B;
+}
+.sub-nav .sub-nav-bar .active a{
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    color: #B5121B;
+    font-size: 0.9375rem;
+}
+
+
+/*BRAND-visual*/
+.visual-1{
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.visual-1>h1{
+    font-size: 70px; 
+    margin-bottom: 200px;
+    display: flex;
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #302C2D;
+
+    transform: translateY(0%);
+    animation: h2 1s forwards;
+}
+
+@keyframes h2{
+    100%{transform: translateY(100%);}
+}
+
+.visual-1>h1>span{
+    font-size: 70px;
+    display: flex;
+    font-family: 'Gowun Dodum', sans-serif;
+    color:#B5121B;
+}
+
+.main>.main-txt{
+    margin: 200px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main>.main-txt>h2{
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.main>.main-txt>h2>b{
+    font-family: 'GmarketSansMedium';
+    color: #5C4033;
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.main>.main-txt>p{
+    font-weight: 200;
+    margin: 15px 0 50px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main>.main-2{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main>.main-2>.txt-1{
+    transform: translateY(-50%);
+}
+
+.main>.main-2>.txt-1>h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.main>.main-2>.txt-1>h3>span{
+    font-size: 28px;
+    color: #B5121B;
+}
+
+.main>.main-2>.txt-1>h3::after{
+    content: '';
+    display: block; width: 120%; 
+    border-bottom: 1px solid #000000;
+    margin: 5px auto;
+}
+
+.main>.main-2>.txt-1>p{
+    font-size: 14px;
+}
+
+.main>.main-2>img{
+    padding: 30px;
+    z-index: 1;
+}
+
+.main>.main-2>.txt-2{
+    text-align: right;
+    transform: translateY(50%);
+}
+
+.main>.main-2>.txt-2>h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.main>.main-2>.txt-2>h3>span{
+    font-size: 28px;
+    color: #B5121B;
+}
+
+.main>.main-2>.txt-2>h3::after{
+    content: '';
+    display: block; width: 125%; 
+    border-bottom: 1px solid #000000;
+    margin: 5px auto;
+    transform: translateX(-20%);
+}
+
+.main>.main-2>.txt-2>p{
+    font-size: 14px;
+}
+
+.main>p{
+    font-size: 18px; font-weight: 300;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.main>p:nth-child(1) {
+    margin-top: 50px;
+}
+.main>p:nth-child(1) img{
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgb(74 74 74 / 24%);
+}
+.main>p:nth-child(2){
+    font-family: 'GmarketSansMedium';
+    margin-bottom:50px;
+    font-size:0.9375rem;
+    margin-top: 20px;
+}
+
+.main>p>span{
+    font-family: 'GmarketSansMedium';
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #B5121B;
+    font-weight: 700;
+}
+
+.nav-2{
+    padding: 200px 0 ;
+    width: 1440px; margin: 0 auto;
+    display: flex;
+}
+
+.nav-2>figure:hover>div{
+    display: block;
+}
+
+.nav-2>figure>a{
+}
+
+.nav-2>figure>a:nth-of-type(3){
+    font-weight: bold;
+    color: #B5121B;
+}
+
+/*2. history*/
+.visual-2{
+    width: 100%; 
+    margin: 50px auto;
+}
+.visual-2 .main h1{
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    color: #5C4033;
+    margin: 0;
+    font-family: 'GmarketSansBold';
+}
+.visual-2 .main p{
+    margin: 0;
+    padding: 10px;
+    font-weight: 400;
+}
+.visual-2 .h_wrap{
+    position: relative;
+    margin-top: 30px;
+}
+.visual-2 .h_wrap .line{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+    margin-left: -1px;
+}
+.visual-2 .h_wrap .line span.line02{
+    top: 55px;
+}
+.visual-2 .h_wrap .line .line02{
+    background-color: #A67B5B;
+}
+.visual-2 .h_wrap .line span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #f2ede7;
+}
+.visual-2 .h_wrap .y_wrap{
+    padding: 40px 0;
+}
+.visual-2 .h_wrap .y_wrap .txt_w{
+    width: 50%;
+}
+
+.visual-2 .h_wrap .y_right .img_w{
+    padding-left: 100px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.visual-2 .h_wrap .y_right .img_w img{
+    width: 100%;
+}
+.visual-2 .h_wrap .y_right .txt_w{
+    width: 100%;
+    float: left;
+    padding-left: 100px;
+}
+.visual-2 .h_wrap .y_left {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.visual-2 .h_wrap .y_left .img_w{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.visual-2 .h_wrap .y_left .img_w img{
+    width: 100%;
+}
+.visual-2 .h_wrap .y_left .txt_w{
+    padding-left: 100px;
+    width: 100%;
+    text-align: left;
+}
+
+body > main > div.visual-2 > div.h_wrap.clear > div.clear.y_wrap.y_right.y_1998 > div.img_w > img{
+    border: 1px solid #eee;
+}
+.clear:after{
+    content: "";
+    display: table;
+    clear: both;   
+}
+.visual-2 .h_wrap .y_wrap .txt_w strong{
+    display: block;
+    position: relative;
+    font-family: 'GmarketSansBold';
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #A67B5B;
+}
+.visual-2 .h_wrap .y_wrap .txt_w strong:after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #A67B5B;
+}
+.visual-2 .h_wrap .y_left .txt_w strong:after{
+    position: absolute;
+    right: 124%;
+    top: 40%;
+    transform: translate(0, -50%);  
+}
+.visual-2 .h_wrap .y_right .txt_w strong:after{
+    position: absolute;
+    left: -24.7%;
+    top: 40%;
+    transform: translate(0, -50%);
+}
+.visual-2 .h_wrap .y_wrap .txt_w ul li{
+    font-size: 0.9375rem;
+    letter-spacing: -.8px;
+}
+
+/*3. BI소개*/
+.visual-3{
+    width: 100%; 
+    margin: 50px auto;
+}
+.visual-3 .main h1{
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    color: #5C4033;
+    margin: 0;
+    font-family: 'GmarketSansBold';
+}
+.visual-3 .main p{
+    margin: 0;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.visual-3 .bi{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 65px;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.visual-3 .bi .img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-top: 20px;
+}
+.visual-3 .bi .logo{
+    width: 100%;
+}
+.visual-3 .bi .logo .logo-txt{
+
+}
+.visual-3 .bi .logo .logo-txt span{
+    font-size: 0.9375rem;
+    color: #B5121B;
+
+}
+.visual-3 .bi .logo .logo-txt p{
+    font-family: 'GmarketSansMedium';
+    font-size: 1.75rem;
+    line-height: 1.3;
+    margin-top: 10px;
+}
+.visual-3 .bi .logo>p{
+    margin-top: 1.25rem;
+    font-size: 15px;
+    letter-spacing: -.8px;
+}
+
+.visual-3 .logo2{
+    padding: 50px 20px;
+    border-top: 1px solid #eee;
+}
+.visual-3 .logo2 h4{
+    font-family: 'GmarketSansMedium';
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    color: #5C4033;
+}
+.visual-3 .logo2 p img{
+    width: 100%;
+}
+
+.visual-3 .color{
+    padding: 50px 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+.visual-3 .color h4{
+    font-family: 'GmarketSansMedium';
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    color: #5C4033;
+}
+.visual-3 .color .color-txt p{
+    font-size: 0.9375rem;
+    letter-spacing: -.8px;
+}
+.visual-3 .img > p >img{
+    height: auto;
+}
+
+/*찾아오시는 길*/
+.visual-4{
+    width: 100%; 
+    margin: 50px auto;
+}
+.visual-4 .main h1{
+    display: block;
+    font-size:2rem;
+    font-weight: 800;
+    text-align: center;
+    color: #5C4033;
+    margin: 0;
+    font-family: 'GmarketSansBold';
+}
+#daumRoughmapContainer1741329969027{
+    margin-top: 50px;
+}
+.root_daum_roughmap .cont .section_address{
+    display: none;
+}
+.root_daum_roughmap .cont .section{
+    margin: 0;
+}
+/*top*/
+.top > a{
+    display:scroll;
+    position:fixed;
+    bottom:50px; right:50px;
+    transition: 2s;
+    font-size: 0;
+    background-image: url("../img/bi_arrow-up-circle-fill.png");
+    width: 50px; height: 50px;
+}
+}

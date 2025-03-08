@@ -1,170 +1,182 @@
 @charset "utf-8";
 @import url('./common.css');
 
+
 /*main-1*/
 
 ::-webkit-scrollbar{
     display: none;
 }
 
-main{
+.pc{
     position: fixed;
     width: 100%; height: 100%;
 }
 
-.visual{
-    overflow:hidden;
-    position:relative;
-    left: 0; top:0;
+.pc .visual {
+    overflow: hidden;
+    position: relative;
+    left: 0; 
+    top: 0;
     width: 100%; 
     transition: 1s;
 }
 
-.visual .main-1{
-    height:100vh;
+.pc .visual .main-1 {
+    height: 100vh;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.visual .main-1>img{
+.pc .visual .main-1 > img {
     position: absolute; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.slide{
+.pc .slide {
     width: 100%;
     position: relative;
-                
     /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
 }
 
-.slide .slick-list{  
-/* 배너들의 상위요소 */
-    overflow:hidden;  
+.pc .slide .slick-list {  
+    /* 배너들의 상위요소 */
+    overflow: hidden;  
 }
 
-.slide .slick-track{
-/* 배너 그룹 및 translateX값으로 이동(스크립트) */
+.pc .slide .slick-track {
+    /* 배너 그룹 및 translateX값으로 이동(스크립트) */
 }
 
-.slide .slick-track::after{
-    content:'';
-    display:block;
+.pc .slide .slick-track::after {
+    content: '';
+    display: block;
     clear: both;
 }
 
-.slide .slick-slide{
-/* 개별 배너 */
-margin:0; 
-width:100%;
-float:left;
+.pc .slide .slick-slide {
+    /* 개별 배너 */
+    margin: 0; 
+    width: 100%;
+    float: left;
 }
 
-.slide .slick-slide  img{width:100%;}
-    
+.pc .slide .slick-slide img {
+    width: 100%;
+}
+
 /* next prev */           
-.slide .slick-prev{
+.pc .slide .slick-prev {
     position: absolute;
-    left:0; top:50%;
+    left: 0; 
+    top: 50%;
     z-index: 2;
 }
 
-.slide .slick-next{
+.pc .slide .slick-next {
     position: absolute;
-    right:0; top:50%;
+    right: 0; 
+    top: 50%;
     z-index: 2;
 }
-    
+
 /* dots */
-    .slide .slick-dots{
+.pc .slide .slick-dots {
     position: absolute;
-    left:0; bottom:5%;
-    width:100%;
+    left: 0; 
+    bottom: 5%;
+    width: 100%;
     text-align: center;
-    
     list-style-type: none;
-    padding:0;
+    padding: 0;
 }
 
-.slide .slick-dots li{display: inline-block;}
-.slide .slick-dots li button{
-    width:12px; height:12px;
+.pc .slide .slick-dots li {
+    display: inline-block;
+}
+
+.pc .slide .slick-dots li button {
+    width: 12px; 
+    height: 12px;
     background-color: #fff;
     border-radius: 50%;
     display: inline-block;
-    border:none;
-    font-size:0;
-    margin:0 10px;
+    border: none;
+    font-size: 0;
+    margin: 0 10px;
 }
 
-.slide .slick-dots li.slick-active button{
+.pc .slide .slick-dots li.slick-active button {
     background-color: #B5121B;
 }
 
 /*main-2*/
-.main-2{
-    margin:0 auto;
-    padding:150px 200px 60px 200px;
-
+.pc .main-2 {
+    margin: 0 auto;
+    padding: 150px 200px 60px 200px;
     height: 100vh;
     position: relative;
     text-align: center;
 }
 
-.main-2>h2{
-    font-family: 'GmarketSansMedium';
+.pc .main-2 > h2 {
+    font-family: 'GmarketSansBold';
     font-size: 42px;
 }
 
-.main-2>h2::after{
+.pc .main-2 > h2::after {
     content: '';
-    display: block; width: 60px; 
+    display: block; 
+    width: 60px; 
     border-bottom: 3px solid #A67B5B;
     margin: 8px auto;
 }
 
-.main-2>p{
+.pc .main-2 > p {
     padding: 20px 0 100px;
     font-size: 18px;
 }
 
-.main-2>ul {
+.pc .main-2 > ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.main-2>ul>li{
+.pc .main-2 > ul > li {
     position: relative;
 }
 
-.main-2>ul>li>figure{ 
+.pc .main-2 > ul > li > figure { 
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(74 74 74 / 24%);
 }
 
-.main-2>ul>li:hover>figure::after{ 
+.pc .main-2 > ul > li:hover > figure::after { 
     content: '';
-    position: absolute; left: 3%; top:2.5%;
+    position: absolute; 
+    left: 3%; 
+    top: 2.5%;
     margin: 0 auto;
-    width: 90%; height: 80%;
-    border: 5px solid rgba(255, 255, 255,0.8);
+    width: 90%; 
+    height: 80%;
+    border: 5px solid rgba(255, 255, 255, 0.8);
 }
 
-.main-2>ul>li>figure>img{
+.pc .main-2 > ul > li > figure > img {
     transition: 0.5s;
 }
 
-.main-2>ul>li>figure:hover>img{
+.pc .main-2 > ul > li > figure:hover > img {
     transform: scale(1.1);
 }
 
-.main-2>ul>li>.txt-s1{
+.pc .main-2 > ul > li > .txt-s1 {
     width: 50%;
     margin: 0 auto;
     border: 1px solid #A67B5B;
@@ -172,63 +184,63 @@ float:left;
     transition: 0.9s;
 }
 
-.main-2>ul>li:hover>.txt-s1{
+.pc .main-2 > ul > li:hover > .txt-s1 {
     background-color: #A67B5B;
-
 }
 
-.main-2>ul>li>.txt-s1>a{
+.pc .main-2 > ul > li > .txt-s1 > a {
     font-size: 15px;
     color: #A67B5B;
 }
 
-.main-2>ul>li:hover>.txt-s1>a{
+.pc .main-2 > ul > li:hover > .txt-s1 > a {
     color: rgb(255, 255, 255);
     border-radius: 20px;
 }
 
 
 /*main-3*/
-.main-3{
-    margin:0 auto;
-    width: 100%; height: 100vh;
+.pc .main-3 {
+    margin: 0 auto;
+    width: 100%; 
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
 
-.main-3>.img>p{
+.pc .main-3 > .img > p {
     width: 100%;
     position: absolute;
-    left:-40%; top:0%;
+    left: -40%; 
+    top: 0%;
     transform: skewX(20deg);
     z-index: 1;
 }
 
-.main-3>.img>.rolling{
+.pc .main-3 > .img > .rolling {
     transform-style: preserve-3d;
 }
 
-.main-3>.img>.rolling:hover{
+.pc .main-3 > .img > .rolling:hover {
     transition: 0.5s;
 }
 
-.main-3>.img>.rolling>p{
+.pc .main-3 > .img > .rolling > p {
     transform: translateX(30%) translateY(-10%);
     opacity: 0.8;
 }
 
-
-.main-3>.txt-s1{
-    width: 50%; height: 50%;
-    
+.pc .main-3 > .txt-s1 {
+    width: 50%; 
+    height: 50%;
     position: absolute;
-    left:15%; top:30%;
-    transform: translate(0%,0%);
+    left: 15%; 
+    top: 30%;
+    transform: translate(0%, 0%);
     z-index: 6;
-
 }
 
-.main-3>.txt-s1>h2{
+.pc .main-3 > .txt-s1 > h2 {
     font-size: 55px;
     color: #111;
     letter-spacing: -1.5px;
@@ -236,36 +248,39 @@ float:left;
     line-height: 49px;
 }
 
-.main-3>.txt-s1>h2>span{
+.pc .main-3 > .txt-s1 > h2 > span {
     font-family: 'GmarketSansMedium';
     font-size: 72px;
     color: #B5121B;
 }
 
-.main-3>.txt-s1>p{
+.pc .main-3 > .txt-s1 > p {
     padding: 50px 0 50px;
     font-size: 30px;
     color: #A67B5B;
 }
 
-.main-3>.txt-s1>p::before{
+.pc .main-3 > .txt-s1 > p::before {
     content: '';
-    display: block; width: 460px; 
+    display: block; 
+    width: 460px; 
     border-top: 1px solid #A67B5B;
     margin: 6px;
 }
 
-.main-3>.txt-s1>p::after{
+.pc .main-3 > .txt-s1 > p::after {
     content: '';
-    display: block; width: 460px; 
+    display: block; 
+    width: 460px; 
     border-bottom: 1px solid #A67B5B;
     margin: 6px;
 }
 
-.main-3>.txt-s1>a{
+.pc .main-3 > .txt-s1 > a {
     border: 1px solid #B5121B;
     box-shadow: 5px 5px 5px rgb(74 74 74 / 24%);
-    padding: 20px 50px; margin-right: 20px;
+    padding: 20px 50px; 
+    margin-right: 20px;
     color: #B5121B;
     font-weight: bold;
     font-size: 18px;
@@ -273,109 +288,393 @@ float:left;
     border-radius: 10px;
 }
 
-.main-3>.txt-s1>a:hover{
+.pc .main-3 > .txt-s1 > a:hover {
     background-color: #B5121B;
     color: white;
 }
 
 /*main-4*/
-.main-4{
+.pc .main-4 {
     height: 100vh;
-
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
 }
 
-
-.main-4>.img>ul{
+.pc .main-4 > .img > ul {
     width: 80%; 
     display: flex;
     align-items: center;
     text-align: center;
     margin: 0 auto;
-
 }
 
-.main-4>.img>ul>li{
+.pc .main-4 > .img > ul > li {
     background-color: #EFEAE3;
     border-radius: 50px;
     box-shadow: 5px 5px 5px rgb(74 74 74 / 24%);
     margin: 0 50px;
 }
 
-.main-4>.img>ul>li:nth-of-type(2){
+.pc .main-4 > .img > ul > li:nth-of-type(2) {
     background-color:  #E8D5D2;
     border-radius: 50px;
     box-shadow: 5px 5px 5px rgb(74 74 74 / 24%);
     margin: 0 50px;
 }
 
-.main-4>.img>ul>li>figure{
+.pc .main-4 > .img > ul > li > figure {
     overflow: hidden;
 }
 
-.main-4>.img>ul>li>figure>img{
+.pc .main-4 > .img > ul > li > figure > img {
     width: 70%;
-    transform: translate(0%,20%);
+    transform: translate(0%, 20%);
     transition: 0.6s;
 }
 
-.main-4>.img>ul>li>figure:hover>img{
+.pc .main-4 > .img > ul > li > figure:hover > img {
     width: 70%;
-    transform: translate(0%,5%);
+    transform: translate(0%, 5%);
 }
 
-.main-4>.img>ul>li>.txt-s1{
+.pc .main-4 > .img > ul > li > .txt-s1 {
     margin-top: 50px;
     position: relative;
     z-index: 1;
 }
 
-.main-4>.img>ul>li>.txt-s1>b{
+.pc .main-4 > .img > ul > li > .txt-s1 > b {
     font-family: 'GmarketSansMedium';
     font-size: 30px;
 }
 
-.main-4>.img>ul>li>.txt-s1>b::before{
+.pc .main-4 > .img > ul > li > .txt-s1 > b::before {
     content: '';
     position: absolute; 
-    left: 20%; top:0%;
-    width: 60%; height: 20%;
-    border-bottom: 20px solid rgba(255, 255, 255,0.8);
+    left: 20%; 
+    top: 0%;
+    width: 60%; 
+    height: 20%;
+    border-bottom: 20px solid rgba(255, 255, 255, 0.8);
     z-index: -1;
 }
 
-.main-4>.img>ul>li>.txt-s1>p{
+.pc .main-4 > .img > ul > li > .txt-s1 > p {
     font-weight: 400;
     margin-top: 20px;
     font-size: 16px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
 }
 
-aside{
-    position:fixed; right:3%; top:40%;
+.pc aside {
+    position: fixed; 
+    right: 3%; 
+    top: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
-aside > p {
+.pc aside > p {
     font-size: 25px;
     font-weight: bold;
     color: #232323;
     padding: 10px 0;
 }
 
-aside > a{
-    width:4px; height:30px;
+.pc aside > a {
+    width: 4px; 
+    height: 30px;
     background-color: rgb(218, 218, 218);
     display: block; 
-    
 }
 
-aside > a.active{
+.pc aside > a.active {
     background-color: #232323;
+}
+
+/*mo*/
+.mo .visual {
+    overflow: hidden;
+    position: relative;
+    left: 0; 
+    top: 0;
+    width: 100%; 
+    transition: 1s;
+}
+
+.mo .visual .main-1 {
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 44px;
+}
+
+.mo .visual .main-1 > img {
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mo .slide-1 {
+    width: 100%;
+    position: relative;
+}
+.mo .slide-1 figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.mo .slide-1 .slick-list {  
+    overflow: hidden;  
+}
+
+.mo .slide-1 .slick-track::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mo .slide-1 .slick-slide {
+    margin: 0; 
+    width: 100%;
+    float: left;
+}
+
+.mo .slide-1 .slick-slide img {
+    width: 100%;
+}
+
+/* next prev */           
+.mo .slide-1 .slick-prev {
+    position: absolute;
+    left: 0; 
+    top: 50%;
+    z-index: 2;
+}
+
+.mo .slide-1 .slick-next {
+    position: absolute;
+    right: 0; 
+    top: 50%;
+    z-index: 2;
+}
+
+/* dots */
+.mo .slide-1 .slick-dots {
+    position: absolute;
+    left: 0; 
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.mo .slide-1.slick-dots li {
+    display: inline-block;
+}
+
+.mo .slide-1 .slick-dots li button {
+    width: 12px; 
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    border: none;
+    font-size: 0;
+    margin: 0 10px;
+}
+
+.mo .slide-1 .slick-dots li.slick-active button {
+    background-color: #B5121B;
+}
+
+/*main-2*/
+.mo .main-2 {
+    margin: 0 auto;
+    padding: 100px 20px;
+    height: auto; 
+    position: relative;
+    text-align: center;
+}
+
+.mo .main-2 > h2 {
+    font-family: 'GmarketSansBold';
+    font-size: 32px; 
+}
+
+.mo .main-2 > h2::after {
+    content: '';
+    display: block; 
+    width: 60px; 
+    border-bottom: 3px solid #A67B5B;
+    margin: 8px auto;
+}
+
+.mo .main-2 > p {
+    padding: 20px 0 60px;
+    font-size: 14px; 
+}
+
+.mo .main-2 > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.mo .main-2 > ul > li {
+    position: relative;
+    width: 45%; /* 2열로 표시 */
+    margin-bottom: 20px;
+}
+
+.mo .main-2 > ul > li > figure { 
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(74 74 74 / 24%);
+}
+
+
+.mo .main-2 > ul > li > figure > img {
+    transition: 0.5s;
+    width: 100%; 
+}
+
+.mo .main-2 > ul > li > figure:hover > img {
+    transform: scale(1.1);
+}
+
+.mo .main-2 > ul > li > .txt-s1 {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #A67B5B;
+    border-radius: 20px;
+    transition: 0.9s;
+}
+
+.mo .main-2 > ul > li:hover > .txt-s1 {
+    background-color: #A67B5B;
+}
+
+.mo .main-2 > ul > li > .txt-s1 > a {
+    font-size: 13px; 
+    color: #A67B5B;
+}
+
+.mo .main-2 > ul > li:hover > .txt-s1 > a {
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+
+/*main-3*/
+.mo .main-3 {
+    width: 100%;
+    height: 100%; 
+    position: relative;
+    background-image: url(../img/mobile/bg03.png); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    color: white; 
+    text-align: center; 
+    padding: 100px 40px;
+    
+}
+.mo .main-3 .txt-s1{
+    width: 100%;
+}
+.mo .main-3 .txt-s1 span{
+    font-family: 'GmarketSansMedium';
+    color: #fff;
+    font-size: 40px;
+}
+.mo .main-3 .txt-s1 h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.mo .main-3 .txt-s1 p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #fff;
+    text-align: left;
+}
+.mo .main-3 .txt-s1 .btn{
+    display: flex;
+    justify-content: space-between;
+}
+.mo .main-3 .txt-s1 .btn a {
+    display: inline-block;
+    background-color: #a67b5b80;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+/*main-4*/
+.mo .main-4{
+    padding: 100px 20px;
+}
+.mo .main-4 h2{
+    font-family: 'GmarketSansBold';
+    font-size: 32px;
+    text-align: center;
+}
+.mo .main-4  > h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    border-bottom: 3px solid #A67B5B;
+    margin: 8px auto;
+}
+.mo .main-4 p{
+    padding: 20px 0 60px;
+    font-size: 14px;
+    text-align: center;
+}
+.mo .main-4 .slide-2 {
+    width: 100%;
+    position: relative;
+}
+.mo .main-4 .slide-2 figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.mo .main-4 .slide-2 .slick-list {  
+    overflow: hidden;  
+}
+
+.mo .main-4 .slide-2 .slick-track::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mo .main-4 .slide-2 .slick-slide {
+    margin: 0; 
+    width: 100%;
+    float: left;
+}
+
+.mo .main-4 .slide-2 .slick-slide img {
+    width: 100%;
+}
+
+.mo .main-4 .slide-2 .slick-arrow{
+    display:none !important;
 }

@@ -150,7 +150,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 30px;
+    border-radius: 1.875rem;
 }
 
 .menu>ul>li>.main>figure>img{
@@ -177,10 +177,10 @@
     position: absolute; left: 0; top:0;
     display: none;
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     top: 5%;
     border: 1px solid #5C4033;
-    border-radius: 30px;
+    border-radius: 1.875rem;
 }
 
 .menu>ul>li>.txt.active{
@@ -219,7 +219,7 @@
 }
 
 .menu>ul>li>.txt>.txt2>.title>span{
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 15px;
     line-height: 1.5;
     letter-spacing: -.8px;
@@ -246,7 +246,7 @@
 .menu>ul>li>.txt>.txt2>table>tr{
     font-size: 10px;
     color: #B5121B;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 .menu>ul>li>.txt>.txt2>table>tbody>tr{
@@ -287,7 +287,7 @@
     font-family: 'GmarketSansMedium';
     background-color: white;
     font-size: 25px;
-    padding: 0 30px;
+    padding: 0 1.875rem;
 }
 
 .hot>h3::before{
@@ -351,7 +351,7 @@
     margin:0; 
     width:100%;
     float:left;
-    padding-top: 30px;
+    padding-top: 1.875rem;
 }
 .slide .slick-slide p{
     font-size: 15px;
@@ -388,6 +388,9 @@
     background-position: center; 
     width: 45px;
     height: 45px;
+}
+body > main > div.hot > div > ul{
+    display: none !important;
 }
 
 /*search*/
@@ -428,7 +431,7 @@
     gap: 8px; 
     cursor: pointer;
     font-size: 15px;
-    margin-right: 30px;
+    margin-right: 1.875rem;
 }
 
 
@@ -453,7 +456,7 @@ input[type="checkbox"]:checked + .custom-checkbox {
 input[type="checkbox"]:checked + .custom-checkbox::after {
     content: '✔';
     color: white;
-    font-size: 14px;
+    font-size: 0.875rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -474,8 +477,6 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     position: relative;
 }
 
-
-
 /*top*/
 .top > a{
     display:scroll;
@@ -498,3 +499,399 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 }
 
 
+@media (max-width:767px){
+    .img{
+        position: relative;
+        margin-top: 50px;
+        height: 300px;
+    }
+    .img > p {
+        height: 100%;
+    }
+    .img > p >img {
+        width: 100%;
+        height: 100%;
+    }
+    .img>div{
+        width: 100%;
+        position: absolute;
+        left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .img>div>h1{
+        font-family: 'GmarketSansBold';
+        font-weight: 900;
+        font-size: 1.875rem;
+        color: #fff;
+        margin: 0;
+    }
+    .img>div>p{
+        font-size: 0.9375rem;
+        font-weight: 100;
+        color: #fff;
+    }
+    
+    /*sub-nav*/
+    .sub-nav{
+        height: 4.25rem;
+    }
+    .sub-nav .sub-nav-bar{
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        padding: 0 2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sub-nav .sub-nav-bar li {
+        height: 100%;
+    }
+    .sub-nav .sub-nav-bar li a{
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5em 1em;
+        color: #333;
+        font-size: 0.9375rem;
+        height: 100%;
+    }
+    .sub-nav .sub-nav-bar .active{
+        border-bottom: 2.5px solid #B5121B;
+    }
+    .sub-nav .sub-nav-bar .active a{
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5em 1em;
+        color: #B5121B;
+        font-size: 0.9375rem;
+    }
+    
+    
+    /*1. 신메뉴*/
+    .menu{
+        width: 100%; 
+        margin: 50px auto;
+        position: relative;
+    }
+    
+    .menu>ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+        margin: 0 20px;
+    }
+    
+    .menu>ul>li{
+        width: calc((100% - 10px) / 2);
+        text-align: center;
+        padding: 20px 0 0 0;
+        list-style: none;
+    }
+    .menu ul::after {
+        content: "";
+        width: calc((100% - 10px) / 2);
+        visibility: hidden;
+    }
+    
+    .menu>ul>li:hover .main{
+        box-shadow: 5px 5px 5px rgb(74 74 74 / 24%);
+    }
+    
+    .menu>ul>li>.main{
+        width: 100%;
+        height: 100%;
+        background-color: #f9f9f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+    
+    .menu>ul>li>.main>figure>img{
+        transform: translateY(-15%);
+        width: 100%;
+        padding: 70px 0;
+    }
+    
+    .menu>ul>li>.main>p{
+        font-family: 'GmarketSansMedium';
+        font-size: 0.875rem;
+        position: absolute;
+        top: 77%;
+        padding: 0 2%;
+    }
+    
+    .menu>ul>li>.main>span{
+        color: #5C4033;
+        font-size: 0.6875rem;
+        position: absolute;
+        top: 85%;
+        line-height: 1.2;
+        padding: 0 2%;
+    }
+    
+    .menu>ul>li>.txt{
+        width: 100%;
+        height: 100%;
+        position: absolute; left: 0; top:0;
+        display: none;
+        background-color: #fff;
+        border-radius: 1.875rem;
+        top: 5%;
+        border: 1px solid #5C4033;
+        border-radius: 20px;
+    }
+    
+    .menu>ul>li>.txt.active{
+        display: block;
+    }
+    
+    .menu>ul>li>.txt>button{
+        display: none;
+    }
+    .menu>ul>li>.txt>.txt2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .menu>ul>li>.txt>.txt2>.title{
+        padding: 0 8%;
+    }
+    
+    .menu>ul>li>.txt>.txt2>.title>h4{
+        font-family: 'GmarketSansMedium';
+        font-size: 0.9375rem;
+        letter-spacing: -.8px;
+    }
+    
+    .menu>ul>li>.txt>.txt2>.title>p{
+        margin-bottom: 5px;
+        color: #B5121B; 
+        font-size: 10px;
+        letter-spacing: -.8px;
+    }
+    
+    .menu>ul>li>.txt>.txt2>.title>span{
+        font-size: 10px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        letter-spacing: -.8px;
+        display: inline-block;
+        white-space: normal;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+    
+    .menu>ul>li>.txt>.txt2>table{
+        margin-top: 20px; 
+        width: 100%; 
+    }
+    
+    .menu>ul>li>.txt>.txt2>table::before{
+        content: '';
+        width: 80%; 
+        border-bottom: 1px solid #ddd;
+        position: absolute;
+        margin-top: -18px;
+        left: 10%;
+    }
+    
+    .menu>ul>li>.txt>.txt2>table>tr{
+        font-size: 10px;
+        color: #B5121B;
+        padding: 1.875rem;
+    }
+    
+    .menu>ul>li>.txt>.txt2>table>tbody>tr{
+        font-size: 10px;
+    }
+    
+    .menu>ul>li>.txt>.txt2>table>tbody>tr>th{
+        font-size: 0.6875rem;
+        color: #5C4033;
+    }
+    
+    .menu>ul>li>.txt>.txt2>table>tbody>tr>td{
+        font-size: 0.6875rem;
+    }
+    
+    
+    
+    
+    
+    /*2.커피*/
+    /*hot*/
+    .hot{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .hot>h3{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        font-size: 25px;
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .hot>h3>span{
+        font-family: 'GmarketSansMedium';
+        background-color: white;
+        font-size: 18px;
+        padding: 0 1.875rem;
+    }
+    
+    .hot>h3::before{
+        content: '';
+        width: 90%;
+        border-bottom: 1px solid #A67B5B;
+        margin: 5px auto;
+        position: absolute;
+        z-index: -1;
+    }
+    .hot .slide {
+        width: 100%;
+        overflow: hidden;
+    }
+    .hot .slide .slick-track {
+        display: flex;
+        align-items: center;
+    }
+    .hot .slide .slick-slide {
+        width: 100% !important;
+        box-sizing: border-box;
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .hot .slide .slick-prev, 
+    .hot .slide .slick-next {
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+    .hot .slide .slick-prev {
+        left: 10px;
+    }
+    
+    .hot .slide .slick-next {
+        right: 10px;
+    }
+    body > main > div.hot > div > ul{
+        display: none !important;
+    }
+    
+    
+    /*search*/
+    .search{
+        width: 90%; margin: 0 auto;
+        position: relative;
+        border: 1px solid #ddd;
+        padding: 1.875rem 20px;
+        border-radius: 15px;
+    }
+    
+    .search>h4{
+        font-family: 'GmarketSansMedium';
+        font-size: 0.9375rem;
+        display: flex;
+        align-items: center;
+    }
+    .search>h4>img{
+        margin-right: 5px;
+        margin-bottom: 2px;
+    }
+    .search>ul{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 10px;
+        border-top: 1px solid #ddd;
+    }
+    
+    .search>ul>li{
+        padding: 15px 0 0 0;
+    }
+    
+    .search>ul>li>label{
+        display: flex;
+        align-items: center;
+        gap: 8px; 
+        cursor: pointer;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    .custom-checkbox {
+        width: 15px;
+        height: 15px;
+        border: 1px solid #333;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    input[type="checkbox"]:checked + .custom-checkbox {
+        background-color: #B5121B;
+        border-color: #B5121B;
+    }
+    
+    input[type="checkbox"]:checked + .custom-checkbox::after {
+        content: '✔';
+        color: white;
+        font-size: 0.875rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    
+    .menu>ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .menu>ul>li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        position: relative;
+    }
+    
+    /*top*/
+    .top > a{
+        display:scroll;
+        position:fixed;
+        bottom:50px; right:50px;
+        transition: 2s;
+        font-size: 0;
+        background-image: url("../img/bi_arrow-up-circle-fill.png");
+        width: 50px; height: 50px;
+    }
+    /*top*/
+    .top > a{
+        display:scroll;
+        position:fixed;
+        bottom:50px; right:50px;
+        transition: 2s;
+        font-size: 0;
+        background-image: url("../img/bi_arrow-up-circle-fill.png");
+        width: 50px; height: 50px;
+    }
+}

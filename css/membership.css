@@ -226,9 +226,10 @@
     margin-left: 7px;
 }
 .visual-2 .crown .txt p{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     color: #5C4033;
+    text-align: center;
 }
 .visual-2 .crown .txt h3{
     font-family: 'GmarketSansBold';
@@ -402,10 +403,22 @@
 .visual-3 .slide-02{
     display: flex;
     align-items: center;
+    justify-content: center !important;
     justify-content: flex-start; 
+    margin-top: 130px;
 }
 .visual-3 .slide-02 .slide-right{
     margin-left: 150px;
+}
+.visual-3 .slide-03,.visual-3 .slide-04,.visual-3 .slide-05,.visual-3 .slide-06{
+    justify-content: space-evenly !important;
+    align-items: center;
+}
+.visual-3 .slide-03{
+    margin-top: 140px;
+}
+.visual-3 .slide-03{
+    margin-top: 130px;
 }
 .visual-3 .slick-slide .slide-right p{
     font-family: 'GmarketSansBold';
@@ -443,3 +456,472 @@
     width: 50px; height: 50px;
 }
 
+@media (max-width:767px){
+    .img{
+        position: relative;
+        margin-top: 50px;
+        height: 300px;
+    }
+    .img > p {
+        height: 100%;
+    }
+    .img > p >img {
+        width: 100%;
+        height: 100%;
+    }
+    .img>div{
+        width: 100%;
+        position: absolute;
+        left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .img>div>h1{
+        font-family: 'GmarketSansBold';
+        font-weight: 900;
+        font-size: 1.875rem;
+        color: #fff;
+        margin: 0;
+    }
+    .img>div>p{
+        font-size: 0.9375rem;
+        font-weight: 100;
+        color: #fff;
+    }
+    
+    /*sub-nav*/
+    .sub-nav{
+        height: 4.25rem;
+    }
+    .sub-nav .sub-nav-bar{
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        padding: 0 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sub-nav .sub-nav-bar li {
+        height: 100%;
+    }
+    .sub-nav .sub-nav-bar li a{
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5em 1em;
+        color: #333;
+        font-size: 0.9375rem;
+        height: 100%;
+    }
+    .sub-nav .sub-nav-bar .active{
+        border-bottom: 2.5px solid #B5121B;
+    }
+    .sub-nav .sub-nav-bar .active a{
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5em 1em;
+        color: #B5121B;
+        font-size: 0.9375rem;
+    }
+    
+    /*멤버십 혜택*/
+    .visual-1{
+        margin: 100px auto;
+    }
+    .visual-1 .main h1{
+        display: block;
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+        color: #5C4033;
+        margin: 0;
+        font-family: 'GmarketSansBold';
+    }
+    .visual-1 .main p{
+        margin: 0;
+        padding: 10px;
+        font-weight: 400;
+    }
+    
+    .visual-1 .info_box{
+        background-color: #f7f4f2;
+        margin-top: 50px;
+        position: relative;
+        height: 850px;
+    }
+    .visual-1 .info_box .left{
+        display: none;
+    }
+    .visual-1 .info_box .left .wrap{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        padding-left: 14%;
+    } 
+    .visual-1 .info_box  .left .wrap .eng{
+        font-family: 'GmarketSansBold';
+        display: block;
+        font-size: 64px;
+        line-height: 80px;
+        color: #ffffff;
+        font-weight: 600;
+    }
+    
+    .visual-1 .info_box .right{
+        padding-top: 60px;
+    }
+    .visual-1 .info_box .right .inner{
+        padding-left: 0;
+    }
+    .visual-1 .info_box .right ul {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .visual-1 .info_box .right ul li{
+        float: left;
+        text-align: center;
+        width: 50%;
+        margin-top: 20px;
+    }
+    .visual-1 .info_box .right ul li .icon_w{
+        width: 140px;
+        height: 140px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 0px 30px 0px rgba(234, 227, 222, 0.28);
+        border: 1px solid #eee;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .visual-1 .info_box .right ul li .icon_w img{
+        width: 70px;
+        opacity: 0.7;
+    }
+    .visual-1 .info_box .right ul li:hover .icon_w{
+        border: none;
+    }
+    .visual-1 .info_box .right ul li .txt_w{
+        margin-top: 10px;
+    }
+    .visual-1 .info_box .right ul li .txt_w strong{
+        font-family: 'GmarketSansMedium';
+        font-size: 1rem;
+        color: #5C4033;
+    }
+    .visual-1 .info_box .right ul li .txt_w p{
+        line-height: 20px;
+        font-size: 0.875rem;
+    }
+    
+    /*등급별 혜택*/
+    .visual-2{
+        width: 100%;
+        margin: 50px auto;
+    }
+    .visual-2 .main{
+        margin-bottom: 50px;
+    }
+    .visual-2 .main h1{
+        display: block;
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+        color: #5C4033;
+        margin: 0;
+        font-family: 'GmarketSansBold';
+    }
+    .visual-2 .crown{
+        width: 90%; height: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px; padding: 30px;
+        background-color: #f7f4f2;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: 5px 5px 5px rgb(74 74 74 / 24%);
+    }
+    
+    .visual-2 .crown .img{
+        display: flex;
+        justify-content: center;
+        align-items: center; margin: 0 !important;
+        height: auto;
+    }
+    .visual-2 .crown .img p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .visual-2 .crown .img p img{
+        width: 80%;
+        height: auto;
+    }
+    .visual-2 .crown:nth-of-type(5) .img p img{
+        width: 70%;
+    }
+    .visual-2 .crown .txt {
+        margin-left: 0px !important;
+    }
+    .visual-2 .crown .txt {
+        margin-left: 50px;
+    }
+    .visual-2 .crown:nth-of-type(5)  .txt{
+        margin-left: 7px;
+    }
+    .visual-2 .crown .txt p{
+        font-size: 18px;
+        font-weight: 700;
+        color: #5C4033;
+    }
+    .visual-2 .crown .txt h3{
+        font-family: 'GmarketSansBold';
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    .visual-2 .crown .txt h3 span{
+        font-family: 'GmarketSansMedium';
+        font-size: 0.875rem;
+    }
+    .visual-2 .crown .txt ul li{
+        font-size: 0.9375rem;
+        letter-spacing: -.8px;
+        color: #444;
+        text-align: center;
+    }
+    
+    
+    /*note*/
+    .visual-2 .note{
+        width: 90%; margin: 0 auto;
+        padding: 50px 0 ;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .visual-2 .note .txt{
+        display: flex;
+        align-items: center;
+    }
+    
+    .visual-2 .note .txt span{
+        font-family: 'GmarketSansMedium';
+        margin-left: 10px;
+        font-weight: bold; 
+        font-size: 1.25rem;
+    }
+    
+    .visual-2 .note ul{
+        margin: 20px 0;
+    }
+    
+    .visual-2 .note li{
+        font-size: 0.9375rem;
+        margin-bottom: 10px;
+    }
+    
+    
+    
+    /*스마트 오더*/
+    .visual-3{
+        width: 100%;
+        margin: 100px auto;
+    }
+    .visual-3 .main{
+        margin-bottom: 50px;
+    }
+    .visual-3 .main h1{
+        display: block;
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+        color: #5C4033;
+        margin: 0;
+        font-family: 'GmarketSansBold';
+    }
+    
+    .visual-3 .order{
+        width: 85%; 
+        margin: 0px auto;
+    }
+    .visual-3 .order .order-1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .visual-3 .order .order-1 .right{
+        background-color: #F7F4F2;
+        padding: 50px 30px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgb(74 74 74 / 24%);
+        margin-top: 50px;
+    }
+    .visual-3 .order .order-1 .right img{
+        width: 100%;
+    }
+    
+    .visual-3 .order .order-1 .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .visual-3 .order .order-1 .left span{
+        font-family: 'GmarketSansMedium';
+        font-size: 1.125rem;
+    }
+    .visual-3 .order .order-1 .left h2{
+        font-family: 'GmarketSansBold';
+        font-size: 2rem;
+        margin-top: -5px;
+    }
+    .visual-3 .order .order-1 .left p{
+        margin-top: 0px;
+        font-size: 0.9375rem;
+        line-height: 21px;
+        color: #444;
+    }
+    .visual-3 .order .order-1 .left .btn{
+        display: flex;
+        margin-top: 50px;
+    }
+    .visual-3 .order .order-1 .left .btn .google{
+        font-family: 'GmarketSansMedium';
+        color: #5C4033;
+        font-size: 0.9375rem;
+        padding: 3% 5%;
+        background-color: #F7F4F2;
+        width: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #5C4033;
+        border-radius: 5px;
+    }
+
+    .visual-3 .order .order-1 .left .btn .apple{
+        font-family: 'GmarketSansMedium';
+        color: #5C4033;
+        font-size: 0.9375rem;
+        padding: 3% 5%;
+        background-color: #F7F4F2;
+        width: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #5C4033;
+        border-radius: 5px;
+        margin-left: 1%;
+    }
+
+    .visual-3 .order .order-1 .left .btn img{
+        margin-right: 10px;
+    }
+    .visual-3 .text{
+        display: block;
+        font-size: 1.125rem;
+        font-weight: 300;
+        text-align: center;
+        color: #5C4033;
+        margin: 0;
+        margin-top: 200px;
+        font-family: 'GmarketSansMedium';
+    }
+    .visual-3 .text b{
+        font-family: 'GmarketSansBold';
+        font-size: 1.125rem;
+        color: #5C4033;
+    }
+    .visual-3 .text span{
+        display: block;
+        font-size: 2rem;
+        font-weight: 300;
+        text-align: center;
+        color: #5C4033;
+        margin: 0;
+        font-family: 'GmarketSansBold';
+    }
+    .visual-3 .slick-slide{
+        width: 80%;
+        display: flex !important;
+        justify-content: space-around;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .visual-3 .slide-02{
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    .visual-3 .slide-02 .slide-right{
+        margin-left: 0px;
+    }
+    .visual-3 .slide-03,.visual-3 .slide-04,.visual-3 .slide-05,.visual-3 .slide-06{
+        justify-content: space-evenly !important;
+        align-items: center;
+    }
+    .visual-3 .slide-03{
+        margin-top: 50px;
+    }
+    .visual-3 .slide-03{
+        margin-top: 50px;
+    }
+    .visual-3 .slide-04,.visual-3 .slide-06{
+        flex-direction: column-reverse;
+    }
+    .visual-3 .slick-slide .slide-right p{
+        font-family: 'GmarketSansBold';
+        text-align: center;
+        font-size: 2.3rem;
+        color: #B5121B;
+    }
+    .visual-3 .slick-slide .slide-right h2{
+        font-size: 1.125rem;
+        font-weight: 400;
+        letter-spacing: -1px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .visual-3 .slick-slide .slide-right ul{
+        display: flex;
+        margin-top: 10px;
+        gap: 0;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .visual-3 .slick-slide .slide-right ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9375rem;
+        width: 25%;
+    }
+    .visual-3 .slick-slide .slide-right ul li img{
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .visual-3 .slick-slide .slide-left{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .visual-3 .slick-slide .slide-left img{
+        width: 100%;
+    }
+    .visual-3 .slide-01 .slide-left img{
+        width: 50%;
+    }
+}
