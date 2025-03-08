@@ -72,10 +72,27 @@ function init(){
     //init end
 }
 
-// $('.top').on('click',function(){
-//     $('html').animate({scrollTop:0},750);
-// });
 
+$(document).ready(function() {
+    // 첫 번째 슬라이드 초기화
+    $(".slide-1").slick({
+        arrows: true,  
+        dots: true,    
+        autoplay: true, 
+        autoplaySpeed: 5000, 
+        slidesToShow: 1,  
+        slidesToScroll: 1,  
+        fade: true,  
+    });
+
+    // 두 번째 슬라이드 초기화
+    $(".slide-2").slick({
+        autoplay: true, 
+        autoplaySpeed: 5000, 
+        slidesToShow: 1,  
+        slidesToScroll: 1,  
+    });
+});
 
 
 $(window).on('load',init)

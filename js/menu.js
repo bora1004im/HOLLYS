@@ -1,24 +1,63 @@
+function init() {
+    // 기존 슬라이드 제거 후 재초기화
+    if ($(".slide").hasClass("slick-initialized")) {
+        $(".slide").slick("unslick");
+    }
+
+    $(".slide").slick({
+        arrows: true,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        slidesToShow: 3, 
+        slidesToScroll: 1, 
+        responsive: [
+            {
+                breakpoint: 768, // 모바일 (768px 이하)
+                settings: {
+                    slidesToShow: 1,  
+                    slidesToScroll: 1,
+                    centerMode: false,  // 중앙 정렬 해제
+                    variableWidth: false // 슬라이드 크기 고정
+                }
+            }
+        ]
+    });
+}
+
+// 페이지 로드 후 실행
+$(document).ready(function () {
+    init();
+});
+
+// 윈도우 크기 변경 시 슬라이드 재적용
+$(window).on("resize", function () {
+    init();
+});
+
+
+
 const elBtn = document.querySelectorAll('.menu>ul>li .main'); 
 const elPopup = document.querySelectorAll('.menu>ul>li .txt');
 
-elBtn[0].addEventListener('click', function(){
-    elPopup[0].classList.add('active');
-    // elPopup.classList.remove('active');
+// 모든 .main 버튼에 클릭 이벤트를 추가
+elBtn.forEach((btn, index) => {
+    btn.addEventListener('click', function() {
+        elPopup[index].classList.add('active');
+    });
 });
 
-elPopup[0].addEventListener('click',function(){
-    elPopup[0].classList.remove('active');
+// 모든 .txt 요소에 클릭 이벤트를 추가하여 팝업을 닫을 수 있도록 설정
+elPopup.forEach((popup, index) => {
+    popup.addEventListener('click', function() {
+        elPopup[index].classList.remove('active');
+    });
 });
 
 $(document).on('ready', function() {
-    // $(function){ }→ 위 코드를 간단하게 표기 
-
     $(".slide").slick({
-    // dots: true,
-    // vertical: true,
-    // centerMode: true,
-    slidesToShow: 3,
-    slidesToScroll: 1
+        slidesToShow: 3,
+        slidesToScroll: 1
     });
 });
 
